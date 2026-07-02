@@ -1,0 +1,8 @@
+{
+  "name": "practical-ai-workflows",
+  "type": "static-zero-dependency",
+  "build": "python3 scripts/build.py",
+  "output": "dist",
+  "status": "staging-noindex",
+  "created": "2026-07-02"
+}

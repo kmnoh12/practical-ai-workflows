@@ -1,0 +1,11 @@
+# Generated build output
+/dist/
+
+# Local/system files
+.DS_Store
+.env
+.env.*
+node_modules/
+
+# Logs
+*.log
