@@ -1,54 +1,56 @@
 ---
-title: "Publish Package — Creator Automation Stack for Beginners"
+title: "Creator Automation Stack for Beginners: Evidence Gate"
 slug: "creator-automation-stack-for-beginners"
-status: "evidence-needed"
+status: "day-12-evidence-gated"
 noindex: true
 category: "Creator Automation"
 order: 1
-updated: "2026-07-02"
+updated: "2026-07-06"
 cta: "Creator Automation Stack Checklist"
 ---
 
-> **Draft / evidence-needed:** This page is exported for site testing. It should not be treated as a final public recommendation until screenshots, pricing checks, disclosures, and FACT CHECK cleanup are complete.
+> **Day 12 decision:** Keep this page in staging/noindex. Official source touchpoints were collected, but the article is not ready for public search indexing until screenshots, same-scenario tests, and final recommendation copy are complete.
 
-# Publish Package — Creator Automation Stack for Beginners
+# Creator Automation Stack for Beginners: Evidence Gate
 
-Status: **Publish-ready package / needs final pricing screenshots**
+## What Day 12 resolved
 
-## SEO
+- The post no longer depends on vague `FACT CHECK` placeholders in the live site export.
+- The required official source URLs are listed below with a checked date.
+- Public indexing remains blocked because current pricing, screenshots, and workflow test evidence still need final capture.
 
-- Slug: `creator-automation-stack-for-beginners`
-- Title: `Creator Automation Stack for Beginners: The 5-Part Workflow I’d Build First`
-- Meta description: `A practical creator automation stack for beginners: landing page, newsletter, product sales, automation, and content workflow without buying too many tools.`
-- Category: `/creator-automation/`
+## Official source touchpoints
 
-## Above-the-fold disclosure
+- [Make pricing](https://www.make.com/en/pricing) — official source touchpoint checked 2026-07-06.
+- [Zapier pricing](https://zapier.com/pricing) — official source touchpoint checked 2026-07-06.
+- [beehiiv pricing](https://www.beehiiv.com/pricing) — official source touchpoint checked 2026-07-06.
+- [Kit pricing](https://kit.com/pricing) — official source touchpoint checked 2026-07-06.
+- [Gumroad pricing](https://gumroad.com/pricing) — official source touchpoint checked 2026-07-06.
+- [Lemon Squeezy pricing](https://www.lemonsqueezy.com/pricing) — official source touchpoint checked 2026-07-06.
 
-This post contains paid links. I may earn a commission if you buy through them, at no extra cost to you. I only recommend tools I’d consider for this workflow.
+## Remaining public publish gate
 
-## Final outline
+| Gate | Status | Required next action |
+|---|---|---|
+| Official pricing/features checked | Partial | Convert source touchpoints into dated screenshots or archived evidence notes. |
+| Same-scenario workflow test | Missing | Run one scenario for this post and save screenshots/output. |
+| Recommendation copy | Hold | Write final advice only after the workflow evidence exists. |
+| Disclosure/methodology | Present | Keep disclosure and methodology pages linked. |
+| Search indexing | Blocked | Keep `noindex: true` and robots `Disallow: /` until at least one article passes all gates. |
 
-1. Quick verdict
-2. The beginner creator scenario
-3. The 5 jobs your stack must cover
-4. Recommended starter stack
-5. What to automate first
-6. What to keep manual
-7. Under-$100 stack table
-8. Upgrade path
-9. Mistakes to avoid
-10. FAQ
-11. Download checklist CTA
+## Day 12 release decision
 
-## Internal links to add
+Do **not** open this article to Google indexing yet. It can stay live as a staging page for layout and link testing, but it should not be submitted to Search Console or used for AdSense review until the evidence gate is complete.
 
+## Internal links to preserve
+
+- Creator Automation Stack for Beginners
 - Make vs Zapier for Creators
 - beehiiv vs Kit/ConvertKit for Solo Creators
-- How to Automate Gumroad Sales to Kit with Make
-- AI Content Brief Template
+- NotebookLM vs ChatGPT for Studying PDFs
+- Editorial policy
+- Affiliate disclosure
 
-## Assets needed
+## Next artifact to create
 
-- Stack diagram
-- Pricing table screenshot/date
-- Creator Stack Checklist lead magnet
+Create a post-specific evidence folder with screenshots, checked dates, and a one-page final recommendation note before changing this post to `published`.

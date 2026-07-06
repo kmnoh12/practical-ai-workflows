@@ -1,54 +1,52 @@
 ---
-title: "Publish Package — beehiiv vs Kit/ConvertKit for Solo Creators"
+title: "beehiiv vs Kit/ConvertKit for Solo Creators: Evidence Gate"
 slug: "beehiiv-vs-kit-convertkit-for-solo-creators"
-status: "evidence-needed"
+status: "day-12-evidence-gated"
 noindex: true
 category: "Tool Comparisons"
 order: 3
-updated: "2026-07-02"
+updated: "2026-07-06"
 cta: "Newsletter Platform Decision Matrix"
 ---
 
-> **Draft / evidence-needed:** This page is exported for site testing. It should not be treated as a final public recommendation until screenshots, pricing checks, disclosures, and FACT CHECK cleanup are complete.
+> **Day 12 decision:** Keep this page in staging/noindex. Official source touchpoints were collected, but the article is not ready for public search indexing until screenshots, same-scenario tests, and final recommendation copy are complete.
 
-# Publish Package — beehiiv vs Kit/ConvertKit for Solo Creators
+# beehiiv vs Kit/ConvertKit for Solo Creators: Evidence Gate
 
-Status: **Launch-week revenue post / evidence-needed**
+## What Day 12 resolved
 
-## SEO
+- The post no longer depends on vague `FACT CHECK` placeholders in the live site export.
+- The required official source URLs are listed below with a checked date.
+- Public indexing remains blocked because current pricing, screenshots, and workflow test evidence still need final capture.
 
-- Slug: `beehiiv-vs-kit-convertkit-for-solo-creators`
-- Title: `beehiiv vs Kit/ConvertKit for Solo Creators: Newsletter Growth or Product Funnel?`
-- Meta description: `A workflow-first beehiiv vs Kit comparison for solo creators choosing between newsletter growth and digital product email automation.`
-- Category: `/tool-comparisons/`
+## Official source touchpoints
 
-## Disclosure
+- [beehiiv pricing](https://www.beehiiv.com/pricing) — official source touchpoint checked 2026-07-06.
+- [Kit pricing](https://kit.com/pricing) — official source touchpoint checked 2026-07-06.
 
-This post contains paid links. I may earn a commission if you buy through them, at no extra cost to you. Recommendations are based on workflow fit, limitations, and the scenario being tested.
+## Remaining public publish gate
 
-## Final outline
+| Gate | Status | Required next action |
+|---|---|---|
+| Official pricing/features checked | Partial | Convert source touchpoints into dated screenshots or archived evidence notes. |
+| Same-scenario workflow test | Missing | Run one scenario for this post and save screenshots/output. |
+| Recommendation copy | Hold | Write final advice only after the workflow evidence exists. |
+| Disclosure/methodology | Present | Keep disclosure and methodology pages linked. |
+| Search indexing | Blocked | Keep `noindex: true` and robots `Disallow: /` until at least one article passes all gates. |
 
-1. Quick verdict
-2. Test scenario: newsletter + lead magnet + $19 digital product
-3. Where beehiiv fits
-4. Where Kit/ConvertKit fits
-5. Newsletter growth vs product funnel decision table
-6. Pricing/features to verify
-7. Migration/upgrade questions
-8. Who should choose each
-9. FAQ
-10. Newsletter platform decision table CTA
+## Day 12 release decision
 
-## Internal links
+Do **not** open this article to Google indexing yet. It can stay live as a staging page for layout and link testing, but it should not be submitted to Search Console or used for AdSense review until the evidence gate is complete.
+
+## Internal links to preserve
 
 - Creator Automation Stack for Beginners
-- Best Newsletter Platform for Digital Product Creators
-- Lead Magnet Delivery Workflow With Kit, beehiiv, and Make
-- How to Automate Gumroad Sales to Kit With Make
+- Make vs Zapier for Creators
+- beehiiv vs Kit/ConvertKit for Solo Creators
+- NotebookLM vs ChatGPT for Studying PDFs
+- Editorial policy
+- Affiliate disclosure
 
-## Assets needed
+## Next artifact to create
 
-- beehiiv pricing/features screenshot
-- Kit pricing/features screenshot
-- decision table
-- simple funnel diagram
+Create a post-specific evidence folder with screenshots, checked dates, and a one-page final recommendation note before changing this post to `published`.

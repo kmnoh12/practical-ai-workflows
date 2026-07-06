@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import re, html, shutil
+import re, html, shutil, json
 ROOT=Path(__file__).resolve().parents[1]
 CONTENT=ROOT/'content'
 DIST=ROOT/'dist'
 SITE_TITLE='Practical AI Workflows'
+MANIFEST=json.loads((ROOT/'site-manifest.json').read_text(encoding='utf-8')) if (ROOT/'site-manifest.json').exists() else {}
+BASE_PATH=str(MANIFEST.get('base_path','')).rstrip('/')
+
+def site_url(path='/'):
+    path='/' + str(path).lstrip('/')
+    return (BASE_PATH + path) if BASE_PATH else path
 
 def parse_fm(text):
     data={}
@@ -76,8 +82,8 @@ def md_to_html(md):
 
 def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.'):
     robots='<meta name="robots" content="noindex,nofollow">' if noindex else ''
-    nav='<div class="nav wrap"><a class="brand" href="/">Practical AI Workflows</a><div class="links"><a href="/posts/">Posts</a><a href="/templates/">Templates</a><a href="/editorial-policy/">Methodology</a><a href="/affiliate-disclosure/">Disclosure</a></div></div>'
-    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}<link rel="stylesheet" href="/assets/style.css"></head><body>{nav}<main class="wrap">{body}</main><footer class="footer wrap">© 2026 Practical AI Workflows. Some links may be paid links. Evidence-backed workflow testing, not generic tool lists.</footer></body></html>'
+    nav=f'<div class="nav wrap"><a class="brand" href="{site_url("/")}">Practical AI Workflows</a><div class="links"><a href="{site_url("/posts/")}">Posts</a><a href="{site_url("/templates/")}">Templates</a><a href="{site_url("/editorial-policy/")}">Methodology</a><a href="{site_url("/affiliate-disclosure/")}">Disclosure</a></div></div>'
+    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}<link rel="stylesheet" href="{site_url("/assets/style.css")}"></head><body>{nav}<main class="wrap">{body}</main><footer class="footer wrap">© 2026 Practical AI Workflows. Some links may be paid links. Evidence-backed workflow testing, not generic tool lists.</footer></body></html>'
 
 def write_page(path, html_text):
     path.mkdir(parents=True,exist_ok=True)
@@ -101,7 +107,7 @@ for p in sorted((CONTENT/'pages').glob('*.md')):
     slug=fm.get('slug',p.stem); title=fm.get('title',slug.replace('-',' ').title())
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
     write_page(DIST/str(slug), layout(str(title), body, bool(fm.get('noindex',False))))
-cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="/{x["slug"]}/">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(posts,key=lambda x:x['order']))
+cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="{site_url("/" + x["slug"] + "/")}">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(posts,key=lambda x:x['order']))
 home=f'<section class="hero"><p class="pill">Evidence-backed workflow lab</p><h1>Tested AI workflows for source-based learning and creator automation.</h1><p>Practical AI Workflows turns PDFs, notes, newsletters, checkout tools, and creator automations into repeatable systems with evidence plans, templates, and decision tables.</p></section><section><h2>Launch cluster</h2><div class="grid">{cards}</div></section><section><h2>Start with templates</h2><div class="grid"><div class="card"><h3>Creator Automation Stack Checklist</h3><p>Map landing page, email, checkout, automation, and content workflow before buying more tools.</p></div><div class="card"><h3>PDF-to-Study-Guide Workflow Checklist</h3><p>Use source-grounded notes and AI explanations without losing verification.</p></div><div class="card"><h3>AI Content Brief Template</h3><p>Define intent, evidence, screenshots, links, and publish gates before drafting.</p></div></div></section>'
 write_page(DIST, layout('Home',home))
 write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>'))

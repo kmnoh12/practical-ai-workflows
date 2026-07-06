@@ -3,6 +3,9 @@
   "type": "static-zero-dependency",
   "build": "python3 scripts/build.py",
   "output": "dist",
-  "status": "staging-noindex",
-  "created": "2026-07-02"
+  "status": "staging-noindex-day-12-evidence-gated",
+  "created": "2026-07-02",
+  "base_path": "/practical-ai-workflows",
+  "last_day_completed": "day-12",
+  "updated": "2026-07-06"
 }
