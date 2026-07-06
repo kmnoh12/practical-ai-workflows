@@ -1,0 +1,10 @@
+Use only the provided source. Do not add outside facts.
+
+Tasks:
+1. Create a one-page study guide.
+2. Create 10 quiz questions with answers hidden under an answer key.
+3. Identify the three concepts a student is most likely to confuse.
+4. Build a three-day review plan.
+5. Explain the difference between recognition and recall in simple language.
+
+If the source does not support a claim, write: Not in source.

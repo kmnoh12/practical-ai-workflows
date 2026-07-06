@@ -16,7 +16,7 @@ for slug in ['creator-automation-stack-for-beginners','make-vs-zapier-for-creato
         continue
     text=p.read_text(encoding='utf-8',errors='ignore')
     if 'Evidence checks are still required' not in text: issues.append(f'missing evidence warning {slug}')
-    if 'day-12-evidence-gated' not in text: issues.append(f'missing day-12 status {slug}')
+    if not any(status in text for status in ['day-12-evidence-gated','day-13-evidence-pack-ready']): issues.append(f'missing evidence-gated status {slug}')
     if 'noindex' not in text: issues.append(f'missing noindex meta {slug}')
     if 'Official source touchpoints' not in text: issues.append(f'missing source touchpoints section {slug}')
 robots=(DIST/'robots.txt').read_text(encoding='utf-8',errors='ignore') if (DIST/'robots.txt').exists() else ''

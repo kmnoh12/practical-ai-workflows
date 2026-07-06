@@ -1,0 +1,65 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 1545 >> stream
+BT
+/F1 10 Tf
+50 780 Td
+14 TL
+(# Sample lecture notes: attention, memory, and spaced retrieval) Tj
+T*
+(These notes are synthetic test material created for the Practical AI Workflows evidence pack. They a) Tj
+T*
+(## Core ideas) Tj
+T*
+(Attention is the limited mental process that selects some information for deeper processing while ig) Tj
+T*
+(A common study mistake is rereading notes without retrieval. Retrieval practice means trying to reca) Tj
+T*
+(Spacing means spreading review sessions over time instead of cramming in one block. Spaced retrieval) Tj
+T*
+(## Example) Tj
+T*
+(A student studying photosynthesis should not only reread the definition. They should close the notes) Tj
+T*
+(## Weak concept warning) Tj
+T*
+(Learners often confuse recognition with recall. Recognition is feeling that an answer looks familiar) Tj
+T*
+(## Three-day review plan) Tj
+T*
+(Day 1: Read the source once, write a short summary, and answer five recall questions.) Tj
+T*
+(Day 2: Answer the same questions without notes, add two transfer questions, and review mistakes.) Tj
+T*
+(Day 3: Teach the topic aloud in two minutes, then write a final checklist of weak points.) Tj
+T*
+(## Terms) Tj
+T*
+(- Attention: selecting information for processing.) Tj
+T*
+(- Working memory: temporary mental workspace.) Tj
+T*
+(- Long-term memory: durable knowledge store.) Tj
+T*
+(- Retrieval practice: recalling before checking.) Tj
+T*
+(- Spacing: distributing review over time.) Tj
+T*
+(- Transfer question: a question that asks the learner to apply the idea in a new example.) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1908
+%%EOF
