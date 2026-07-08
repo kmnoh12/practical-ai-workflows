@@ -3,13 +3,13 @@
   "type": "static-zero-dependency",
   "build": "python3 scripts/build.py",
   "output": "dist",
-  "status": "staging-noindex-day-15-strategy-reframed",
+  "status": "split-business-experiment-active-operations-lab-archived",
   "created": "2026-07-02",
   "base_path": "/practical-ai-workflows",
-  "last_day_completed": "day-15-01-05-strategy-reform",
+  "last_day_completed": "split-business-experiment-vs-operations-lab",
   "updated": "2026-07-08",
-  "current_phase": "SEO/content automation learning experiment with monetization-readiness gates",
-  "monetization_status": "deferred until evidence, indexing, measurement, traffic, and policy gates pass",
+  "current_phase": "Revenue content factory split: business experiment active, operations lab archived",
+  "monetization_status": "not live; first business test is one public article plus a free workflow/template asset with real measurement",
   "adsense_scope": "out-of-scope now; do not apply on a path-based project URL or before readiness gates",
   "affiliate_scope": "first-30-day intent measurement only; no affiliate links before approval and disclosure",
   "public_base_url": "",
@@ -17,5 +17,5 @@
   "robots_at_host_root": false,
   "robots_policy_note": "required before public indexing; current staging build must remain Disallow: / while no public posts exist",
   "analytics_status": "not configured; do not add fake GA4 or GSC values",
-  "indexing_status": "no public/indexable posts"
+  "indexing_status": "no public/indexable posts until first publishing unit and measurement path are ready"
 }

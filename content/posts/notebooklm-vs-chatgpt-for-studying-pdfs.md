@@ -168,17 +168,17 @@ The evidence package is kept near the article and should be treated as a pre-pub
 
 | Evidence item | Link or status |
 |---|---|
-| Source PDF | [same-source-study-notes.pdf](../../docs/day-13-notebooklm-evidence-pack-files/same-source-study-notes.pdf) |
-| Source notes | [same-source-study-notes.md](../../docs/day-13-notebooklm-evidence-pack-files/same-source-study-notes.md) |
-| Shared prompt | [same-source-prompt.txt](../../docs/day-13-notebooklm-evidence-pack-files/same-source-prompt.txt) |
-| Evaluation rubric | [evaluation-rubric.md](../../docs/day-13-notebooklm-evidence-pack-files/evaluation-rubric.md) |
-| Evidence manifest | [evidence-manifest.md](../../docs/day-13-notebooklm-evidence-pack-files/evidence-manifest.md) |
-| NotebookLM raw output | [notebooklm-output.md](../../docs/day-13-notebooklm-evidence-pack-files/notebooklm-output.md) |
-| ChatGPT raw output | [chatgpt-output.md](../../docs/day-13-notebooklm-evidence-pack-files/chatgpt-output.md) |
-| Scoring sheet | [scoring-sheet.csv](../../docs/day-13-notebooklm-evidence-pack-files/scoring-sheet.csv) |
-| Unsupported claims log | [unsupported-claims-log.md](../../docs/day-13-notebooklm-evidence-pack-files/unsupported-claims-log.md) |
-| Source claim map | [source-claim-map.md](../../docs/day-13-notebooklm-evidence-pack-files/source-claim-map.md) |
-| Screenshots folder | [screenshots/README.md](../../docs/day-13-notebooklm-evidence-pack-files/screenshots/README.md) |
+| Source PDF | [same-source-study-notes.pdf](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/same-source-study-notes.pdf) |
+| Source notes | [same-source-study-notes.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/same-source-study-notes.md) |
+| Shared prompt | [same-source-prompt.txt](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/same-source-prompt.txt) |
+| Evaluation rubric | [evaluation-rubric.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/evaluation-rubric.md) |
+| Evidence manifest | [evidence-manifest.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/evidence-manifest.md) |
+| NotebookLM raw output | [notebooklm-output.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/notebooklm-output.md) |
+| ChatGPT raw output | [chatgpt-output.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/chatgpt-output.md) |
+| Scoring sheet | [scoring-sheet.csv](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/scoring-sheet.csv) |
+| Unsupported claims log | [unsupported-claims-log.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/unsupported-claims-log.md) |
+| Source claim map | [source-claim-map.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/source-claim-map.md) |
+| Screenshots folder | [screenshots/README.md](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/screenshots/README.md) |
 
 ## Final recommendation
 
@@ -188,7 +188,7 @@ The best workflow is still not “trust one tool.” Use one tool to generate th
 
 ## Pre-publication checklist and transparency notes
 
-This article must remain `noindex: true` until final URL, measurement, launch checklist, stable public evidence-link decisions, and static build QA are complete.
+This article must remain `noindex: true` until the first publishing unit, final URL, measurement, and template/download tracking are ready.
 
 Before public indexing:
 
@@ -202,7 +202,7 @@ Before public indexing:
 | Unsupported claims log | Filled from source checks; ChatGPT follow-up complete from local evidence |
 | Scoring sheet | Filled from captured outputs only — initial pass done |
 | Winner claims | Based only on measured evidence |
-| noindex | Keep `true` until all evidence and QA gates pass |
+| noindex | Keep `true` until public URL, GA4/GSC, template/download tracking, and publish decision are ready |
 | Sitemap | Do not include a public/indexable URL before approval |
 | Launch checklist | Final URL, analytics/measurement choice, sitemap behavior, and public evidence-link handling still required |
 
