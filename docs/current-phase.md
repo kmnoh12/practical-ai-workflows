@@ -2,9 +2,11 @@
 
 ## Phase name
 
-Practical AI Workflows is currently an **SEO/content automation learning experiment with monetization-readiness gates**.
+Practical AI Workflows is currently being reset from a noindex evidence lab into a **revenue-oriented content factory experiment**.
 
-Internal shorthand: **Evidence-backed SEO & Content Automation Lab**.
+Internal shorthand: **Revenue Content Factory Reset**.
+
+Primary reset doc: [Revenue Content Factory Reset](revenue-content-factory-reset.md).
 
 ## What this project is
 
