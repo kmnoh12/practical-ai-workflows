@@ -1,7 +1,7 @@
 ---
 title: "NotebookLM vs ChatGPT for Studying PDFs: Same-Source Test"
 slug: "notebooklm-vs-chatgpt-for-studying-pdfs"
-status: "day-15-public-candidate-evidence-required"
+status: "staging-evidence-captured-noindex"
 noindex: true
 category: "AI Study Workflows"
 order: 1
@@ -15,7 +15,7 @@ cta: "PDF-to-Study-Guide Workflow Checklist"
 
 This is the first public candidate article for Practical AI Workflows, but it is not indexable yet.
 
-No winner is declared here because the required raw outputs, screenshots, scoring sheet, and unsupported-claim checks have not been captured. The final verdict will be evidence-based and situation-specific: source grounding, study guide quality, quiz quality, and review planning may point to different tools.
+The first same-source capture is complete, but this page stays noindex until the ChatGPT source-check follow-up and final editorial QA are done. Initial scoring favors NotebookLM for source-grounding affordances, while study-guide usefulness, quiz quality, weak-concept handling, and review-plan quality are effectively tied in this small test.
 
 Do not use either tool as a final authority without checking the PDF.
 
@@ -49,7 +49,7 @@ Local metadata currently available:
 | Source Markdown word tokens | 318 |
 | Source type | Synthetic notes created for this evidence pack |
 
-The final capture pass should verify that the uploaded PDF renders as expected in both tools before scoring outputs.
+Capture note: macOS file-picker automation was unreliable, so the captured run used source-equivalent copied text from the same evidence pack rather than a completed PDF upload. The PDF remains archived for repeat testing.
 
 ## The exact prompt
 
@@ -88,52 +88,41 @@ The final scoring will use measurement-oriented criteria rather than a vague pre
 | Review plan | Whether retrieval, spacing, and a repair loop are included |
 | Student safety | Whether the output warns readers to verify and source-check |
 
-The score sheet should be filled only after both tools have been run with the same PDF and the same prompt.
+The initial score sheet has been filled from one NotebookLM run and one ChatGPT Pro web run using the same source text and prompt. The page remains noindex because final public QA is not complete.
 
 ## Results summary
 
-### Results summary - pending capture
+### Results summary - initial captured run
 
-The results table below describes the fields that will be filled after evidence capture. It does not contain scores yet.
+| Criterion | NotebookLM | ChatGPT | Initial read |
+|---|---|---|---|
+| Source grounding | Strong, with visible citation/source affordances | Strong, but one simple-language example goes beyond exact source wording | NotebookLM edge |
+| Study guide usefulness | Complete and structured | Complete and student-friendly | Tie |
+| Quiz quality | 10 questions and answer key, source-aligned | 10 questions and hidden answer key, source-aligned | Tie |
+| Weak-concept detection | Correctly says only recognition/recall are supported and third is not in source | Correctly says recognition vs recall, then Not in source for slots 2 and 3 | Tie |
+| Review plan | Reproduces the source-specific 3-day plan | Reproduces the source-specific 3-day plan | Tie |
+| Student safety | Better source/citation UI affordances | Good constraint following, fewer source affordances visible | NotebookLM edge |
 
-| Criterion | NotebookLM field to fill | ChatGPT field to fill | Winner rule | Evidence required |
-|---|---|---|---|---|
-| Source grounding | Supported-claim ratio and unsupported-claim count | Supported-claim ratio and unsupported-claim count | Higher supported ratio, fewer unsupported claims | Claim map and unsupported claims log |
-| Study guide usefulness | Covered source concepts, missing concepts, structure notes | Covered source concepts, missing concepts, structure notes | More complete and usable study guide | Raw output and scoring sheet |
-| Quiz quality | Recognition/recall/application mix and answer-key accuracy | Recognition/recall/application mix and answer-key accuracy | Better retrieval practice with accurate answers | Quiz output and answer-key check |
-| Weak-concept detection | Source-specific confusions identified | Source-specific confusions identified | More accurate source-specific weak concepts | Claim map and raw output |
-| Review plan | Retrieval, spacing, and repair loop present or absent | Retrieval, spacing, and repair loop present or absent | More actionable source-specific plan | Raw output and scoring sheet |
-| Student safety | Verification/source-checking warnings | Verification/source-checking warnings | Better warnings against unsupported use | Raw output and scoring sheet |
 
 ## Source grounding
 
-This section will answer: which tool stayed closer to the PDF?
-
-The final version should include unsupported-claim counts, citation behavior, source-check examples, and links to the raw outputs or screenshots. NotebookLM citations and ChatGPT file-upload behavior are feature-scope reasons to run this test, not proof that either answer is accurate.
+Initial claim mapping found both outputs mostly source-grounded. NotebookLM had the stronger source-verification affordance because its answer included source/citation chips in the visible UI. ChatGPT followed the source constraint well, but its simple-language answer-sheet example is an explanatory extrapolation rather than a direct source claim.
 
 ## Study guide quality
 
-This section will compare structure, completeness, missing concepts, clarity, and usefulness for a student.
-
-The source concepts to check include attention, working memory, long-term memory, retrieval practice, spacing, recognition, recall, transfer questions, and the three-day review plan.
+Both outputs covered attention, working memory, long-term memory, retrieval practice, spacing, recognition, recall, transfer questions, the photosynthesis example, and the three-day review plan. ChatGPT read more like a student-facing Korean explanation; NotebookLM read more like a citation-backed source summary.
 
 ## Quiz quality
 
-This section will compare whether each tool creates useful retrieval practice instead of only recognition-style questions.
-
-The final scoring should classify quiz questions as recognition, recall, or application, then check the answer key against the source.
+Both tools created 10 source-aligned quiz questions with answer keys. The answer keys matched the source in the initial claim map. ChatGPT used a hidden answer-key details block; NotebookLM included source markers/citation chips around answer statements.
 
 ## Weak concepts and review plan
 
-This section will compare whether each tool identifies likely confusions from the source and builds a useful review loop.
-
-The expected review-plan elements are retrieval practice, spacing, and repair of missed concepts. A generic plan that does not respond to the source should score lower.
+Both tools handled the “three concepts likely to confuse” trap correctly: the source only supports recognition vs recall, so both refused to invent unsupported extra confusion concepts. Both reproduced the Day 1/Day 2/Day 3 retrieval and repair loop from the source.
 
 ## What each tool got wrong
 
-This section is mandatory before publication.
-
-It should name unsupported claims, missing source concepts, weak quiz items, inaccurate answer-key entries, overconfident recommendations, and any place where a tool ignored the "Not in source" instruction.
+Initial review found no major unsupported educational claims in either primary output. ChatGPT added a small answer-sheet example to explain recognition vs recall; that is consistent with the source definition but not directly stated in the source, so it is logged as partial/explanatory rather than a source fact. A ChatGPT self-check follow-up is still required before removing noindex.
 
 ## Recommended workflow
 
@@ -170,13 +159,12 @@ This page is still pre-publication. Known limitations:
 
 1. The test uses one source and one prompt.
 2. The source is a synthetic English study handout.
-3. The PDF is one page; local extraction found 196 PDF text-stream word tokens and 318 source Markdown word tokens, so the final capture pass should verify the uploaded PDF rendering.
-4. ChatGPT plan and model are pending capture.
-5. ChatGPT tools enabled are pending capture.
-6. NotebookLM account/plan and settings are pending capture.
-7. Runs per tool and regeneration status are pending capture.
-8. Tool updates can change results.
-9. No real student exam outcome is measured.
+3. The archived PDF is one page; local extraction found 196 PDF text-stream word tokens and 318 source Markdown word tokens.
+4. The captured web run used source-equivalent copied text because file-picker automation was unreliable.
+5. ChatGPT model details beyond the Pro web session were not captured.
+6. Tool updates can change results.
+7. No real student exam outcome is measured.
+8. Screenshots were automatically redacted for account/sidebar areas, but still need final human review before public indexing.
 
 ## Evidence archive
 
@@ -189,8 +177,8 @@ The evidence package is kept near the article but should be treated as a pre-pub
 | Shared prompt | [same-source-prompt.txt](../../docs/day-13-notebooklm-evidence-pack-files/same-source-prompt.txt) |
 | Evaluation rubric | [evaluation-rubric.md](../../docs/day-13-notebooklm-evidence-pack-files/evaluation-rubric.md) |
 | Evidence manifest | [evidence-manifest.md](../../docs/day-13-notebooklm-evidence-pack-files/evidence-manifest.md) |
-| NotebookLM raw output | `notebooklm-output.md` pending capture |
-| ChatGPT raw output | `chatgpt-output.md` pending capture |
+| NotebookLM raw output | [notebooklm-output.md](../../docs/day-13-notebooklm-evidence-pack-files/notebooklm-output.md) |
+| ChatGPT raw output | [chatgpt-output.md](../../docs/day-13-notebooklm-evidence-pack-files/chatgpt-output.md) |
 | Scoring sheet | [scoring-sheet.csv](../../docs/day-13-notebooklm-evidence-pack-files/scoring-sheet.csv) |
 | Unsupported claims log | [unsupported-claims-log.md](../../docs/day-13-notebooklm-evidence-pack-files/unsupported-claims-log.md) |
 | Source claim map | [source-claim-map.md](../../docs/day-13-notebooklm-evidence-pack-files/source-claim-map.md) |
@@ -198,27 +186,25 @@ The evidence package is kept near the article but should be treated as a pre-pub
 
 ## Final recommendation
 
-No single winner yet.
+Initial single-run recommendation: NotebookLM has the edge when the priority is source-grounding workflow and visible source affordances. ChatGPT is just as useful for a student-facing explanation in this small test, and its quiz/review-plan output was competitive.
 
-For PDF content that must not drift from the source, the winner is pending the source-grounding score. For flexible explanation and formatting, the winner is pending the study-guide and clarity score. For quiz and retrieval practice, the winner is pending the quiz and answer-key score.
-
-The best workflow is already clear: use a source check, claim log, and review loop. Do not use NotebookLM or ChatGPT as a final authority without checking the PDF.
+The best workflow is still not “trust one tool.” Use one tool to generate the study guide, then check atomic claims against the source, log unsupported claims, and turn missed concepts into retrieval practice. Do not use NotebookLM or ChatGPT as a final authority without checking the source.
 
 ## Pre-publication checklist and transparency notes
 
-This article must remain `noindex: true` until the evidence package is complete and QA passes.
+This article must remain `noindex: true` until ChatGPT source-check follow-up, final editorial QA, and static build QA pass.
 
 Before public indexing:
 
 | Gate | Required state |
 |---|---|
-| Raw outputs | NotebookLM and ChatGPT raw outputs saved |
+| Raw outputs | NotebookLM and ChatGPT raw outputs saved — done |
 | Screenshots | Source upload, prompt, outputs, quiz, citations/source checks, and settings captured |
 | Same-source integrity | Same PDF, prompt, rubric, and capture rules confirmed |
 | Model/settings log | ChatGPT model/plan/tools and NotebookLM settings recorded |
-| Claim trace | At least 20 atomic claims per tool checked |
+| Claim trace | At least 20 atomic claims per tool checked — initial pass done |
 | Unsupported claims log | Filled from source checks |
-| Scoring sheet | Filled from captured outputs only |
+| Scoring sheet | Filled from captured outputs only — initial pass done |
 | Winner claims | Based only on measured evidence |
 | noindex | Keep `true` until all evidence and QA gates pass |
 | Sitemap | Do not include a public/indexable URL before approval |

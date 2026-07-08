@@ -1,0 +1,959 @@
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM - Chrome
+뒤로
+앞으로
+새로고침
+사이트 정보 보기
+주소창 및 검색창
+NotebookLM 설치
+현재 탭을 북마크에 추가
+확장 프로그램
+Zeze's Life
+Chrome
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM
+Google 앱
+Google 계정: Zeze's Life 제제의 하루 (kmnoh1234@gmail.com)
+NotebookLM 홈페이지
+NotebookLM 로고
+효과적인 학습을 위한 기억과 인출의 원리
+노트북 만들기
+분석
+노트북 공유
+설정
+PRO
+출처
+출처
+소스 패널 접기
+출처 추가
+입력된 질문을 기반으로 소스 검색
+제출
+모두 선택
+모든 출처 선택
+붙여넣은 텍스트
+더보기
+붙여넣은 텍스트
+채팅
+채팅
+노트북 구성
+채팅 옵션
+🧠
+노트북 맞춤설정
+효과적인 학습을 위한 기억과 인출의 원리
+효과적인 학습을 위한 기억과 인출의 원리
+소스 1개
+·
+2026. 7. 8.
+이 자료는
+주의 집중
+,
+작업 기억
+,
+장기 기억
+의 개념을 중심으로 효과적인 학습법을 다루고 있습니다. 저자는 단순히 내용을 반복해서 읽는 방식보다 정보를 직접 머릿속에서 끄집어내는
+회상 연습
+의 중요성을 강조합니다. 특히 학습자는 단순히 눈에 익은
+재인
+상태를 완전히 이해한 것으로 착각하지 않도록 주의해야 하며, 복습 주기에 간격을 두는
+간격 반복
+기법을 활용해야 합니다. 또한, 실제 광합성 학습 사례와 3일간의 구체적인 복습 계획을 통해 이론을 실무에 적용하는 방법을 제시합니다. 결과적으로 이 텍스트는 지식을 장기적으로 보존하기 위해 학습 과정에서 의도적인
+어려움
+을 마주하고 이를 극복할 것을 권장합니다.
+메모에 저장
+요약 복사
+만족스러운 요약
+불만족스러운 요약
+효율적인 학습을 위한 주의력과 기억력의 상관관계는 무엇인가요?
+단순 복습보다 인출 연습과 분산 학습이 효과적인 이유는?
+재인과 회상의 차이를 활용한 3일 복습 계획법을 알려줘
+오늘 • 오후 4:35
+Use only the provided source. Do not add outside facts.Tasks:1. Create a one-page study guide.2. Create 10 quiz questions with answers hidden under an answer key.3. Identify the three concepts a student is most likely to confuse.4. Build a three-day review plan.5. Explain the difference between recognition and recall in simple language.If the source does not support a claim, write: Not in source.
+Use only the provided source. Do not add outside facts.Tasks:1. Create a one-page study guide.2. Create 10 quiz questions with answers hidden under an answer key.3. Identify the three concepts a student is most likely to confuse.4. Build a three-day review plan.5. Explain the difference between recognition and recall in simple language.If the source does not support a claim, write: Not in source.
+Here is the response to your tasks based entirely on the provided source.
+1. One-Page Study Guide
+1. One-Page Study Guide
+Study Guide: Attention, Memory, and Spaced Retrieval
+•
+Attention
+: The limited mental process that selects specific information for deeper processing while ignoring other information
+1: 붙여넣은 텍스트
+1
+.
+•
+Working Memory
+: A temporary mental workspace that holds a small amount of information so a learner can manipulate it
+1: 붙여넣은 텍스트
+1
+.
+•
+Long-Term Memory
+: A durable knowledge store that maintains information over longer periods
+1: 붙여넣은 텍스트
+1
+.
+•
+Common Study Mistake
+: Rereading notes without attempting retrieval
+1: 붙여넣은 텍스트
+1
+.
+•
+Retrieval Practice
+: The act of trying to recall information before checking the answer
+1: 붙여넣은 텍스트
+1
+. It typically feels harder than rereading, but this difficulty acts as a valuable learning signal
+1: 붙여넣은 텍스트
+1
+.
+•
+Spacing
+: The practice of distributing review sessions over time instead of cramming them into one single block
+1: 붙여넣은 텍스트
+1
+.
+•
+Spaced Retrieval
+: Combining the two previous methods by recalling the material, waiting, and then recalling it again later
+1: 붙여넣은 텍스트
+1
+.
+•
+Transfer Question
+: A question that requires the learner to apply a learned idea to a completely new example
+1: 붙여넣은 텍스트
+1
+.
+•
+Practical Example
+: When studying a process like photosynthesis, do not just reread definitions
+1: 붙여넣은 텍스트
+1
+. Instead, close your notes and attempt to answer specific questions (e.g., What enters? What leaves? Where does light energy fit?)
+1: 붙여넣은 텍스트
+1
+. Afterward, compare your answers against the source material and repair any mistakes
+1: 붙여넣은 텍스트
+1
+.
+2. Quiz Questions and Answer Key
+2. Quiz Questions and Answer Key
+Quiz
+1.
+What is the limited mental process that selects some information for processing while ignoring others?
+2.
+Which type of memory serves as a temporary workspace for manipulating information?
+3.
+Which type of memory acts as a durable store for knowledge over longer periods?
+4.
+What common study mistake is mentioned in the text?
+5.
+What does the term "retrieval practice" mean?
+6.
+What is the definition of "spacing" in a study context?
+7.
+What are the three steps involved in "spaced retrieval"?
+8.
+In the photosynthesis example, what must a student do after answering questions from memory?
+9.
+What kind of question asks a learner to apply an idea to a new example?
+10.
+Which memory retrieval method should practice exams test?
+Answer Key
+1.
+Attention
+1: 붙여넣은 텍스트
+1
+.
+2.
+Working memory
+1: 붙여넣은 텍스트
+1
+.
+3.
+Long-term memory
+1: 붙여넣은 텍스트
+1
+.
+4.
+Rereading notes without retrieval
+1: 붙여넣은 텍스트
+1
+.
+5.
+Trying to recall information before looking at the answer
+1: 붙여넣은 텍스트
+1
+.
+6.
+Spreading review sessions over time instead of cramming in one block
+1: 붙여넣은 텍스트
+1
+.
+7.
+Recall the material, wait, then recall it again later
+1: 붙여넣은 텍스트
+1
+.
+8.
+Compare their answers against the source and repair mistakes
+1: 붙여넣은 텍스트
+1
+.
+9.
+A transfer question
+1: 붙여넣은 텍스트
+1
+.
+10.
+Recall (not only recognition)
+1: 붙여넣은 텍스트
+1
+.
+3. Three concepts a student is most likely to confuse
+3. Three concepts a student is most likely to confuse
+The source explicitly notes
+two
+concepts that learners often confuse:
+1.
+Recognition
+1: 붙여넣은 텍스트
+1
+.
+2.
+Recall
+1: 붙여넣은 텍스트
+1
+.
+3.
+Not in source.
+(The provided text does not identify a third concept that students are likely to confuse).
+4. Three-Day Review Plan
+4. Three-Day Review Plan
+•
+Day 1
+: Read the source material once, write a short summary, and answer five recall questions
+1: 붙여넣은 텍스트
+1
+.
+•
+Day 2
+: Answer those same five questions without looking at notes, add two transfer questions, and review any mistakes made
+1: 붙여넣은 텍스트
+1
+.
+•
+Day 3
+: Teach the topic aloud for two minutes, and then write a final checklist of your weak points
+1: 붙여넣은 텍스트
+1
+.
+5. Difference between Recognition and Recall
+5. Difference between Recognition and Recall
+•
+Recognition
+is the feeling that an answer looks familiar when you are looking at it
+1: 붙여넣은 텍스트
+1
+.
+•
+Recall
+is the ability to produce the answer completely on your own, without seeing it first
+1: 붙여넣은 텍스트
+1
+.
+(Note: The source emphasizes that true practice exams should test your ability to recall, rather than just relying on recognition
+1: 붙여넣은 텍스트
+1
+.)
+메시지를 메모에 저장
+클립보드에 모델 대답 복사
+대답을 좋음으로 평가
+대답을 좋지 않음으로 평가
+분산 학습(Spacing)이 벼락치기보다 효과적인 이유는 무엇인가요?
+인식과 회상의 차이를 실생활 사례로 설명해 주세요.
+전이 질문(Transfer question)을 만드는 구체적인 방법이 궁금해요.
+쿼리 상자
+소스 1개
+제출
+스튜디오
+스튜디오
+스튜디오 패널 접기
+AI 오디오 오버뷰
+AI 오디오 오버뷰
+AI 오디오 오버뷰 맞춤설정
+슬라이드 자료
+슬라이드 자료
+슬라이드 자료 맞춤설정
+동영상 개요
+마인드맵
+마인드맵
+마인드맵 맞춤설정
+보고서
+플래시카드
+플래시카드
+플래시카드 맞춤설정
+퀴즈
+퀴즈
+퀴즈 맞춤설정
+인포그래픽
+인포그래픽
+인포그래픽 맞춤설정
+데이터 표
+데이터 표
+데이터 표 맞춤설정
+스튜디오 출력이 여기에 저장됩니다
+소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요.
+메모 추가
+NotebookLM이 부정확한 정보를 표시할 수 있으므로 대답을 다시 한번 확인하세요.
+답변 준비가 완료되었습니다.
+탭 검색
+실행 가능한 수익화 전략 - 메모리 사용량 - 359MB
+닫기
+동물의 숲 무주식 계산기 — 무 시세 예측 - 메모리 사용량 - 331MB
+닫기
+mikebryant/ac-nh-turnip-prices: Price calculator/predictor for Turnip prices
+닫기
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM - 메모리 사용량 - 194MB
+닫기
+새 탭
+Chrome의 Gemini 열기
+Apple
+이 Mac에 관하여
+시스템 정보
+시스템 설정…
+App Store
+최근 사용 항목
+응용 프로그램
+사진
+Finder에서 ‘사진’ 보기
+시스템 설정
+Finder에서 ‘시스템 설정’ 보기
+카카오톡
+Finder에서 ‘카카오톡’ 보기
+터미널
+Finder에서 ‘터미널’ 보기
+Codex
+Finder에서 ‘Codex’ 보기
+Google Chrome
+Finder에서 ‘Google Chrome’ 보기
+Hermes
+Finder에서 ‘Hermes’ 보기
+Obsidian
+Finder에서 ‘Obsidian’ 보기
+Safari
+Finder에서 ‘Safari’ 보기
+Telegram
+Finder에서 ‘Telegram’ 보기
+문서
+인공지능 기초와 활용 (260615).pdf
+Finder에서 ‘인공지능 기초와 활용 (260615).pdf’ 보기
+compare.html
+Finder에서 ‘compare.html’ 보기
+iMovie 보관함
+Finder에서 ‘iMovie 보관함’ 보기
+iter1_canvas_direct.png
+Finder에서 ‘iter1_canvas_direct.png’ 보기
+KakaoTalk_Photo_2026-06-25-13-39-14 (1).jpeg
+Finder에서 ‘KakaoTalk_Photo_2026-06-25-13-39-14 (1).jpeg’ 보기
+Obsidian Vault
+Finder에서 ‘Obsidian Vault’ 보기
+OneDrive.pkg
+Finder에서 ‘OneDrive.pkg’ 보기
+서버
+메뉴 지우기
+강제 종료...
+Chrome 강제 종료
+잠자기
+재시동…
+재시동
+시스템 종료…
+시스템 종료
+잠금 화면
+경민 로그아웃…
+경민 로그아웃
+Chrome
+Google Chrome 정보
+설정…
+인터넷 사용 기록 삭제…
+북마크 및 설정 가져오기…
+서비스
+적용할 서비스 없음
+서비스 설정…
+Google Chrome 숨기기
+기타 숨기기
+모두 보기
+종료하기 전 경고(⌘Q)
+Google Chrome 종료
+파일
+새 탭
+새 창
+새 시크릿 창
+닫은 탭 다시 열기
+파일 열기…
+위치 열기…
+창 닫기
+모두 닫기
+탭 닫기
+페이지를 다른 이름으로 저장…
+공유
+이메일 링크
+AirDrop
+메시지
+메모
+Freeform
+일기
+미리 알림
+더보기…
+인쇄
+시스템 대화상자를 사용하여 인쇄…
+수정
+실행 취소
+실행 복귀
+잘라내기
+복사
+붙여넣기
+붙여넣고 스타일 일치시킴
+붙여넣고 스타일 일치시킴
+삭제
+모두 선택
+찾기
+웹 검색…
+찾기…
+다음 찾기
+이전 찾기
+선택 부분으로 찾기
+선택 부분으로 이동
+글쓰기 도구
+글쓰기 도구 표시
+교정
+재작성
+친근하게 만들기
+전문적으로 만들기
+간결하게 만들기
+요약
+키 포인트 생성
+목록으로 만들기
+표로 만들기
+작문…
+영문 철자 및 문법
+맞춤법 및 문법 보기
+지금 문서 확인
+입력 시 맞춤법 검사
+영문 철자 및 문법 검사
+대체 항목
+텍스트 대치
+스마트 인용
+스마트 대시
+텍스트 바꾸기
+Transformations(변환)
+Make Uppercase(대문자로 표시)
+Make Lowercase(소문자로 표시)
+Capitalize(첫 글자 대문자로 표시)
+음성
+말하기 시작
+말하기 중지
+자동 완성
+연락처…
+암호…
+신용카드…
+받아쓰기 시작…
+이모지 및 기호
+보기
+북마크바 항상 표시
+전체화면에서 툴바 항상 표시
+항상 전체 URL 표시
+Google 렌즈 바로가기 항상 표시
+AI 모드 항상 표시
+검색 바로가기 표시
+중지
+페이지 새로고침
+캐시를 무시하고 페이지 새로고침
+전체 화면 시작
+전체 화면 시작
+실제 크기
+확대
+축소
+전송…
+개발자 정보
+소스 보기
+개발자 도구
+요소 검사
+자바스크립트 콘솔
+Apple Events의 자바스크립트 허용
+방문 기록
+홈
+뒤로
+앞으로
+최근에 닫은 탭
+(93) 구글 애드센스 블로그 - YouTube
+구글 블로그 - Google 검색
+탭 4개
+모든 탭 복원
+chatgpt.com
+chatgpt.com
+새 탭
+http://192.168.200.254:18642/voc_error_internet_port.asp
+🔎 ChatGPT Pro prompts - 탭 1개
+모든 탭 복원
+ChatGPT
+탭 1개
+모든 탭 복원
+Google AI Studio
+탭 1개
+모든 탭 복원
+ChatGPT
+탭 1개
+모든 탭 복원
+ChatGPT
+탭 1개
+모든 탭 복원
+ChatGPT
+탭 9개
+모든 탭 복원
+AI SEO 수익화 실험
+ChatGPT
+ChatGPT
+ChatGPT
+ChatGPT
+ChatGPT
+ChatGPT
+ChatGPT
+ChatGPT
+탭 2개
+모든 탭 복원
+(93) YouTube
+AI SEO 수익화 실험
+최근 방문
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM
+제목 없는 노트북 - NotebookLM
+Creating Notebook...
+NotebookLM
+실행 가능한 수익화 전략
+mikebryant/ac-nh-turnip-prices: …ator/predictor for Turnip prices
+글 수정 제안
+ChatGPT
+SEO 리스크 분석
+ChatGPT
+동물의 숲 무주식 계산기 — 무 시세 예측
+WGS84 ↔ KATEC / UTM-K 좌표계 변…174/5179/5181 | FindLatLng
+지도 거리 · 면적 · 반경 측정 — 클릭으로 거리/면적/평수 계산 | FindLatLng
+내 위치 · 현재 위치 확인 — GPS 위도 …표 + 주소 즉시 표시 | FindLatLng
+지도로 위도 경도 찾기 — 주소·좌표 즉시 변환
+방문 기록 전체 보기
+북마크
+북마크 관리자 열기
+현재 탭을 북마크에 추가
+모든 탭 북마크…
+네이버
+YouTube
+나무위키:대문 - 나무위키
+경북대학교 학습관리시스템
+Gemini
+Google 번역
+홈 • Threads
+New chat
+Google AI Studio
+LMArena
+Instagram
+NotebookLM
+경북대 통합정보시스템
+Grok
+토스증권
+인터넷 속도 테스트 | Fast.com
+Flow
+Explore • Higgsfield
+TikTok
+포토 - Google 포토
+한영타변환기 – theYT.net
+경북대학교
+티비위키 접속 가이드 - 접속 주소 안내 & DNS 변경 방법
+ATK HUB
+모바일 북마크
+Google AI Studio
+Build | Google AI Studio
+프로필
+Zeze's Life
+수정…
+프로필 추가…
+탭
+오른쪽에 새 탭 열기
+다음 탭 선택
+이전 탭 선택
+탭 복사
+선택한 탭 복사
+사이트 음소거
+선택한 사이트 음소거
+탭 고정
+선택한 탭 고정
+탭 그룹화
+선택한 탭 그룹화
+다른 탭 닫기
+오른쪽 탭 닫기
+탭을 새 창으로 이동
+탭 검색…
+실행 가능한 수익화 전략
+동물의 숲 무주식 계산기 — 무 시세 예측
+mikebryant/ac-nh-turnip-prices: …ator/predictor for Turnip prices
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM
+창
+최소화
+모두 최소화
+확대
+모두 확대/축소
+채우기
+중앙 정렬
+이동 및 크기 조절
+이분면
+왼쪽
+오른쪽
+상단
+하단
+사분면
+왼쪽 상단
+오른쪽 상단
+왼쪽 하단
+오른쪽 하단
+정렬
+왼쪽과 오른쪽
+왼쪽 및 사분면
+오른쪽 및 왼쪽
+오른쪽 및 사분면
+상단 및 하단
+상단 및 사분면
+아래와 위
+하단 및 사분면
+사분면
+이전 크기로 돌아가기
+전체 화면 타일
+화면 왼쪽
+화면 오른쪽
+탭으로 표시
+창 이름 지정…
+다운로드
+확장 프로그램
+작업 관리자
+앞으로 모두 가져오기
+차례대로 정렬
+세트에서 윈도우 제거
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM
+도움말
+Apple에 Chrome 피드백 보내기
+문제 신고…
+Google Chrome 도움말
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM - Chrome
+뒤로
+앞으로
+새로고침
+사이트 정보 보기
+주소창 및 검색창
+NotebookLM 설치
+현재 탭을 북마크에 추가
+확장 프로그램
+Zeze's Life
+Chrome
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM
+Google 앱
+Google 계정: Zeze's Life 제제의 하루 (kmnoh1234@gmail.com)
+NotebookLM 홈페이지
+NotebookLM 로고
+효과적인 학습을 위한 기억과 인출의 원리
+노트북 만들기
+분석
+노트북 공유
+설정
+PRO
+출처
+출처
+소스 패널 접기
+출처 추가
+입력된 질문을 기반으로 소스 검색
+제출
+모두 선택
+모든 출처 선택
+붙여넣은 텍스트
+더보기
+붙여넣은 텍스트
+채팅
+채팅
+노트북 구성
+채팅 옵션
+🧠
+노트북 맞춤설정
+효과적인 학습을 위한 기억과 인출의 원리
+효과적인 학습을 위한 기억과 인출의 원리
+소스 1개
+·
+2026. 7. 8.
+이 자료는
+주의 집중
+,
+작업 기억
+,
+장기 기억
+의 개념을 중심으로 효과적인 학습법을 다루고 있습니다. 저자는 단순히 내용을 반복해서 읽는 방식보다 정보를 직접 머릿속에서 끄집어내는
+회상 연습
+의 중요성을 강조합니다. 특히 학습자는 단순히 눈에 익은
+재인
+상태를 완전히 이해한 것으로 착각하지 않도록 주의해야 하며, 복습 주기에 간격을 두는
+간격 반복
+기법을 활용해야 합니다. 또한, 실제 광합성 학습 사례와 3일간의 구체적인 복습 계획을 통해 이론을 실무에 적용하는 방법을 제시합니다. 결과적으로 이 텍스트는 지식을 장기적으로 보존하기 위해 학습 과정에서 의도적인
+어려움
+을 마주하고 이를 극복할 것을 권장합니다.
+메모에 저장
+요약 복사
+만족스러운 요약
+불만족스러운 요약
+효율적인 학습을 위한 주의력과 기억력의 상관관계는 무엇인가요?
+단순 복습보다 인출 연습과 분산 학습이 효과적인 이유는?
+재인과 회상의 차이를 활용한 3일 복습 계획법을 알려줘
+오늘 • 오후 4:35
+Use only the provided source. Do not add outside facts.Tasks:1. Create a one-page study guide.2. Create 10 quiz questions with answers hidden under an answer key.3. Identify the three concepts a student is most likely to confuse.4. Build a three-day review plan.5. Explain the difference between recognition and recall in simple language.If the source does not support a claim, write: Not in source.
+Use only the provided source. Do not add outside facts.Tasks:1. Create a one-page study guide.2. Create 10 quiz questions with answers hidden under an answer key.3. Identify the three concepts a student is most likely to confuse.4. Build a three-day review plan.5. Explain the difference between recognition and recall in simple language.If the source does not support a claim, write: Not in source.
+Here is the response to your tasks based entirely on the provided source.
+1. One-Page Study Guide
+1. One-Page Study Guide
+Study Guide: Attention, Memory, and Spaced Retrieval
+•
+Attention
+: The limited mental process that selects specific information for deeper processing while ignoring other information
+1: 붙여넣은 텍스트
+1
+.
+•
+Working Memory
+: A temporary mental workspace that holds a small amount of information so a learner can manipulate it
+1: 붙여넣은 텍스트
+1
+.
+•
+Long-Term Memory
+: A durable knowledge store that maintains information over longer periods
+1: 붙여넣은 텍스트
+1
+.
+•
+Common Study Mistake
+: Rereading notes without attempting retrieval
+1: 붙여넣은 텍스트
+1
+.
+•
+Retrieval Practice
+: The act of trying to recall information before checking the answer
+1: 붙여넣은 텍스트
+1
+. It typically feels harder than rereading, but this difficulty acts as a valuable learning signal
+1: 붙여넣은 텍스트
+1
+.
+•
+Spacing
+: The practice of distributing review sessions over time instead of cramming them into one single block
+1: 붙여넣은 텍스트
+1
+.
+•
+Spaced Retrieval
+: Combining the two previous methods by recalling the material, waiting, and then recalling it again later
+1: 붙여넣은 텍스트
+1
+.
+•
+Transfer Question
+: A question that requires the learner to apply a learned idea to a completely new example
+1: 붙여넣은 텍스트
+1
+.
+•
+Practical Example
+: When studying a process like photosynthesis, do not just reread definitions
+1: 붙여넣은 텍스트
+1
+. Instead, close your notes and attempt to answer specific questions (e.g., What enters? What leaves? Where does light energy fit?)
+1: 붙여넣은 텍스트
+1
+. Afterward, compare your answers against the source material and repair any mistakes
+1: 붙여넣은 텍스트
+1
+.
+2. Quiz Questions and Answer Key
+2. Quiz Questions and Answer Key
+Quiz
+1.
+What is the limited mental process that selects some information for processing while ignoring others?
+2.
+Which type of memory serves as a temporary workspace for manipulating information?
+3.
+Which type of memory acts as a durable store for knowledge over longer periods?
+4.
+What common study mistake is mentioned in the text?
+5.
+What does the term "retrieval practice" mean?
+6.
+What is the definition of "spacing" in a study context?
+7.
+What are the three steps involved in "spaced retrieval"?
+8.
+In the photosynthesis example, what must a student do after answering questions from memory?
+9.
+What kind of question asks a learner to apply an idea to a new example?
+10.
+Which memory retrieval method should practice exams test?
+Answer Key
+1.
+Attention
+1: 붙여넣은 텍스트
+1
+.
+2.
+Working memory
+1: 붙여넣은 텍스트
+1
+.
+3.
+Long-term memory
+1: 붙여넣은 텍스트
+1
+.
+4.
+Rereading notes without retrieval
+1: 붙여넣은 텍스트
+1
+.
+5.
+Trying to recall information before looking at the answer
+1: 붙여넣은 텍스트
+1
+.
+6.
+Spreading review sessions over time instead of cramming in one block
+1: 붙여넣은 텍스트
+1
+.
+7.
+Recall the material, wait, then recall it again later
+1: 붙여넣은 텍스트
+1
+.
+8.
+Compare their answers against the source and repair mistakes
+1: 붙여넣은 텍스트
+1
+.
+9.
+A transfer question
+1: 붙여넣은 텍스트
+1
+.
+10.
+Recall (not only recognition)
+1: 붙여넣은 텍스트
+1
+.
+3. Three concepts a student is most likely to confuse
+3. Three concepts a student is most likely to confuse
+The source explicitly notes
+two
+concepts that learners often confuse:
+1.
+Recognition
+1: 붙여넣은 텍스트
+1
+.
+2.
+Recall
+1: 붙여넣은 텍스트
+1
+.
+3.
+Not in source.
+(The provided text does not identify a third concept that students are likely to confuse).
+4. Three-Day Review Plan
+4. Three-Day Review Plan
+•
+Day 1
+: Read the source material once, write a short summary, and answer five recall questions
+1: 붙여넣은 텍스트
+1
+.
+•
+Day 2
+: Answer those same five questions without looking at notes, add two transfer questions, and review any mistakes made
+1: 붙여넣은 텍스트
+1
+.
+•
+Day 3
+: Teach the topic aloud for two minutes, and then write a final checklist of your weak points
+1: 붙여넣은 텍스트
+1
+.
+5. Difference between Recognition and Recall
+5. Difference between Recognition and Recall
+•
+Recognition
+is the feeling that an answer looks familiar when you are looking at it
+1: 붙여넣은 텍스트
+1
+.
+•
+Recall
+is the ability to produce the answer completely on your own, without seeing it first
+1: 붙여넣은 텍스트
+1
+.
+(Note: The source emphasizes that true practice exams should test your ability to recall, rather than just relying on recognition
+1: 붙여넣은 텍스트
+1
+.)
+메시지를 메모에 저장
+클립보드에 모델 대답 복사
+대답을 좋음으로 평가
+대답을 좋지 않음으로 평가
+분산 학습(Spacing)이 벼락치기보다 효과적인 이유는 무엇인가요?
+인식과 회상의 차이를 실생활 사례로 설명해 주세요.
+전이 질문(Transfer question)을 만드는 구체적인 방법이 궁금해요.
+쿼리 상자
+소스 1개
+제출
+스튜디오
+스튜디오
+스튜디오 패널 접기
+AI 오디오 오버뷰
+AI 오디오 오버뷰
+AI 오디오 오버뷰 맞춤설정
+슬라이드 자료
+슬라이드 자료
+슬라이드 자료 맞춤설정
+동영상 개요
+마인드맵
+마인드맵
+마인드맵 맞춤설정
+보고서
+플래시카드
+플래시카드
+플래시카드 맞춤설정
+퀴즈
+퀴즈
+퀴즈 맞춤설정
+인포그래픽
+인포그래픽
+인포그래픽 맞춤설정
+데이터 표
+데이터 표
+데이터 표 맞춤설정
+스튜디오 출력이 여기에 저장됩니다
+소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요.
+메모 추가
+NotebookLM이 부정확한 정보를 표시할 수 있으므로 대답을 다시 한번 확인하세요.
+답변 준비가 완료되었습니다.
+탭 검색
+실행 가능한 수익화 전략 - 메모리 사용량 - 359MB
+닫기
+동물의 숲 무주식 계산기 — 무 시세 예측 - 메모리 사용량 - 331MB
+닫기
+mikebryant/ac-nh-turnip-prices: Price calculator/predictor for Turnip prices
+닫기
+효과적인 학습을 위한 기억과 인출의 원리 - NotebookLM - 메모리 사용량 - 194MB
+닫기
+새 탭
+Chrome의 Gemini 열기

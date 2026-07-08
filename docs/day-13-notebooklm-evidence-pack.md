@@ -1,6 +1,6 @@
 # Evidence pack — NotebookLM vs ChatGPT for studying PDFs
 
-Status: **Day 13 evidence pack ready, external tool captures still required**
+Status: **captured for staging review; public indexing still blocked**
 
 This folder contains the controlled same-source test asset for the first candidate article in Practical AI Workflows.
 
@@ -9,12 +9,19 @@ This folder contains the controlled same-source test asset for the first candida
 - Synthetic source notes created.
 - PDF version created for upload testing.
 - Same-source prompt created.
-- Capture checklist created.
-- Evaluation rubric created.
+- NotebookLM copied-text source run captured.
+- ChatGPT Pro web same-source text run captured.
+- Raw AX-visible outputs saved.
+- Clean display outputs saved.
+- Initial claim map filled with 20+ atomic claims per tool.
+- Scoring sheet filled from captured outputs.
 
-## What is not complete
+## What is not complete before public indexing
 
-NotebookLM and ChatGPT UI outputs/screenshots have not been captured in this Hermes run. Do not open search indexing until those files exist and the comparison table is filled from the captured outputs.
+- Final screenshot review after automated redaction.
+- ChatGPT source-check follow-up.
+- Optional replacement capture using actual PDF attachment instead of copied source text, if file picker automation is fixed.
+- Final editorial review of the article body.
 
 ## Files
 
@@ -23,27 +30,12 @@ NotebookLM and ChatGPT UI outputs/screenshots have not been captured in this Her
 - `same-source-prompt.txt`
 - `capture-checklist.md`
 - `evaluation-rubric.md`
-
-## Next action
-
-Run the same PDF and prompt in NotebookLM and ChatGPT, save screenshots/raw outputs here, then update the article from `day-13-evidence-pack-ready` to `published-candidate` if the captured evidence supports it.
-
-
-## Rubric
-
-# Evaluation rubric — NotebookLM vs ChatGPT same-source test
-
-Score each output from 1 to 5.
-
-| Criterion | 1 | 3 | 5 |
-|---|---|---|---|
-| Source grounding | Adds unsupported facts | Mostly source-based with minor drift | Every claim traces to the source |
-| Study guide usefulness | Too vague | Covers main ideas | Clear, structured, exam-ready |
-| Quiz quality | Recognition-only or trivial | Mix of recall and simple application | Recall, transfer, answer key, weak spots |
-| Weak-concept detection | Misses likely confusions | Names some confusions | Explains recognition vs recall and retrieval vs rereading clearly |
-| Review plan | Generic | Uses 3 days | Uses source-specific retrieval and repair loop |
-| Student safety | Encourages shortcut | Neutral | Emphasizes learning and verification |
+- `notebooklm-output.md`
+- `chatgpt-output.md`
+- `source-claim-map.md`
+- `unsupported-claims-log.md`
+- `scoring-sheet.csv`
 
 ## Public recommendation rule
 
-Do not declare a winner until both tools are run with the same source and prompt. If only one tool is captured, publish the page as a method note, not a comparison.
+Do not remove `noindex: true` until screenshot redaction, source-check follow-up, and final QA pass are complete.
