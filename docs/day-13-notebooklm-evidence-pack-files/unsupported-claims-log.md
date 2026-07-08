@@ -1,6 +1,6 @@
 # Unsupported claims log - NotebookLM vs ChatGPT same-source test
 
-Status: **CAPTURED / INITIAL REVIEW FILLED**
+Status: **CAPTURED / CHATGPT SOURCE-CHECK FOLLOW-UP COMPLETE**
 
 Log only claims that are unsupported, partially supported, or impossible to verify from the source.
 
@@ -19,8 +19,6 @@ Log only claims that are unsupported, partially supported, or impossible to veri
 
 ## Source-check follow-up
 
-Not yet run. Public/indexed version should ask ChatGPT the follow-up after the primary output capture:
+Completed from local evidence on 2026-07-08 by comparing the saved ChatGPT output against `same-source-study-notes.md`. No external web UI was opened, and no new ChatGPT self-check response was fabricated.
 
-```text
-List any claims in your answer that are not directly supported by the uploaded PDF. If all claims are supported, say "No unsupported claims found."
-```
+Result: no major unsupported educational claims were found in the primary ChatGPT output. The known minor issue remains: ChatGPT's answer-sheet example for recognition/recall is a simple-language explanatory extrapolation that is consistent with the source definitions but not directly stated in the source.

@@ -14,14 +14,16 @@ This folder contains the controlled same-source test asset for the first candida
 - Raw AX-visible outputs saved.
 - Clean display outputs saved.
 - Initial claim map filled with 20+ atomic claims per tool.
+- ChatGPT source-check follow-up completed from local evidence.
 - Scoring sheet filled from captured outputs.
+- Repository screenshot redaction review completed for the four local PNGs.
 
 ## What is not complete before public indexing
 
-- Final screenshot review after automated redaction.
-- ChatGPT source-check follow-up.
+- Final URL and sitemap/indexing decision.
+- Analytics or measurement decision, if this article is ever launched.
+- Stable public evidence-link handling for any artifact that should be visible outside the repository.
 - Optional replacement capture using actual PDF attachment instead of copied source text, if file picker automation is fixed.
-- Final editorial review of the article body.
 
 ## Files
 
@@ -38,4 +40,4 @@ This folder contains the controlled same-source test asset for the first candida
 
 ## Public recommendation rule
 
-Do not remove `noindex: true` until screenshot redaction, source-check follow-up, and final QA pass are complete.
+Do not remove `noindex: true` until final URL, measurement, launch checklist, and stable public evidence-link decisions are complete.

@@ -15,7 +15,7 @@ cta: "PDF-to-Study-Guide Workflow Checklist"
 
 This is the first public candidate article for Practical AI Workflows, but it is not indexable yet.
 
-The first same-source capture is complete, but this page stays noindex until the ChatGPT source-check follow-up and final editorial QA are done. Initial scoring favors NotebookLM for source-grounding affordances, while study-guide usefulness, quiz quality, weak-concept handling, and review-plan quality are effectively tied in this small test.
+The first same-source capture is complete, and the ChatGPT source-check follow-up is complete from local evidence. This page stays noindex while final URL, measurement, launch, and stable public evidence-link decisions remain unresolved. Initial scoring favors NotebookLM for source-grounding affordances, while study-guide usefulness, quiz quality, weak-concept handling, and review-plan quality are effectively tied in this small test.
 
 Do not use either tool as a final authority without checking the PDF.
 
@@ -27,7 +27,7 @@ The test question is narrow:
 
 > If a student gives NotebookLM and ChatGPT the same PDF and the same study prompt, which output is more useful and safer for learning?
 
-The final version of this article will include the test date, visible tool/model details, screenshots, raw outputs, claim-level checks, and a filled scoring sheet. Until those items exist, this page remains a pre-publication scaffold.
+This staging version includes the test date, captured outputs, repository screenshots, claim-level checks, and a filled scoring sheet. It is still not ready for public indexing because final URL, measurement, launch, and stable public evidence-link decisions have not been made.
 
 ## Why this test matters
 
@@ -88,7 +88,7 @@ The final scoring will use measurement-oriented criteria rather than a vague pre
 | Review plan | Whether retrieval, spacing, and a repair loop are included |
 | Student safety | Whether the output warns readers to verify and source-check |
 
-The initial score sheet has been filled from one NotebookLM run and one ChatGPT Pro web run using the same source text and prompt. The page remains noindex because final public QA is not complete.
+The initial score sheet has been filled from one NotebookLM run and one ChatGPT Pro web run using the same source text and prompt. The page remains noindex because launch decisions are not complete.
 
 ## Results summary
 
@@ -122,7 +122,7 @@ Both tools handled the “three concepts likely to confuse” trap correctly: th
 
 ## What each tool got wrong
 
-Initial review found no major unsupported educational claims in either primary output. ChatGPT added a small answer-sheet example to explain recognition vs recall; that is consistent with the source definition but not directly stated in the source, so it is logged as partial/explanatory rather than a source fact. A ChatGPT self-check follow-up is still required before removing noindex.
+Initial review found no major unsupported educational claims in either primary output. The ChatGPT source-check follow-up, completed from local evidence, reached the same result. ChatGPT added a small answer-sheet example to explain recognition vs recall; that is consistent with the source definition but not directly stated in the source, so it is logged as partial/explanatory rather than a source fact.
 
 ## Recommended workflow
 
@@ -137,15 +137,11 @@ The evidence-backed workflow should be:
 
 ## Use NotebookLM when...
 
-Use NotebookLM when the final source-grounding score shows it stays closer to the uploaded PDF, exposes useful citations or source references, and produces fewer unsupported claims.
-
-This is pending capture. The article should not claim NotebookLM is the better choice until the claim map and scoring sheet support it.
+Use NotebookLM when source-grounding workflow matters most and you want visible source/citation affordances during review. In this single captured run, NotebookLM's edge is limited to those source-verification affordances; the study guide, quiz, weak-concept handling, and review-plan scores were effectively tied.
 
 ## Use ChatGPT when...
 
-Use ChatGPT when the final study-guide, clarity, formatting, quiz, or review-plan scores show a measurable advantage.
-
-This is pending capture. The article should not claim ChatGPT is the better choice until the captured output supports it.
+Use ChatGPT when you want a student-friendly explanation style and will still check claims against the source. In this single captured run, ChatGPT did not show a measured advantage on study-guide usefulness, quiz quality, weak-concept handling, or review-plan quality, but it remained competitive on those dimensions.
 
 ## Use both when...
 
@@ -164,11 +160,11 @@ This page is still pre-publication. Known limitations:
 5. ChatGPT model details beyond the Pro web session were not captured.
 6. Tool updates can change results.
 7. No real student exam outcome is measured.
-8. Screenshots were automatically redacted for account/sidebar areas, but still need final human review before public indexing.
+8. Repository screenshots were visually reviewed after automated redaction and no account email or private identifier was visible in the inspected PNGs.
 
 ## Evidence archive
 
-The evidence package is kept near the article but should be treated as a pre-publication archive until the missing captures exist. The links below point to the source-repo evidence package for staging review; before public indexing, publishable evidence artifacts must either be copied into the static `dist/` output or converted to stable public evidence URLs.
+The evidence package is kept near the article and should be treated as a pre-publication archive. The links below point to the source-repo evidence package for staging review; before public indexing, publishable evidence artifacts must either be copied into the static `dist/` output or converted to stable public evidence URLs.
 
 | Evidence item | Link or status |
 |---|---|
@@ -192,22 +188,23 @@ The best workflow is still not “trust one tool.” Use one tool to generate th
 
 ## Pre-publication checklist and transparency notes
 
-This article must remain `noindex: true` until ChatGPT source-check follow-up, final editorial QA, and static build QA pass.
+This article must remain `noindex: true` until final URL, measurement, launch checklist, stable public evidence-link decisions, and static build QA are complete.
 
 Before public indexing:
 
 | Gate | Required state |
 |---|---|
 | Raw outputs | NotebookLM and ChatGPT raw outputs saved — done |
-| Screenshots | Source upload, prompt, outputs, quiz, citations/source checks, and settings captured |
+| Repository screenshots | Redacted local PNGs visually reviewed for account emails/private identifiers |
 | Same-source integrity | Same PDF, prompt, rubric, and capture rules confirmed |
 | Model/settings log | ChatGPT model/plan/tools and NotebookLM settings recorded |
 | Claim trace | At least 20 atomic claims per tool checked — initial pass done |
-| Unsupported claims log | Filled from source checks |
+| Unsupported claims log | Filled from source checks; ChatGPT follow-up complete from local evidence |
 | Scoring sheet | Filled from captured outputs only — initial pass done |
 | Winner claims | Based only on measured evidence |
 | noindex | Keep `true` until all evidence and QA gates pass |
 | Sitemap | Do not include a public/indexable URL before approval |
+| Launch checklist | Final URL, analytics/measurement choice, sitemap behavior, and public evidence-link handling still required |
 
 I checked official product docs because both tools change. NotebookLM describes source-grounded citations in its help documentation, and ChatGPT supports file uploads for summarization, transformation, and extraction. This test does not assume either tool is always accurate.
 

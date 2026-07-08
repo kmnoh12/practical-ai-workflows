@@ -6,6 +6,8 @@ The Day 15-21 objective is **one evidence-backed public candidate + final URL/me
 
 The first candidate remains `notebooklm-vs-chatgpt-for-studying-pdfs`. It should not become public/indexable until the final URL, evidence pack, generated HTML QA, GA4/GSC readiness, and publish checklist all pass.
 
+Status as of 2026-07-08: Day18-20 evidence, claim mapping, scoring, article rewrite, and editorial QA are complete for the staging/noindex candidate. Day21 is a no-launch dry run because the final URL/custom domain, GA4/GSC, stable public evidence-link handling, and launch checklist are not complete.
+
 ## Scope Correction
 
 This week is a publishing-pipeline proof, not a monetization sprint.

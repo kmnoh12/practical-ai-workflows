@@ -23,8 +23,9 @@ Internal shorthand: **Evidence-backed SEO & Content Automation Lab**.
 ## Must do now
 
 - Keep the site in staging/noindex.
-- Finish one evidence-backed public candidate: `notebooklm-vs-chatgpt-for-studying-pdfs`.
-- Capture reproducible evidence before publishing: same source, same prompt, raw outputs, screenshots, scoring notes, test date, limitations, and official source touchpoints.
+- Keep the evidence-backed candidate `notebooklm-vs-chatgpt-for-studying-pdfs` as a noindex staging candidate until launch gates pass.
+- Treat Day18-20 evidence/editorial work as complete for the current noindex candidate: same source pack, same prompt, raw outputs, screenshots, scoring notes, test date, limitations, and official source touchpoints are captured locally.
+- Treat Day21 as a no-launch dry run until final URL and measurement decisions are made.
 - Decide the final URL policy before indexing: custom domain now for a serious 90-day experiment, or explicitly keep AdSense out-of-scope while using free/subpath infrastructure.
 - Prepare GA4/GSC as a measurement pipeline, not as vanity setup.
 - Keep sitemap empty while there are no public/indexable posts.

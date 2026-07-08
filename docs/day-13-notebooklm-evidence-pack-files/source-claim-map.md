@@ -1,6 +1,6 @@
 # Source claim map - NotebookLM vs ChatGPT same-source test
 
-Status: **CAPTURED / INITIAL CLAIM MAP FILLED**
+Status: **CAPTURED / CHATGPT SOURCE-CHECK FOLLOW-UP COMPLETE**
 
 | Tool | Output section | Claim | Source support | Source page/line | Notes |
 |---|---|---|---|---|---|
@@ -52,4 +52,21 @@ Status: **CAPTURED / INITIAL CLAIM MAP FILLED**
 ## Notes
 
 - Source support is based on `same-source-study-notes.md`, the source-equivalent text used for the web captures.
-- This is an initial claim map sufficient to prevent unsupported winner claims; a public indexed version should still review screenshots and redactions.
+- This claim map is sufficient to prevent unsupported winner claims. Repository screenshot redaction review is complete; public indexing still needs a stable public evidence-link decision.
+
+## ChatGPT source-check follow-up
+
+Status: **complete from local evidence on 2026-07-08**.
+
+Method: compared `chatgpt-output.md` and `chatgpt-output-clean-display.md` against `same-source-study-notes.md`. No external web UI was opened, and no new ChatGPT self-check response was fabricated.
+
+| Category | ChatGPT claim area | Source-check result | Action |
+|---|---|---|---|
+| Supported | Core concept definitions: attention, working memory, long-term memory, retrieval practice, spacing, and spaced retrieval. | Directly supported by `Core ideas`. | Keep as source-grounded evidence. |
+| Supported | Common study mistake: rereading without retrieval. | Directly supported by `Core ideas`. | Keep as source-grounded evidence. |
+| Supported | Photosynthesis example questions and repair loop. | Directly supported by `Example`. | Keep as source-grounded evidence. |
+| Supported | Quiz questions and answer key. | Answers map to `Core ideas`, `Weak concept warning`, `Three-day review plan`, and `Terms`. | Keep as source-grounded evidence. |
+| Supported | Weak-concept behavior: recognition vs recall is named; slots 2 and 3 are `Not in source`. | Source names only recognition vs recall as a common confusion. | Keep as positive source-bound behavior. |
+| Supported | Three-day review plan. | Directly supported by `Three-day review plan`. | Keep as source-grounded evidence. |
+| Partial / explanatory | Simple-language recognition/recall example using an answer sheet. | Consistent with the source definitions, but the answer-sheet scenario is not directly stated in the source. | Keep logged as harmless explanatory extrapolation, not a source fact. |
+| Unsupported | Major educational claims in the primary ChatGPT output. | None found in this local follow-up. | Preserve single-run uncertainty; do not overstate a winner. |

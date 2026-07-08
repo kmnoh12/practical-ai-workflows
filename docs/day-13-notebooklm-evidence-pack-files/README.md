@@ -1,6 +1,6 @@
 # Evidence pack - NotebookLM vs ChatGPT for studying PDFs
 
-Status: **Pre-publication evidence scaffold ready, external tool captures still required**
+Status: **captured for staging review; public indexing still blocked**
 
 This folder contains the controlled same-source test asset for the first candidate article in Practical AI Workflows.
 
@@ -11,15 +11,19 @@ This folder contains the controlled same-source test asset for the first candida
 - Same-source prompt created.
 - Capture checklist created.
 - Evaluation rubric created.
-- Evidence manifest scaffold created.
-- Source claim map scaffold created.
-- Unsupported claims log scaffold created.
-- Scoring sheet scaffold created.
-- Screenshot checklist folder created.
+- Evidence manifest filled for staging review.
+- Source claim map filled with 20+ atomic claims per tool.
+- Unsupported claims log filled from source checks.
+- ChatGPT source-check follow-up completed from local evidence.
+- Scoring sheet filled from captured outputs.
+- Four repository screenshots captured and visually reviewed after automated redaction.
 
-## What is not complete
+## What is not complete before public indexing
 
-NotebookLM and ChatGPT UI outputs/screenshots have not been captured in this Hermes run. Do not open search indexing until those files exist and the comparison table is filled from the captured outputs.
+- Final URL and sitemap/indexing decision.
+- Analytics or measurement decision, if this article is ever launched.
+- Stable public evidence-link handling for any artifact that should be visible outside the repository.
+- Optional replacement capture using actual PDF attachment instead of copied source text, if file-picker automation is fixed.
 
 ## Files
 
@@ -34,14 +38,14 @@ NotebookLM and ChatGPT UI outputs/screenshots have not been captured in this Her
 - `scoring-sheet.csv`
 - `screenshots/README.md`
 
-## Pending capture files
+## Captured output files
 
 - `notebooklm-output.md`
 - `notebooklm-output-clean-display.md`
 - `chatgpt-output.md`
 - `chatgpt-output-clean-display.md`
-- screenshot files listed in `screenshots/README.md`
+- screenshot files documented in `screenshots/README.md`
 
 ## Next action
 
-Run the same PDF and prompt in NotebookLM and ChatGPT, save screenshots/raw outputs here, fill the claim map and scoring sheet, then update the article only if the captured evidence supports it. Keep the article non-public/noindex until those gates pass.
+Keep the article non-public/noindex. Before public indexing, decide the final URL, measurement setup, sitemap behavior, and stable public evidence-link handling.
