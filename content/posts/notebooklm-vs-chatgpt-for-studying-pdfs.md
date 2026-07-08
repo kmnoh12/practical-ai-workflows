@@ -181,7 +181,7 @@ After both tools answer, compare:
 
 ## Free template
 
-[Download the PDF Study Workflow Template](/downloads/pdf-study-workflow-template.md)
+[Download the PDF Study Workflow Template](../downloads/pdf-study-workflow-template.md)
 
 Use it as a checklist: source-grounded notes first, explanation second, quiz third, verification before trust.
 
@@ -191,7 +191,7 @@ This recommendation is based on one same-source test: one synthetic study handou
 
 In that run, both NotebookLM and ChatGPT produced useful study guides, quizzes, weak-concept notes, and review plans. NotebookLM had the clearer edge for source-verification affordances. ChatGPT was competitive for student-facing explanation, quiz structure, and review planning.
 
-This is not a broad benchmark. It is a practical workflow test. The background evidence archive is available here: [same-source evidence archive](../../automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/README.md).
+This is not a broad benchmark. It is a practical workflow test. The background evidence archive is kept in the repository under `automation-lab-archive/docs/day-13-notebooklm-evidence-pack-files/` for auditability; it is not the main reader-facing asset.
 
 Official product documentation also supports the workflow distinction: NotebookLM documentation describes source-grounded answers with citations, while OpenAI's file upload documentation describes ChatGPT support for document synthesis, transformation, and extraction.
 
