@@ -1,49 +1,36 @@
 ---
-title: "Landing Page Copy — Free Workflow Templates"
+title: "Free AI Workflow Templates"
 slug: "templates"
 noindex: false
 ---
 
-# Landing Page Copy — Free Workflow Templates
+# Free AI Workflow Templates
 
-Slug: `/templates/`
+Practical templates for source-based studying and creator automation.
 
-## Hero
+## Available now
 
-Free AI workflow templates for source-based studying and creator automation.
+### PDF Study Workflow Template: NotebookLM + ChatGPT
 
-## Subheadline
+Turn a PDF, lecture handout, textbook chapter, or article into source-grounded notes, explanations, quiz questions, an answer key, and a 7-day review plan.
 
-Use practical checklists to turn PDFs, notes, newsletters, blog posts, and digital products into repeatable workflows.
+[Download or copy the Markdown template](../downloads/pdf-study-workflow-template.md)
 
-## Lead magnet cards
+Use it when you want NotebookLM to stay close to the source and ChatGPT to help with explanations, practice questions, answer checking, and review planning.
 
-### Creator Automation Stack Checklist
+## What is inside
 
-Choose the first tools for your creator workflow: landing page, newsletter, checkout, automation, and content system.
+- When to use NotebookLM.
+- When to use ChatGPT.
+- A four-step PDF study workflow.
+- Five copy/paste prompts.
+- Verification checklist.
+- Common failure cases.
+- Optional next step for turning the workflow into a tool if people actually use it.
 
-CTA: Download checklist
+## Coming later
 
-### PDF-to-Study-Guide Workflow Checklist
+These templates are planned but not published yet:
 
-Turn lecture notes or PDFs into summaries, quizzes, weak-spot reviews, and a 3-day study plan.
-
-CTA: Download study workflow
-
-### AI Content Brief Template
-
-Plan SEO/affiliate articles before drafting: intent, proof angle, source table, screenshots, internal links, and publish gate.
-
-CTA: Download brief template
-
-## Trust line
-
-These templates are built from the same workflow tests used in Practical AI Workflows articles. They are not generic prompt dumps.
-
-## Email capture placeholder
-
-Form fields:
-- email
-- preferred workflow: studying / creator automation / content writing
-
-Button: Send me the templates
+- Creator Automation Stack Checklist.
+- AI Content Brief Template.
