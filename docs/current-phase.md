@@ -30,6 +30,10 @@ Internal shorthand: **Evidence-backed SEO & Content Automation Lab**.
 - Prepare GA4/GSC as a measurement pipeline, not as vanity setup.
 - Keep sitemap empty while there are no public/indexable posts.
 
+## Session logs
+
+- [2026-07-08 session log](session-log-2026-07-08.md) — NotebookLM/ChatGPT evidence capture, Codex source-check/editorial QA, and no-launch dry-run gate closure.
+
 ## Later
 
 - AdSense application.
