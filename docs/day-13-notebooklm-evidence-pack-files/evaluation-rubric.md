@@ -1,4 +1,22 @@
-# Evaluation rubric — NotebookLM vs ChatGPT same-source test
+# Evaluation rubric - NotebookLM vs ChatGPT same-source test
+
+Use measurement first. The 1/3/5 scale below is only a summary score after the claim map, unsupported claims log, and scoring sheet are filled.
+
+## Measurement criteria
+
+| Criterion | Measurement |
+|---|---|
+| Source grounding | Ratio of atomic claims that are supported by the source |
+| Unsupported claims | Count of claims that are not in the source |
+| Citation usefulness | Whether a citation or quote lets the reader verify the claim |
+| Study guide coverage | Number of source key concepts included |
+| Quiz quality | Recognition, recall, and application question mix |
+| Answer key accuracy | Share of answers that match the source |
+| Weak concepts | Whether likely source-specific confusions are identified |
+| Review plan | Whether retrieval, spacing, and a repair loop are included |
+| Student safety | Whether the output warns readers to verify and source-check |
+
+## Summary score guide
 
 Score each output from 1 to 5.
 

@@ -7,6 +7,9 @@ DIST=ROOT/'dist'
 SITE_TITLE='Practical AI Workflows'
 MANIFEST=json.loads((ROOT/'site-manifest.json').read_text(encoding='utf-8')) if (ROOT/'site-manifest.json').exists() else {}
 BASE_PATH=str(MANIFEST.get('base_path','')).rstrip('/')
+PUBLIC_BASE_URL=str(MANIFEST.get('public_base_url','')).rstrip('/')
+SLUG_RE=re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+GA4_RE=re.compile(r'^G-[A-Z0-9]+$')
 
 def site_url(path='/'):
     path='/' + str(path).lstrip('/')
@@ -29,6 +32,59 @@ def parse_fm(text):
                     data[k.strip()]=v
             return data, parts[2].lstrip()
     return data,text
+
+def fm_bool(fm, key, default=None):
+    if key not in fm:
+        return default
+    v=fm[key]
+    if isinstance(v,bool):
+        return v
+    if isinstance(v,str):
+        s=v.strip().lower()
+        if s=='true':
+            return True
+        if s=='false':
+            return False
+    return default
+
+def is_public_candidate(fm):
+    return (
+        str(fm.get('status','draft'))=='published'
+        and fm_bool(fm,'indexable',False) is True
+        and fm_bool(fm,'qa_approved',False) is True
+        and fm_bool(fm,'noindex',True) is False
+    )
+
+def checked_slug(slug):
+    slug=str(slug).strip()
+    if '/' in slug or '\\' in slug or '..' in slug or not SLUG_RE.fullmatch(slug):
+        raise ValueError(f'invalid slug: {slug!r}')
+    return slug
+
+def reserve_slug(slug, seen_slugs):
+    if slug in seen_slugs:
+        raise ValueError(f'duplicate slug: {slug!r}')
+    seen_slugs.add(slug)
+    return slug
+
+def manifest_bool(key, default=False):
+    return fm_bool(MANIFEST, key, default)
+
+def validate_public_launch_prereqs(public_posts):
+    if not public_posts:
+        return
+    errors=[]
+    if not PUBLIC_BASE_URL.startswith('https://'):
+        errors.append('public build requires https public_base_url in site-manifest.json')
+    if manifest_bool('robots_at_host_root', False) is not True:
+        errors.append('public build requires robots_at_host_root: true')
+    ga4_id=str(MANIFEST.get('ga4_measurement_id','')).strip()
+    if not GA4_RE.fullmatch(ga4_id):
+        errors.append('public build requires valid ga4_measurement_id matching ^G-[A-Z0-9]+$')
+    if not str(MANIFEST.get('google_site_verification','')).strip():
+        errors.append('public build requires google_site_verification')
+    if errors:
+        raise SystemExit('Refusing public/indexable build:\n- ' + '\n- '.join(errors))
 
 def md_inline(s):
     s=html.escape(s)
@@ -80,10 +136,21 @@ def md_to_html(md):
     close_lists(); flush_table()
     return '\n'.join(out)
 
-def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.'):
-    robots='<meta name="robots" content="noindex,nofollow">' if noindex else ''
+def absolute_url(path='/'):
+    path='/' + str(path).lstrip('/')
+    return PUBLIC_BASE_URL + path if PUBLIC_BASE_URL else site_url(path)
+
+def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.', path='/'):
+    robots='<meta name="robots" content="noindex,nofollow">' if noindex else '<meta name="robots" content="index,follow">'
+    canonical=f'<link rel="canonical" href="{html.escape(absolute_url(path))}">'
+    ga4_id=str(MANIFEST.get('ga4_measurement_id','')).strip()
+    ga4=''
+    if ga4_id:
+        ga4=f'''<script async src="https://www.googletagmanager.com/gtag/js?id={html.escape(ga4_id)}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{html.escape(ga4_id)}');</script>'''
+    gsc=str(MANIFEST.get('google_site_verification','')).strip()
+    gsc_meta=f'<meta name="google-site-verification" content="{html.escape(gsc)}">' if gsc else ''
     nav=f'<div class="nav wrap"><a class="brand" href="{site_url("/")}">Practical AI Workflows</a><div class="links"><a href="{site_url("/posts/")}">Posts</a><a href="{site_url("/templates/")}">Templates</a><a href="{site_url("/editorial-policy/")}">Methodology</a><a href="{site_url("/affiliate-disclosure/")}">Disclosure</a></div></div>'
-    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}<link rel="stylesheet" href="{site_url("/assets/style.css")}"></head><body>{nav}<main class="wrap">{body}</main><footer class="footer wrap">© 2026 Practical AI Workflows. Some links may be paid links. Evidence-backed workflow testing, not generic tool lists.</footer></body></html>'
+    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}{canonical}{gsc_meta}{ga4}<link rel="stylesheet" href="{site_url("/assets/style.css")}"></head><body>{nav}<main class="wrap">{body}</main><footer class="footer wrap">© 2026 Practical AI Workflows. Some links may be paid links. Evidence-backed workflow testing, not generic tool lists.</footer></body></html>'
 
 def write_page(path, html_text):
     path.mkdir(parents=True,exist_ok=True)
@@ -93,24 +160,41 @@ if DIST.exists(): shutil.rmtree(DIST)
 DIST.mkdir(parents=True)
 shutil.copytree(ROOT/'public', DIST, dirs_exist_ok=True)
 posts=[]
+post_sources=[]
+seen_slugs=set()
 for p in sorted((CONTENT/'posts').glob('*.md')):
     fm,md=parse_fm(p.read_text(encoding='utf-8'))
-    slug=fm.get('slug',p.stem); title=fm.get('title',slug.replace('-',' ').title())
+    slug=reserve_slug(checked_slug(fm.get('slug',p.stem)), seen_slugs); title=fm.get('title',slug.replace('-',' ').title())
+    public=is_public_candidate(fm)
+    post_sources.append((p,fm,md,slug,title,public))
+
+public_posts=[{'slug':slug,'title':str(title),'category':str(fm.get('category','Workflow')),'order':int(fm.get('order',99)),'status':str(fm.get('status','draft')),'public':public} for _,fm,_,slug,title,public in post_sources if public]
+validate_public_launch_prereqs(public_posts)
+
+for p,fm,md,slug,title,public in post_sources:
     body=f'<article class="post"><p class="pill">{html.escape(str(fm.get("category","Workflow")))}</p><h1>{html.escape(str(title))}</h1>'
-    if fm.get('status')!='published':
+    if not public:
         body+=f'<div class="warn"><strong>Status:</strong> {html.escape(str(fm.get("status","draft")))}. Evidence checks are still required before public recommendation.</div>'
     body+=md_to_html(md)+'</article>'
-    write_page(DIST/str(slug), layout(str(title), body, bool(fm.get('noindex',False))))
-    posts.append({'slug':str(slug),'title':str(title),'category':str(fm.get('category','Workflow')),'order':int(fm.get('order',99)),'status':str(fm.get('status','draft'))})
+    noindex=not public
+    public_path='/' + str(slug).strip('/') + '/'
+    write_page(DIST/str(slug), layout(str(title), body, noindex, path=public_path))
+    posts.append({'slug':str(slug),'title':str(title),'category':str(fm.get('category','Workflow')),'order':int(fm.get('order',99)),'status':str(fm.get('status','draft')),'noindex':noindex,'public':public})
 for p in sorted((CONTENT/'pages').glob('*.md')):
     fm,md=parse_fm(p.read_text(encoding='utf-8'))
-    slug=fm.get('slug',p.stem); title=fm.get('title',slug.replace('-',' ').title())
+    slug=reserve_slug(checked_slug(fm.get('slug',p.stem)), seen_slugs); title=fm.get('title',slug.replace('-',' ').title())
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
-    write_page(DIST/str(slug), layout(str(title), body, bool(fm.get('noindex',False))))
-cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="{site_url("/" + x["slug"] + "/")}">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(posts,key=lambda x:x['order']))
+    write_page(DIST/str(slug), layout(str(title), body, True, path='/' + str(slug).strip('/') + '/'))
+visible_posts=public_posts if public_posts else posts
+cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="{site_url("/" + x["slug"] + "/")}">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(visible_posts,key=lambda x:x['order']))
 home=f'<section class="hero"><p class="pill">Evidence-backed workflow lab</p><h1>Tested AI workflows for source-based learning and creator automation.</h1><p>Practical AI Workflows turns PDFs, notes, newsletters, checkout tools, and creator automations into repeatable systems with evidence plans, templates, and decision tables.</p></section><section><h2>Launch cluster</h2><div class="grid">{cards}</div></section><section><h2>Start with templates</h2><div class="grid"><div class="card"><h3>Creator Automation Stack Checklist</h3><p>Map landing page, email, checkout, automation, and content workflow before buying more tools.</p></div><div class="card"><h3>PDF-to-Study-Guide Workflow Checklist</h3><p>Use source-grounded notes and AI explanations without losing verification.</p></div><div class="card"><h3>AI Content Brief Template</h3><p>Define intent, evidence, screenshots, links, and publish gates before drafting.</p></div></div></section>'
-write_page(DIST, layout('Home',home))
-write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>'))
-(DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n# Evidence-needed staging build. Remove Disallow after FACT CHECK cleanup.\n',encoding='utf-8')
-(DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>\n',encoding='utf-8')
+write_page(DIST, layout('Home',home, noindex=True, path='/'))
+write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>', noindex=True, path='/posts/'))
+if public_posts:
+    robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
+else:
+    robots='User-agent: *\nDisallow: /\n# Evidence-needed staging build. Do not rely on robots.txt as noindex or security.\n'
+(DIST/'robots.txt').write_text(robots,encoding='utf-8')
+sitemap_urls=''.join(f'<url><loc>{html.escape(absolute_url("/" + p["slug"] + "/"))}</loc></url>' for p in public_posts)
+(DIST/'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sitemap_urls}</urlset>\n',encoding='utf-8')
 print(f'Built {len(posts)} posts into {DIST}')

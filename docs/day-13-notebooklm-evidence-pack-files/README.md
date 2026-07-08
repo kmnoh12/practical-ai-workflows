@@ -1,6 +1,6 @@
-# Evidence pack — NotebookLM vs ChatGPT for studying PDFs
+# Evidence pack - NotebookLM vs ChatGPT for studying PDFs
 
-Status: **Day 13 evidence pack ready, external tool captures still required**
+Status: **Pre-publication evidence scaffold ready, external tool captures still required**
 
 This folder contains the controlled same-source test asset for the first candidate article in Practical AI Workflows.
 
@@ -11,6 +11,11 @@ This folder contains the controlled same-source test asset for the first candida
 - Same-source prompt created.
 - Capture checklist created.
 - Evaluation rubric created.
+- Evidence manifest scaffold created.
+- Source claim map scaffold created.
+- Unsupported claims log scaffold created.
+- Scoring sheet scaffold created.
+- Screenshot checklist folder created.
 
 ## What is not complete
 
@@ -23,7 +28,20 @@ NotebookLM and ChatGPT UI outputs/screenshots have not been captured in this Her
 - `same-source-prompt.txt`
 - `capture-checklist.md`
 - `evaluation-rubric.md`
+- `evidence-manifest.md`
+- `source-claim-map.md`
+- `unsupported-claims-log.md`
+- `scoring-sheet.csv`
+- `screenshots/README.md`
+
+## Pending capture files
+
+- `notebooklm-output.md`
+- `notebooklm-output-clean-display.md`
+- `chatgpt-output.md`
+- `chatgpt-output-clean-display.md`
+- screenshot files listed in `screenshots/README.md`
 
 ## Next action
 
-Run the same PDF and prompt in NotebookLM and ChatGPT, save screenshots/raw outputs here, then update the article from `day-13-evidence-pack-ready` to `published-candidate` if the captured evidence supports it.
+Run the same PDF and prompt in NotebookLM and ChatGPT, save screenshots/raw outputs here, fill the claim map and scoring sheet, then update the article only if the captured evidence supports it. Keep the article non-public/noindex until those gates pass.

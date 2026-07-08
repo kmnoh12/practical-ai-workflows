@@ -1,0 +1,23 @@
+# Template only. No affiliate programs are approved for this project yet.
+# Keep statuses pending/empty until real approval data exists.
+
+programs:
+  - name:
+    category:
+    status: pending
+    application_url:
+    approved_date:
+    affiliate_base_url:
+    disclosure_text:
+    rel_attribute: "sponsored nofollow"
+    allowed_pages: []
+    prohibited_claims: []
+    last_checked:
+    notes:
+
+link_policy:
+  default_affiliate_rel: "sponsored nofollow"
+  disclose_near_top: true
+  disclose_near_first_affiliate_link: true
+  use_affiliate_links_before_approval: false
+  first_30_day_goal: "intent measurement, not revenue"
