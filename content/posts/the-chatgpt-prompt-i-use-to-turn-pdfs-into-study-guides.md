@@ -146,6 +146,117 @@ Day 3: retest missed questions and compress the final sheet.
 Include exact tasks, not motivational advice.
 ```
 
+## The prompt I would actually run, in order
+
+If you want the practical version, do not paste one giant prompt and hope it works. Run the workflow in passes.
+
+### Pass 1: source boundary and structure
+
+```text
+Use only the source material I provide below.
+First, make a source map:
+- main sections,
+- key concepts in each section,
+- claims that need checking,
+- terms that are likely to be confused.
+Do not write a final study guide yet.
+```
+
+This pass is intentionally restrictive. You are telling ChatGPT not to be helpful in the usual way. You want it to inspect the material before it teaches.
+
+### Pass 2: study guide with uncertainty labels
+
+```text
+Now create a study guide from the source map.
+Use four labels:
+1. Source fact
+2. Study explanation
+3. Generated example
+4. Check source
+Keep the labels visible in the output.
+```
+
+The labels make the answer less pretty, but more useful. They let you see which parts came from the PDF and which parts are teaching aids.
+
+### Pass 3: quiz generation
+
+```text
+Using only the verified study guide, create questions in this order:
+1. 10 short-answer recall questions
+2. 5 compare-and-contrast questions
+3. 5 application questions
+4. Answer key at the end
+For each answer, list the concept tested.
+```
+
+Short-answer questions come first because they expose whether you can produce the idea without seeing options. Multiple choice is useful later, but it can trick you into thinking recognition is mastery.
+
+### Pass 4: answer-key audit
+
+```text
+Audit the answer key.
+For each answer, mark:
+- Supported by source
+- Partly supported
+- Not supported by source
+If partly supported or unsupported, rewrite the question or remove it.
+```
+
+This is the pass most people skip. It is also the pass that prevents a polished quiz from becoming a polished mistake.
+
+## Before and after: weak prompt vs useful prompt
+
+| Weak prompt | What usually goes wrong | Better prompt move |
+|---|---|---|
+| "Summarize this PDF." | Passive notes with no study action. | Ask for a source map first. |
+| "Make me a study guide." | Mixed source facts, explanations, and examples. | Require labels for each layer. |
+| "Give me quiz questions." | Questions may test unsupported claims. | Generate from verified notes only. |
+| "Explain this like I'm five." | Oversimplification can drift from the source. | Ask for simple explanation plus `Check source` list. |
+| "Make a study plan." | Generic schedule. | Tie the plan to missed questions and weak concepts. |
+
+A strong prompt is not longer because long prompts are magical. It is longer because it defines the job, the source boundary, the output format, and the failure behavior.
+
+## How to review the output in five minutes
+
+After ChatGPT returns the study guide, scan it in this order:
+
+1. **Look for unsupported confidence.** Any sentence with "always," "never," "proves," or "the best" should be checked.
+2. **Check definitions.** Definitions are easy to make fluent and slightly wrong.
+3. **Check answer keys.** A wrong answer key is worse than no quiz.
+4. **Separate examples.** If an example was generated, mark it as generated.
+5. **Delete vague advice.** "Review regularly" is not a plan. "Retest missed short-answer questions on Day 2" is a plan.
+
+This review step is why the prompt includes a `Check source` list. You do not need the model to be perfect. You need the workflow to reveal where it might be wrong.
+
+## A reusable output format
+
+When the PDF is important, ask for this structure every time:
+
+| Section | What it should contain | Pass condition |
+|---|---|---|
+| Source map | Sections, concepts, source cues | Covers the whole document, not only easy parts. |
+| Key terms | Term, definition, source cue, confusion risk | Definitions trace back to source. |
+| Concept contrasts | Pairs students might confuse | Each contrast is source-supported or labeled. |
+| Study guide | Plain explanation separated from source facts | No unlabeled generated examples. |
+| Retrieval practice | Short-answer and application questions | Answers hidden until the end. |
+| Answer audit | Supported / partly supported / unsupported | Weak questions repaired or removed. |
+| Review plan | Day-by-day tasks | Based on missed questions, not motivation. |
+
+That format is less glamorous than an instant summary, but it produces something you can actually study from.
+
+## When ChatGPT should not be the first tool
+
+Do not start with ChatGPT when the PDF is the authority and you need citations, page references, or strict source tracking. Start with NotebookLM, manual highlighting, or another source-centered pass. ChatGPT becomes much more useful after the source has already been organized.
+
+Start with ChatGPT only when:
+
+1. you have already pasted verified excerpts,
+2. the document is short enough to audit manually,
+3. you mainly need tutoring, rewriting, or quiz variation,
+4. the output will not be used as a citation or final authority.
+
+For high-stakes academic, legal, medical, financial, or professional material, treat ChatGPT as a study assistant, not as the source of truth.
+
 ## How to avoid hallucinations and source drift
 
 The biggest mistake is asking ChatGPT to become both the source and the tutor. Keep those roles separate.

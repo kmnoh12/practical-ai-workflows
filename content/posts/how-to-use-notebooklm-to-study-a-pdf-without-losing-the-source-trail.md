@@ -149,6 +149,77 @@ Before you paste notes into ChatGPT, check:
 | Uncovered sections | Listed instead of silently ignored |
 | Unsupported claims | Removed or labeled |
 
+## A real session example: from messy PDF to usable notes
+
+Here is the version of the workflow I would use for a class handout, policy PDF, research explainer, or internal training document.
+
+| Minute | Action | Output | Why it matters |
+|---|---|---|---|
+| 0-5 | Upload the PDF and ask for a section map | Section list with source cues | You see the document structure before the summary. |
+| 5-12 | Ask for key terms and contrasts | Definition table | You catch concepts that are easy to mix up. |
+| 12-20 | Ask for unsupported or uncertain claims | Verification list | You stop weak claims before they enter your notes. |
+| 20-30 | Build a clean note pack | Source facts + study explanations | You keep the source layer separate from the learning layer. |
+| 30-45 | Move verified notes into ChatGPT | Quiz + answer key + repair plan | You turn reading into retrieval practice. |
+
+The important part is not the exact timing. The important part is the sequence. If you ask for a polished study guide at minute zero, you may get a useful-looking answer before you know what the PDF actually supports. If you start with a source map, the later study guide has something to anchor to.
+
+A good first NotebookLM answer should feel slightly boring. It should name sections, terms, and source cues. That is a feature, not a bug. The exciting output comes later, when you use the verified notes to build questions, examples, and a review plan.
+
+## What to do when NotebookLM gives a vague answer
+
+If the answer says something broad like "the document explains memory" or "the source discusses learning strategies," do not accept it yet. Ask a narrower follow-up:
+
+```text
+For each claim in your last answer, add the source section or quote that supports it.
+If a claim is an interpretation rather than a direct source fact, label it as interpretation.
+If the source does not support it, remove it.
+```
+
+Then review the answer as a table:
+
+| Vague output | Better follow-up | Keep or reject? |
+|---|---|---|
+| "Retrieval practice improves learning." | Where does the source say this, and how does it define retrieval? | Keep only with source cue. |
+| "Students should review every day." | Does the PDF say daily review or spaced review? | Rewrite if the wording overstates. |
+| "Working memory is like a computer cache." | Is that metaphor in the source or generated? | Keep only as generated explanation. |
+| "Recognition is less effective than recall." | Does the source compare them directly? | Keep if the contrast exists. |
+
+This extra step is what makes the notes defensible. You are not trying to make NotebookLM slower. You are making the output easier to trust.
+
+## Mistakes that make PDF studying worse
+
+| Mistake | Why it hurts | Safer replacement |
+|---|---|---|
+| Asking for one giant summary | It hides missing sections and weak claims. | Ask for a section-by-section source map first. |
+| Copying citations without opening the PDF | Source cues can still point to compressed or partial context. | Check important claims in the original document. |
+| Mixing examples with source facts | Generated examples can become fake evidence in your notes. | Label examples as generated. |
+| Turning everything into multiple choice | Recognition feels easier than recall. | Use short-answer questions first. |
+| Deleting the uncertainty list | You lose the audit trail. | Keep a small `check source` section at the end. |
+
+If you only change one habit, change this: never let an AI answer remove the uncertainty from your workflow. Good study notes should show what is known, what is simplified, and what still needs checking.
+
+## When NotebookLM is not enough
+
+NotebookLM is strongest when the source itself is the center of the task. It is weaker when you need a long tutoring conversation, many variants of a quiz, or a custom review plan around your schedule. That is where ChatGPT becomes useful after the source pass.
+
+Use NotebookLM for:
+
+1. source maps,
+2. document-grounded definitions,
+3. citation/source cue checks,
+4. finding unsupported claims,
+5. keeping a document-centered workspace.
+
+Use ChatGPT after that for:
+
+1. rewriting verified notes in simpler language,
+2. turning notes into short-answer questions,
+3. generating application questions,
+4. diagnosing wrong answers,
+5. creating a three-day or seven-day review plan.
+
+The handoff should be explicit. Paste only verified notes, not the whole messy output, and tell ChatGPT that the notes are the source of truth. That keeps the second tool from inventing a new version of the PDF.
+
 ## How to avoid hallucinations and source drift
 
 The safest habit is to separate three layers:

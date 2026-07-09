@@ -193,6 +193,92 @@ Use these safeguards:
 
 NotebookLM can still make mistakes. ChatGPT can still make mistakes. The practical difference is that NotebookLM's source workflow makes checking easier, while ChatGPT's conversational workflow makes studying and revision easier.
 
+## Decision guide: which one should you open first?
+
+If you are staring at a PDF and deciding where to begin, use this decision table.
+
+| Situation | Open first | Reason |
+|---|---|---|
+| You must know what the document actually says | NotebookLM | The source-centered workspace makes verification easier. |
+| You need citations or source cues while reading | NotebookLM | It is designed around uploaded sources and citation-style navigation. |
+| You already have clean notes and need practice questions | ChatGPT | It is strong at transforming verified notes into retrieval practice. |
+| You are confused by a concept and need several explanations | ChatGPT | The conversational tutoring loop is better for rephrasing. |
+| The PDF is scanned, messy, or full of tables | Neither blindly | Check extraction quality first. |
+| You are studying for a graded exam | Both, plus manual verification | Tool output is not the authority. |
+| You want a reusable workflow | NotebookLM first, ChatGPT second | Source map first, learning design second. |
+
+The wrong question is "which tool is smarter?" The useful question is "which failure mode is more dangerous for this task?" If the dangerous failure is losing the source trail, start with NotebookLM. If the dangerous failure is passive reading with no retrieval practice, bring in ChatGPT after the notes are verified.
+
+## What each tool did better in the test
+
+In the captured same-source run, the difference was not dramatic in every category. Both tools produced usable material. The practical differences showed up in workflow fit.
+
+### NotebookLM was better for the first pass
+
+NotebookLM felt better suited to the beginning of the session because the source remained visible as the object of work. That matters when the user is not only trying to understand the topic, but also trying to preserve where each claim came from.
+
+The strongest NotebookLM use cases were:
+
+1. building a source map,
+2. keeping the uploaded material central,
+3. checking whether a claim appears to come from the source,
+4. creating a first-pass guide without immediately turning it into a generic explainer.
+
+### ChatGPT was better for the second pass
+
+ChatGPT was more useful once the notes were already bounded. It was easier to ask for variants: harder questions, simpler explanations, a different review schedule, or a repair plan for missed answers.
+
+The strongest ChatGPT use cases were:
+
+1. turning notes into active recall questions,
+2. creating multiple difficulty levels,
+3. explaining why a wrong answer is wrong,
+4. adapting a review plan around time available,
+5. rewriting dense notes into study-friendly language.
+
+That is why the recommendation is a sequence, not a winner. NotebookLM reduces source drift early. ChatGPT increases study usefulness later.
+
+## Example workflow for a 60-page PDF
+
+Here is a practical version for a medium-length PDF such as a chapter, policy report, course handout, or research explainer.
+
+| Stage | Tool | Prompt goal | Output |
+|---|---|---|---|
+| 1 | NotebookLM | Map the document | Sections, terms, source cues |
+| 2 | NotebookLM | Identify confusing concepts | Contrast table with source cues |
+| 3 | NotebookLM + original PDF | Verify important claims | Keep / rewrite / remove list |
+| 4 | ChatGPT | Turn verified notes into questions | Recall, application, answer key |
+| 5 | ChatGPT | Repair missed answers | Mistake pattern and review plan |
+| 6 | You | Final source check | Notes safe enough to use |
+
+For a short handout, this might take 20 minutes. For a dense academic PDF, it might take longer. But the order stays the same: source first, explanation second, recall third, verification throughout.
+
+## Common bad workflows
+
+| Bad workflow | Why it fails | Better version |
+|---|---|---|
+| ChatGPT summary first | It can create fluent notes before the source is checked. | Source map first, then summary. |
+| NotebookLM answer copied directly into notes | Citations can become decoration instead of verification. | Open important source cues before copying. |
+| Quiz generated from a summary | The quiz may test compressed or unsupported claims. | Generate from verified notes. |
+| Answer key trusted without checking | Wrong practice trains wrong memory. | Audit answer key against the PDF. |
+| One tool used for everything | Each tool's weakness gets amplified. | Split the workflow by job. |
+
+The point is not to slow yourself down. The point is to avoid spending an hour studying a beautiful answer that quietly drifted from the source.
+
+## Scoring rubric you can reuse
+
+If you want to compare tools on your own PDF, score the outputs like this:
+
+| Category | 1 point | 2 points | 3 points |
+|---|---|---|---|
+| Source grounding | Claims are hard to trace. | Some claims have source cues. | Important claims are easy to trace. |
+| Coverage | Misses major sections. | Covers most sections. | Covers all major sections without overclaiming. |
+| Study usefulness | Mostly summary. | Includes some questions. | Includes recall, application, and review plan. |
+| Uncertainty handling | No uncertainty list. | Some caveats. | Clear unsupported/check-source list. |
+| Answer-key safety | No audit. | Partial audit. | Answers are checked or labeled. |
+
+A perfect score is not required. What matters is seeing which tool fails in a way that is dangerous for your use case.
+
 ## Prompt to compare both tools yourself
 
 If you want to test your own PDF, use the same prompt in both tools:
