@@ -1,16 +1,16 @@
 priority,lane,keyword,title,intent,asset,traffic_score,money_score,risk,status
 1,AI study/PDF,notebooklm vs chatgpt for studying,NotebookLM vs ChatGPT for Studying PDFs: Which One Should You Use?,comparison,PDF study workflow template,7,2,low,published
-2,AI study/PDF,how to use notebooklm to study a pdf,How to Use NotebookLM to Study a PDF Without Losing the Source Trail,how-to,NotebookLM study checklist,8,2,low,queued
-3,AI study/PDF,chatgpt prompt for studying pdf,The ChatGPT Prompt I Use to Turn PDFs into Study Guides,prompt,copyable prompt pack,7,2,low,queued
+2,AI study/PDF,how to use notebooklm to study a pdf,How to Use NotebookLM to Study a PDF Without Losing the Source Trail,how-to,NotebookLM study checklist,8,2,low,published
+3,AI study/PDF,chatgpt prompt for studying pdf,The ChatGPT Prompt I Use to Turn PDFs into Study Guides,prompt,copyable prompt pack,7,2,low,published
 4,AI study/PDF,pdf to study guide ai free,Best Free AI Workflows to Turn a PDF into a Study Guide,list/how-to,comparison table,8,3,low,queued
 5,AI study/PDF,notebooklm study guide template,"NotebookLM Study Guide Template for Lectures, PDFs, and Exams",template,downloadable template,6,2,low,queued
 6,AI productivity,ai meeting notes workflow,"AI Meeting Notes Workflow: Record, Summarize, Assign Tasks, Follow Up",how-to,meeting notes SOP,8,4,low,queued
 7,AI productivity,chatgpt email workflow,A Practical ChatGPT Email Workflow for Busy Solo Operators,how-to,email triage prompt,7,3,low,queued
 8,AI productivity,ai weekly planning template,AI Weekly Planning Template: Turn Notes into a Real Schedule,template,weekly planner template,6,2,low,queued
-9,AI productivity,best ai tools for productivity,"Best AI Productivity Tools by Workflow, Not Hype",list/comparison,tool decision matrix,9,5,low,queued
+9,AI productivity,best ai tools for productivity,"Best AI Productivity Tools by Workflow, Not Hype",list/comparison,tool decision matrix,9,5,low,published
 10,AI productivity,chatgpt vs claude for writing,ChatGPT vs Claude for Writing: Which One Fits Your Workflow?,comparison,writing prompt test sheet,8,4,low,queued
-11,Creator automation,make vs zapier for creators,Make vs Zapier for Creators: Which Automation Tool Should You Pick?,comparison,automation checklist,7,8,low,queued
-12,Creator automation,creator automation stack,"Creator Automation Stack for Beginners: Landing Page, Email, Checkout, Delivery",stack guide,stack checklist,7,8,low,queued
+11,Creator automation,make vs zapier for creators,Make vs Zapier for Creators: Which Automation Tool Should You Pick?,comparison,automation checklist,7,8,low,published
+12,Creator automation,creator automation stack,"Creator Automation Stack for Beginners: Landing Page, Email, Checkout, Delivery",stack guide,stack checklist,7,8,low,published
 13,Creator automation,kit vs beehiiv,"Kit vs beehiiv for Solo Creators: Newsletter, Automation, Monetization",comparison,newsletter tool matrix,6,8,low,queued
 14,Creator automation,gumroad vs lemon squeezy,Gumroad vs Lemon Squeezy for Digital Products,comparison,checkout comparison table,6,8,low,queued
 15,Creator automation,zapier automation ideas for creators,15 Zapier Automation Ideas for Creators That Save Real Time,ideas/how-to,automation recipe pack,8,7,low,queued

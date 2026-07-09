@@ -184,12 +184,12 @@ for p in sorted((CONTENT/'pages').glob('*.md')):
     fm,md=parse_fm(p.read_text(encoding='utf-8'))
     slug=reserve_slug(checked_slug(fm.get('slug',p.stem)), seen_slugs); title=fm.get('title',slug.replace('-',' ').title())
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
-    write_page(DIST/str(slug), layout(str(title), body, True, path='/' + str(slug).strip('/') + '/'))
+    write_page(DIST/str(slug), layout(str(title), body, fm_bool(fm, 'noindex', False) is True, path='/' + str(slug).strip('/') + '/'))
 visible_posts=public_posts if public_posts else posts
 cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="{site_url("/" + x["slug"] + "/")}">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(visible_posts,key=lambda x:x['order']))
 home=f'<section class="hero"><p class="pill">Evidence-backed workflow lab</p><h1>Tested AI workflows for source-based learning and creator automation.</h1><p>Practical AI Workflows turns PDFs, notes, newsletters, checkout tools, and creator automations into repeatable systems with evidence plans, templates, and decision tables.</p></section><section><h2>Launch cluster</h2><div class="grid">{cards}</div></section><section><h2>Start with templates</h2><div class="grid"><div class="card"><h3>Creator Automation Stack Checklist</h3><p>Map landing page, email, checkout, automation, and content workflow before buying more tools.</p></div><div class="card"><h3>PDF-to-Study-Guide Workflow Checklist</h3><p>Use source-grounded notes and AI explanations without losing verification.</p></div><div class="card"><h3>AI Content Brief Template</h3><p>Define intent, evidence, screenshots, links, and publish gates before drafting.</p></div></div></section>'
-write_page(DIST, layout('Home',home, noindex=True, path='/'))
-write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>', noindex=True, path='/posts/'))
+write_page(DIST, layout('Home',home, noindex=False if public_posts else True, path='/'))
+write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
 if public_posts:
     robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
 else:

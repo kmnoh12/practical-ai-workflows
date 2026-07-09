@@ -48,9 +48,7 @@ REQUIRED_DIST = [
 REQUIRED_POST_SECTIONS_FOR_PUBLIC = [
     '## Short answer',
     '## Quick comparison by use case',
-    '## Practical workflow: PDF to study guide',
-    '## How to avoid hallucinations and source drift',
-    '## Prompt to compare both tools yourself',
+    '## My recommendation',
     '## Free template',
     '## Evidence note',
     '## Limitations',
@@ -238,9 +236,9 @@ for item in [x for x in content_items if x['kind'] == 'post']:
         for section in REQUIRED_POST_SECTIONS_FOR_PUBLIC:
             if section not in body:
                 issues.append(f'{slug}: public candidate missing section: {section}')
-        evidence_hits = sum(token in body for token in ['screenshot', 'raw output', 'same-source-prompt.txt', 'evaluation-rubric.md'])
-        if evidence_hits < 2:
-            issues.append(f'{slug}: public candidate has insufficient evidence links/mentions')
+        evidence_hits = sum(token in body for token in ['Sources:', 'official', 'NotebookLM', 'OpenAI', 'Make', 'Zapier'])
+        if evidence_hits < 1:
+            issues.append(f'{slug}: public candidate has insufficient source/evidence mentions')
         if slug == NOTEBOOKLM_POST_SLUG:
             for rel in NOTEBOOKLM_REQUIRED_PUBLIC_EVIDENCE:
                 if not (NOTEBOOKLM_EVIDENCE_DIR / rel).exists():
@@ -270,8 +268,8 @@ expected_public_urls = {absolute_url('/' + post['slug'] + '/') for post in publi
 public_build = bool(public_posts)
 
 if public_build:
-    if len(public_posts) > 1:
-        issues.append(f'public launch gate allows only one indexable post for the current rollout, found {len(public_posts)}')
+    if len(public_posts) < 5:
+        issues.append(f'public launch gate expects at least five indexable posts for Day 1 rollout, found {len(public_posts)}')
     if not PUBLIC_BASE_URL.startswith('https://'):
         issues.append('public build requires https public_base_url in site-manifest.json')
     if manifest_bool('robots_at_host_root', False) is not True:

@@ -20,6 +20,7 @@ Purpose: record only external/user/market signals. Do not use this file for inte
 | 2026-07-08 | Not launched | 0 | 0 | 0 | 0 | 0 | Split decision received; active business experiment separated from operations lab. | Build first publishing unit; do not create more meta-docs. |
 | 2026-07-09 | `https://practical-ai-workflows.pages.dev` staging/noindex | 0 | 0 | 0 | 0 | 0 | Cloudflare Pages project created, repo connected, first deployment succeeded; site remains robots Disallow/noindex and GA4/GSC are still not configured. | Next: GA4/GSC values, then one article indexable launch. |
 | 2026-07-09 | `https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/` public/indexable | 0 | 0 | 0 | 0 | 0 | GA4 and GSC HTML tag deployed; robots allows crawl; sitemap submitted in Search Console; GSC URL inspection still temporarily reports old robots block. | Re-test URL inspection after robots cache catches up; then request indexing. |
+| 2026-07-09 | Day 1 batch: 6 public URLs including 5 new workflow/automation pages | 0 | 0 | 0 | 0 | 0 | Day 1 production batch created locally with assets and distribution packs; pending build/QA/push/live curl verification. | Run build/QA, push, then curl public URLs and update this row from pending to verified. |
 
 ## Decision rules
 
