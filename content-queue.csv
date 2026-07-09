@@ -1,0 +1,31 @@
+priority,lane,keyword,title,intent,asset,traffic_score,money_score,risk,status
+1,AI study/PDF,notebooklm vs chatgpt for studying,NotebookLM vs ChatGPT for Studying PDFs: Which One Should You Use?,comparison,PDF study workflow template,7,2,low,published
+2,AI study/PDF,how to use notebooklm to study a pdf,How to Use NotebookLM to Study a PDF Without Losing the Source Trail,how-to,NotebookLM study checklist,8,2,low,queued
+3,AI study/PDF,chatgpt prompt for studying pdf,The ChatGPT Prompt I Use to Turn PDFs into Study Guides,prompt,copyable prompt pack,7,2,low,queued
+4,AI study/PDF,pdf to study guide ai free,Best Free AI Workflows to Turn a PDF into a Study Guide,list/how-to,comparison table,8,3,low,queued
+5,AI study/PDF,notebooklm study guide template,"NotebookLM Study Guide Template for Lectures, PDFs, and Exams",template,downloadable template,6,2,low,queued
+6,AI productivity,ai meeting notes workflow,"AI Meeting Notes Workflow: Record, Summarize, Assign Tasks, Follow Up",how-to,meeting notes SOP,8,4,low,queued
+7,AI productivity,chatgpt email workflow,A Practical ChatGPT Email Workflow for Busy Solo Operators,how-to,email triage prompt,7,3,low,queued
+8,AI productivity,ai weekly planning template,AI Weekly Planning Template: Turn Notes into a Real Schedule,template,weekly planner template,6,2,low,queued
+9,AI productivity,best ai tools for productivity,"Best AI Productivity Tools by Workflow, Not Hype",list/comparison,tool decision matrix,9,5,low,queued
+10,AI productivity,chatgpt vs claude for writing,ChatGPT vs Claude for Writing: Which One Fits Your Workflow?,comparison,writing prompt test sheet,8,4,low,queued
+11,Creator automation,make vs zapier for creators,Make vs Zapier for Creators: Which Automation Tool Should You Pick?,comparison,automation checklist,7,8,low,queued
+12,Creator automation,creator automation stack,"Creator Automation Stack for Beginners: Landing Page, Email, Checkout, Delivery",stack guide,stack checklist,7,8,low,queued
+13,Creator automation,kit vs beehiiv,"Kit vs beehiiv for Solo Creators: Newsletter, Automation, Monetization",comparison,newsletter tool matrix,6,8,low,queued
+14,Creator automation,gumroad vs lemon squeezy,Gumroad vs Lemon Squeezy for Digital Products,comparison,checkout comparison table,6,8,low,queued
+15,Creator automation,zapier automation ideas for creators,15 Zapier Automation Ideas for Creators That Save Real Time,ideas/how-to,automation recipe pack,8,7,low,queued
+16,No-code tutorials,make automation tutorial google sheets email,Make.com Tutorial: Google Sheets to Email Follow-Up Automation,tutorial,scenario blueprint,6,7,low,queued
+17,No-code tutorials,zapier google sheets to gmail tutorial,Zapier Tutorial: Send Gmail Follow-Ups from Google Sheets,tutorial,zap template checklist,6,7,low,queued
+18,No-code tutorials,notion content calendar automation,Notion Content Calendar Automation for Solo Creators,tutorial,content calendar template,7,5,low,queued
+19,No-code tutorials,airtable vs google sheets for creators,Airtable vs Google Sheets for Creator Operations,comparison,ops database checklist,6,6,low,queued
+20,No-code tutorials,automate lead magnet delivery,How to Automate Lead Magnet Delivery Without a Course Platform,tutorial,lead magnet SOP,7,8,low,queued
+21,Templates,ai content brief template,"AI Content Brief Template: Research, Sources, Outline, QA",template,brief template,7,4,low,queued
+22,Templates,creator automation checklist,Creator Automation Checklist Before You Buy More Tools,template,checklist,6,6,low,queued
+23,Templates,prompt library template,Prompt Library Template for Reusable AI Workflows,template,prompt library sheet,7,3,low,queued
+24,Templates,sop template for solopreneurs,Simple SOP Template for Solo Businesses Using AI,template,SOP template,7,4,low,queued
+25,Templates,content repurposing checklist,"Content Repurposing Checklist: Blog to Reddit, X, LinkedIn, Short Video",template,repurposing checklist,7,5,low,queued
+26,Static site/SEO,cloudflare pages google search console,Cloudflare Pages + Google Search Console Setup for a Free Static Site,tutorial,setup checklist,6,3,low,queued
+27,Static site/SEO,github pages vs cloudflare pages,GitHub Pages vs Cloudflare Pages for Small Content Sites,comparison,hosting matrix,6,3,low,queued
+28,Static site/SEO,free static site analytics,"Free Static Site Analytics: GA4, GSC, and Simple Metrics",tutorial,metrics sheet,6,3,low,queued
+29,Viral utility,new ai tool workflow,New AI Tool? Use This 20-Minute Workflow Test Before Switching,trend/framework,tool test rubric,8,4,low,queued
+30,Viral utility,ai tool comparison template,AI Tool Comparison Template: Stop Picking Tools by Hype,template,comparison rubric,8,5,low,queued
