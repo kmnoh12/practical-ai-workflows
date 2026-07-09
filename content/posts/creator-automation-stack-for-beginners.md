@@ -41,7 +41,7 @@ Build the stack in this order:
 
 If you cannot explain the offer in one sentence, automation will not fix it.
 
-## Practical workflow: PDF to study guide
+## Evidence gate before this page can be republished
 
 The same workflow thinking applies even if your first asset is a PDF, checklist, or template:
 

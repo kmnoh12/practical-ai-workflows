@@ -34,7 +34,7 @@ Do not ask AI to write the article first. Ask it to produce a brief, then force 
 
 Use a 30-minute test instead of a feature-grid debate. Create one realistic sample input, run it through the workflow, and check whether the output is clear enough to use without a second system.
 
-## Practical workflow: PDF to study guide
+## Evidence gate before this page can be republished
 
 This site started with a PDF study workflow because the pattern is easy to inspect: source, transform, output, verify. Apply the same pattern here:
 

@@ -18,6 +18,19 @@ The best ChatGPT prompt for studying PDFs is not a one-line "summarize this" pro
 Use ChatGPT after you have either uploaded the PDF or pasted verified notes from a source-grounded pass. If the source matters, tell ChatGPT exactly what counts as source truth.
 
 
+## Tested with
+
+| Field | Value |
+|---|---|
+| Test source | 1 synthetic PDF-style study handout |
+| Prompt | 1 same-source study prompt |
+| Runs | 1 NotebookLM run + 1 ChatGPT run |
+| Evidence | Screenshots, raw outputs, scoring sheet, unsupported-claims log |
+| Last checked | 2026-07-09 |
+
+[Open the public evidence pack](../notebooklm-chatgpt-pdf-study-evidence/)
+
+
 ## The complete prompt stack
 
 Most PDF prompts stop at a prettier summary. This stack forces the output toward active recall.

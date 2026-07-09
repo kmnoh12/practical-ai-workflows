@@ -37,7 +37,7 @@ Do not start by comparing feature grids. Start by writing the automation in one 
 
 If that sentence has one trigger and one action, test Zapier first. If it has branches, loops, data formatting, or multiple dependent steps, test Make first.
 
-## Practical workflow: PDF to study guide
+## Evidence gate before this page can be republished
 
 The same pattern used for source-based AI workflows applies to automation: source, transform, output, verify.
 

@@ -18,6 +18,19 @@ Use NotebookLM as the first pass when the job is to understand a PDF without los
 The practical rule: every important note should answer two questions: **what does the PDF say?** and **where in the source can I check it?**
 
 
+## Tested with
+
+| Field | Value |
+|---|---|
+| Test source | 1 synthetic PDF-style study handout |
+| Prompt | 1 same-source study prompt |
+| Runs | 1 NotebookLM run + 1 ChatGPT run |
+| Evidence | Screenshots, raw outputs, scoring sheet, unsupported-claims log |
+| Last checked | 2026-07-09 |
+
+[Open the public evidence pack](../notebooklm-chatgpt-pdf-study-evidence/)
+
+
 ## Source-map example
 
 A source map is not a summary. It is a small audit table that tells you what the PDF covers and where you should check important claims.

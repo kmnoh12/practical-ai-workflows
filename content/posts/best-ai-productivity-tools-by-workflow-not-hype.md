@@ -40,7 +40,7 @@ Pick tools by workflow friction:
 
 The wrong move is collecting subscriptions before mapping the workflow.
 
-## Practical workflow: PDF to study guide
+## Evidence gate before this page can be republished
 
 Even outside studying, this source-to-output pattern is useful:
 

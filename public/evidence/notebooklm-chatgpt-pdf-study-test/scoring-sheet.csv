@@ -1,0 +1,7 @@
+Criterion,NotebookLM score,ChatGPT score,Winner,Reason,Evidence link
+Source grounding,5,4,NotebookLM,"Both mostly source-bound; NotebookLM preserves citation chips and marks the third confusion as Not in source. ChatGPT is also source-bound but adds a small answer-sheet example not directly in the source.",source-claim-map.md
+Study guide usefulness,4,4,Tie,"Both cover attention, working memory, long-term memory, retrieval, spacing, recognition, recall, photosynthesis example, and review plan.",notebooklm-output.md / chatgpt-output.md
+Quiz quality,4,4,Tie,"Both provide 10 source-aligned questions and answer keys. ChatGPT includes a hidden Answer Key details block in captured output; NotebookLM provides clear Q/A with citations.",notebooklm-output.md / chatgpt-output.md
+Weak-concept detection,5,5,Tie,"Both avoid inventing three separate confusion concepts and use Not in source behavior.",unsupported-claims-log.md
+Review plan,5,5,Tie,"Both reproduce the source-specific Day 1/2/3 plan with retrieval, transfer questions, mistake review, teaching aloud, and weak-points checklist.",source-claim-map.md
+Student safety,4,3,NotebookLM,"NotebookLM UI includes citation/source affordances and visible source count. ChatGPT answer follows constraint but lacks source citations in the visible output.",screenshots/03_notebooklm_answer_visible.png / screenshots/10_chatgpt_study_guide_output_top.png

@@ -22,6 +22,19 @@ The best workflow is usually not one tool or the other. Use NotebookLM first to 
 Do not use either tool as a final authority. The output can sound polished while still drifting from the PDF.
 
 
+## Tested with
+
+| Field | Value |
+|---|---|
+| Test source | 1 synthetic PDF-style study handout |
+| Prompt | 1 same-source study prompt |
+| Runs | 1 NotebookLM run + 1 ChatGPT run |
+| Evidence | Screenshots, raw outputs, scoring sheet, unsupported-claims log |
+| Last checked | 2026-07-09 |
+
+[Open the public evidence pack](../notebooklm-chatgpt-pdf-study-evidence/)
+
+
 ## What I actually tested
 
 I used one same-source study handout and asked both tools for the same study output: a one-page guide, quiz questions, confusing concepts, and a short review plan. The test was intentionally small because the goal was not a benchmark leaderboard. The goal was to find a workflow a student can repeat without losing the source trail.

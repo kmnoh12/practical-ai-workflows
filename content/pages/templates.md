@@ -34,6 +34,12 @@ Use this prompt stack to turn verified notes into retrieval practice: source bou
 
 Best paired with: [The ChatGPT Prompt I Use to Turn PDFs into Study Guides](../the-chatgpt-prompt-i-use-to-turn-pdfs-into-study-guides/)
 
+## Evidence pack
+
+The three public guides are based on a small same-source workflow test. You can inspect the source handout, prompt, raw outputs, screenshots, scoring sheet, and unsupported-claims log here:
+
+[Open the NotebookLM vs ChatGPT PDF Study Evidence Pack](../notebooklm-chatgpt-pdf-study-evidence/)
+
 ## How to use these templates
 
 1. Start with the PDF or verified notes, not a vague memory prompt.
