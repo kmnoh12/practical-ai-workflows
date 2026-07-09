@@ -188,34 +188,37 @@ for p in sorted((CONTENT/'pages').glob('*.md')):
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
     write_page(DIST/str(slug), layout(str(title), body, fm_bool(fm, 'noindex', False) is True, path='/' + str(slug).strip('/') + '/'))
 visible_posts=public_posts if public_posts else posts
-cards='\n'.join(f'<a class="card post-card" href="{site_url("/" + x["slug"] + "/")}" data-order="{i+1}"><span class="card-kicker">{html.escape(x["category"])}</span><h3>{html.escape(x["title"])}</h3><p>Open the tested workflow</p></a>' for i,x in enumerate(sorted(visible_posts,key=lambda x:x['order'])))
-home=f'''<section class="home-hero">
-  <div class="hero-copy">
-    <p class="pill">Source-grounded AI study lab</p>
-    <h1>Study PDFs with AI without losing the source trail.</h1>
-    <p class="hero-sub">Tested NotebookLM and ChatGPT workflows with screenshots, prompts, scoring sheets, and failure logs.</p>
-    <div class="hero-actions"><a class="button primary" href="{site_url('/notebooklm-vs-chatgpt-for-studying-pdfs/')}">Read the test</a><a class="button secondary" href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">View evidence</a></div>
+cards='\n'.join(f'<a class="dossier-link" href="{site_url("/" + x["slug"] + "/")}"><span>0{i+1}</span><strong>{html.escape(x["title"])}</strong><em>Open workflow</em></a>' for i,x in enumerate(sorted(visible_posts,key=lambda x:x['order'])))
+home=f'''<section class="dossier-hero">
+  <div class="dossier-copy">
+    <p class="lab-label">Practical AI Workflows</p>
+    <h1>PDF study workflows with receipts.</h1>
+    <p class="dossier-sub">NotebookLM for source trails. ChatGPT for retrieval practice. Every public claim links back to prompts, screenshots, outputs, and failure logs.</p>
   </div>
-  <figure class="hero-evidence">
-    <img src="{site_url('/assets/evidence/03_notebooklm_answer_visible.png')}" alt="NotebookLM answer screenshot from the PDF study workflow test">
-    <figcaption>One source, one prompt, two AI tools, public artifacts.</figcaption>
+  <aside class="evidence-ledger" aria-label="Evidence ledger">
+    <div><span>Scope</span><strong>3 public workflows</strong></div>
+    <div><span>Evidence</span><strong>screenshots, outputs, scoring</strong></div>
+    <div><span>Excluded</span><strong>generic AI tool lists</strong></div>
+    <div class="ledger-actions"><a href="{site_url('/notebooklm-vs-chatgpt-for-studying-pdfs/')}">Read test</a><a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">Evidence pack</a></div>
+  </aside>
+</section>
+<section class="evidence-spread">
+  <figure>
+    <img src="{site_url('/assets/evidence/03_notebooklm_answer_visible.png')}" alt="NotebookLM source-grounded answer from the PDF study workflow test">
   </figure>
+  <div class="spread-note"><h2>Not another AI tools roundup.</h2><p>The site now ships as a small research file: one source, one prompt, two tools, visible artifacts. Weak launch-cluster pages stay out of the sitemap until tested.</p></div>
 </section>
-<section class="proof-strip" aria-label="Site evidence summary">
-  <div><strong>3</strong><span>indexable workflows</span></div>
-  <div><strong>10</strong><span>public evidence files</span></div>
-  <div><strong>0</strong><span>generic tool list pages in sitemap</span></div>
+<section class="dossier-index">
+  <div class="index-heading"><h2>Public dossier</h2><p>Start with the comparison, then use the source-map and active-recall workflows.</p></div>
+  <div class="dossier-list">{cards}</div>
 </section>
-<section class="section-block">
-  <div class="section-copy"><h2>The public workflow set</h2><p>Three guides, each tied to the same evidence pack instead of another thin AI-tools roundup.</p></div>
-  <div class="workflow-grid">{cards}</div>
-</section>
-<section class="lab-panel">
-  <div><h2>What the test actually covers</h2><p>NotebookLM handles source mapping first. ChatGPT turns verified notes into retrieval practice second. Anything unsupported gets logged instead of polished into fake certainty.</p></div>
-  <a class="button primary" href="{site_url('/templates/')}">Get templates</a>
+<section class="method-strip">
+  <a href="{site_url('/templates/')}">Copy the templates</a>
+  <a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">Inspect raw files</a>
+  <a href="{site_url('/editorial-policy/')}">Read methodology</a>
 </section>'''
 write_page(DIST, layout('Home',home, noindex=False if public_posts else True, path='/'))
-write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid posts-list">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
+write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="dossier-list">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
 if public_posts:
     robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
 else:
