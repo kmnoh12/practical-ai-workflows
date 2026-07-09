@@ -332,6 +332,18 @@ if public_build and not gsc:
 if gsc and index.count('google-site-verification') != 1:
     issues.append('homepage must contain exactly one google-site-verification meta tag when configured')
 
+adsense_pub = str(MANIFEST.get('adsense_publisher_id', '')).strip()
+if public_build and not re.fullmatch(r'ca-pub-[0-9]+', adsense_pub):
+    issues.append('public build requires adsense_publisher_id matching ca-pub-[0-9]+')
+if adsense_pub:
+    expected_adsense_src = f'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={adsense_pub}'
+    for html_file in sorted(DIST.glob('**/*.html')):
+        html = html_file.read_text(encoding='utf-8', errors='ignore')
+        if html.count(expected_adsense_src) != 1:
+            issues.append(f'{html_file.relative_to(DIST)}: AdSense loader count must be exactly 1 for {adsense_pub}')
+        if 'crossorigin="anonymous"' not in html:
+            issues.append(f'{html_file.relative_to(DIST)}: AdSense loader missing crossorigin="anonymous"')
+
 affiliate_domains = MANIFEST.get('affiliate_domains', [])
 if not isinstance(affiliate_domains, list):
     issues.append('site-manifest.json: affiliate_domains must be a list when present')
