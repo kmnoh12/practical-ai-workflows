@@ -1,13 +1,13 @@
 ---
 title: "How to Automate Lead Magnet Delivery Without a Course Platform"
 slug: "automate-lead-magnet-delivery-without-a-course-platform"
-status: "published"
-noindex: false
+status: "evidence-gated-rewrite"
+noindex: true
 category: "No-Code Tutorials"
 order: 10
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Lead Magnet Delivery SOP"
 ---
 

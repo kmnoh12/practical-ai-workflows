@@ -1,13 +1,13 @@
 ---
 title: "Airtable vs Google Sheets for Creator Operations"
 slug: "airtable-vs-google-sheets-for-creator-operations"
-status: "published"
-noindex: false
+status: "evidence-gated-merge"
+noindex: true
 category: "No-Code Tutorials"
 order: 11
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Creator Ops Database Checklist"
 ---
 

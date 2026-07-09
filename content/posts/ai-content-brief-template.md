@@ -1,13 +1,13 @@
 ---
 title: "AI Content Brief Template: Research, Sources, Outline, QA"
 slug: "ai-content-brief-template"
-status: "published"
-noindex: false
+status: "evidence-gated-merge"
+noindex: true
 category: "Templates"
 order: 14
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the AI Content Brief Template"
 ---
 

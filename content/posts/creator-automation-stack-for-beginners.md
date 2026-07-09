@@ -1,13 +1,13 @@
 ---
 title: "Creator Automation Stack for Beginners: Landing Page, Email, Checkout, Delivery"
 slug: "creator-automation-stack-for-beginners"
-status: "published"
-noindex: false
+status: "evidence-gated-rewrite"
+noindex: true
 category: "Creator Automation"
 order: 6
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Creator Stack Checklist"
 ---
 

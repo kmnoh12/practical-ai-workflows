@@ -1,13 +1,13 @@
 ---
 title: "Prompt Library Template for Reusable AI Workflows"
 slug: "prompt-library-template-for-reusable-ai-workflows"
-status: "published"
-noindex: false
+status: "evidence-gated-merge"
+noindex: true
 category: "Templates"
 order: 15
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Prompt Library Template"
 ---
 

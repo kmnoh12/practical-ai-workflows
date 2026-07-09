@@ -1,13 +1,13 @@
 ---
 title: "Kit vs beehiiv for Solo Creators: Newsletter, Automation, Monetization"
 slug: "kit-vs-beehiiv-for-solo-creators"
-status: "published"
-noindex: false
+status: "evidence-gated-delay"
+noindex: true
 category: "Creator Automation"
 order: 7
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Newsletter Tool Matrix"
 ---
 

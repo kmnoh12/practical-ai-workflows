@@ -268,8 +268,13 @@ expected_public_urls = {absolute_url('/' + post['slug'] + '/') for post in publi
 public_build = bool(public_posts)
 
 if public_build:
-    if len(public_posts) < 5:
-        issues.append(f'public launch gate expects at least five indexable posts for Day 1 rollout, found {len(public_posts)}')
+    # July 2026 Pro critique pivot: quality gate is now a small set of pillar
+    # pages, not volume. Three indexable PDF/NotebookLM study workflows are
+    # allowed while weaker launch-cluster pages remain noindex/evidence-gated.
+    if len(public_posts) < 3:
+        issues.append(f'public pillar gate expects at least three indexable posts, found {len(public_posts)}')
+    if len(public_posts) > 5:
+        issues.append(f'public pillar gate expects no more than five indexable posts during anti-slop pivot, found {len(public_posts)}')
     if not PUBLIC_BASE_URL.startswith('https://'):
         issues.append('public build requires https public_base_url in site-manifest.json')
     if manifest_bool('robots_at_host_root', False) is not True:

@@ -1,13 +1,13 @@
 ---
 title: "Best AI Productivity Tools by Workflow, Not Hype"
 slug: "best-ai-productivity-tools-by-workflow-not-hype"
-status: "published"
-noindex: false
+status: "evidence-gated-kill"
+noindex: true
 category: "AI Productivity"
 order: 4
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the AI Tool Decision Matrix"
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "Make vs Zapier for Creators: Which Automation Tool Should You Pick?"
 slug: "make-vs-zapier-for-creators"
-status: "published"
-noindex: false
+status: "evidence-gated-rewrite"
+noindex: true
 category: "Creator Automation"
 order: 5
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Creator Automation Checklist"
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: "15 Zapier Automation Ideas for Creators That Save Real Time"
 slug: "zapier-automation-ideas-for-creators"
-status: "published"
-noindex: false
+status: "evidence-gated-rewrite"
+noindex: true
 category: "Creator Automation"
 order: 9
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Automation Recipe Pack"
 ---
 

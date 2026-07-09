@@ -1,13 +1,13 @@
 ---
 title: "Gumroad vs Lemon Squeezy for Digital Products"
 slug: "gumroad-vs-lemon-squeezy-for-digital-products"
-status: "published"
-noindex: false
+status: "evidence-gated-rewrite"
+noindex: true
 category: "Creator Automation"
 order: 8
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Checkout Comparison Table"
 ---
 

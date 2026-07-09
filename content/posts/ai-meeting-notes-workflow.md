@@ -1,13 +1,13 @@
 ---
 title: "AI Meeting Notes Workflow: Record, Summarize, Assign Tasks, Follow Up"
 slug: "ai-meeting-notes-workflow"
-status: "published"
-noindex: false
+status: "evidence-gated-delay"
+noindex: true
 category: "AI Productivity"
 order: 13
 updated: "2026-07-09"
-indexable: true
-qa_approved: true
+indexable: false
+qa_approved: false
 cta: "Download the Meeting Notes SOP"
 ---
 
