@@ -188,10 +188,34 @@ for p in sorted((CONTENT/'pages').glob('*.md')):
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
     write_page(DIST/str(slug), layout(str(title), body, fm_bool(fm, 'noindex', False) is True, path='/' + str(slug).strip('/') + '/'))
 visible_posts=public_posts if public_posts else posts
-cards='\n'.join(f'<div class="card"><p class="pill">{html.escape(x["category"])}</p><h3><a href="{site_url("/" + x["slug"] + "/")}">{html.escape(x["title"])}</a></h3><p class="muted">Status: <span class="status">{html.escape(x["status"])}</span></p></div>' for x in sorted(visible_posts,key=lambda x:x['order']))
-home=f'<section class="hero"><p class="pill">Evidence-backed workflow lab</p><h1>Source-grounded AI study workflows for PDFs, notes, and exams.</h1><p>Practical AI Workflows is currently focused on three public pillar guides: NotebookLM vs ChatGPT for PDFs, source-trail study workflows, and retrieval-practice prompts. We pulled weaker launch-cluster pages out of the index until they have real tests, screenshots, and useful assets.</p></section><section><h2>Public pillar workflows</h2><div class="grid">{cards}</div></section><section><h2>Start with templates</h2><div class="grid"><div class="card"><h3>PDF-to-Study-Guide Workflow Checklist</h3><p>Use source-grounded notes and AI explanations without losing verification.</p></div><div class="card"><h3>Source Map First</h3><p>Before summarizing, map claims back to PDF sections so the AI output stays auditable.</p></div><div class="card"><h3>Retrieval Practice Prompt</h3><p>Turn verified notes into quizzes, confusing-pair drills, and missed-question repair steps.</p></div></div></section>'
+cards='\n'.join(f'<a class="card post-card" href="{site_url("/" + x["slug"] + "/")}" data-order="{i+1}"><span class="card-kicker">{html.escape(x["category"])}</span><h3>{html.escape(x["title"])}</h3><p>Open the tested workflow</p></a>' for i,x in enumerate(sorted(visible_posts,key=lambda x:x['order'])))
+home=f'''<section class="home-hero">
+  <div class="hero-copy">
+    <p class="pill">Source-grounded AI study lab</p>
+    <h1>Study PDFs with AI without losing the source trail.</h1>
+    <p class="hero-sub">Tested NotebookLM and ChatGPT workflows with screenshots, prompts, scoring sheets, and failure logs.</p>
+    <div class="hero-actions"><a class="button primary" href="{site_url('/notebooklm-vs-chatgpt-for-studying-pdfs/')}">Read the test</a><a class="button secondary" href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">View evidence</a></div>
+  </div>
+  <figure class="hero-evidence">
+    <img src="{site_url('/assets/evidence/03_notebooklm_answer_visible.png')}" alt="NotebookLM answer screenshot from the PDF study workflow test">
+    <figcaption>One source, one prompt, two AI tools, public artifacts.</figcaption>
+  </figure>
+</section>
+<section class="proof-strip" aria-label="Site evidence summary">
+  <div><strong>3</strong><span>indexable workflows</span></div>
+  <div><strong>10</strong><span>public evidence files</span></div>
+  <div><strong>0</strong><span>generic tool list pages in sitemap</span></div>
+</section>
+<section class="section-block">
+  <div class="section-copy"><h2>The public workflow set</h2><p>Three guides, each tied to the same evidence pack instead of another thin AI-tools roundup.</p></div>
+  <div class="workflow-grid">{cards}</div>
+</section>
+<section class="lab-panel">
+  <div><h2>What the test actually covers</h2><p>NotebookLM handles source mapping first. ChatGPT turns verified notes into retrieval practice second. Anything unsupported gets logged instead of polished into fake certainty.</p></div>
+  <a class="button primary" href="{site_url('/templates/')}">Get templates</a>
+</section>'''
 write_page(DIST, layout('Home',home, noindex=False if public_posts else True, path='/'))
-write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
+write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="grid posts-list">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
 if public_posts:
     robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
 else:
