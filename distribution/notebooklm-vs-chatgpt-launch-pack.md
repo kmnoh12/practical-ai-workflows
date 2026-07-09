@@ -71,7 +71,7 @@ The workflow I ended up recommending:
 
 If this kind of workflow is useful here, I would appreciate feedback on one thing: what would make it more useful for actual studying, a better prompt, a checklist, or a scoring sheet?
 
-Link, if allowed by the subreddit rules: [article/template link]
+Link, if allowed by the subreddit rules: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 ### Productivity subreddit tone
 
@@ -103,7 +103,7 @@ The repeatable workflow is:
 
 I am looking for feedback from people who already use AI for reading or studying: would you rather have this as a prompt template, a checklist, or a simple scoring sheet?
 
-Link, if self-promo rules allow: [article/template link]
+Link, if self-promo rules allow: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 ### AI-tool subreddit tone
 
@@ -129,7 +129,7 @@ The most useful part of the test was the prompt/rubric combo, not the winner lab
 
 Question for people who test AI tools: what would you add to the rubric before repeating this with longer PDFs or real course material?
 
-Link, if allowed: [article/template link]
+Link, if allowed: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 ## 5. X/Threads thread
 
@@ -147,7 +147,7 @@ Link, if allowed: [article/template link]
 
 7. I turned the test into a practical PDF study workflow/template so students can compare outputs without trusting either tool blindly.
 
-8. Template/article: [article/template link]
+8. Template/article: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 ## 6. LinkedIn post
 
@@ -175,7 +175,7 @@ The more useful takeaway is workflow design:
 
 For students, educators, tutors, and knowledge workers, the question should not be "which AI summary should I trust?" The better question is "what process makes the summary checkable?"
 
-I wrote up the test and workflow here: [article/template link]
+I wrote up the test and workflow here: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 I would value feedback from people who use AI for reading, tutoring, or study support: what would make the template more useful in a real study session?
 
@@ -213,7 +213,7 @@ Voiceover: "I made the workflow into a practical template. Use it before you tru
 
 Caption:
 
-NotebookLM vs ChatGPT for studying PDFs: same source, same prompt, source-checking workflow. Link: [article/template link]
+NotebookLM vs ChatGPT for studying PDFs: same source, same prompt, source-checking workflow. Link: https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/
 
 ## 8. Outreach DM/request for feedback to 5 people
 

@@ -7,11 +7,11 @@ Purpose: record only external/user/market signals. Do not use this file for inte
 | Field | Value |
 | --- | --- |
 | Public URL | Deployed staging: `https://practical-ai-workflows.pages.dev` |
-| GA4 | Not configured |
-| GSC | Not configured |
+| GA4 | Configured: `G-Z1GHN2WDGC` |
+| GSC | HTML tag configured: `fUeVN4-aAJjDqU-6KLZ64yZPnRDjSIblzVicj4bf880` |
 | Template/download asset | Created: `public/downloads/pdf-study-workflow-template.md` |
 | Email capture | Not configured |
-| Decision clock | Starts after public URL + measurement path are live |
+| Decision clock | Starts after Cloudflare redeploy verifies GA4/GSC/indexable HTML |
 
 ## Weekly log
 
@@ -26,3 +26,5 @@ Purpose: record only external/user/market signals. Do not use this file for inte
 - If downloads exist but no feedback/signup: improve onboarding and ask for feedback.
 - If no visitors: fix distribution and search positioning.
 - If everything is near zero after 30 days: pivot or kill; do not add more internal docs.
+
+| 2026-07-09 | `https://practical-ai-workflows.pages.dev/notebooklm-vs-chatgpt-for-studying-pdfs/` launch config | 0 | 0 | 0 | 0 | 0 | GA4 ID and GSC HTML verification received; first article set to published/indexable pending redeploy verification. | Verify deployed HTML, then click GSC Verify and start 30-day measurement clock. |

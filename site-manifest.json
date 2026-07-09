@@ -15,9 +15,12 @@
   "public_base_url": "https://practical-ai-workflows.pages.dev",
   "public_url_status": "Cloudflare Pages production URL verified",
   "robots_at_host_root": true,
-  "robots_policy_note": "Cloudflare Pages serves dist/robots.txt at host root; keep Disallow: / while no public/indexable posts exist",
-  "analytics_status": "not configured; do not add fake GA4 or GSC values",
-  "indexing_status": "no public/indexable posts until first publishing unit and measurement path are ready",
+  "robots_policy_note": "Cloudflare Pages serves dist/robots.txt at host root; public launch allows crawling and sitemap includes QA-approved URLs",
+  "analytics_status": "GA4 configured in site-manifest; verify after Cloudflare redeploy",
+  "indexing_status": "one public/indexable article configured for launch",
   "cloudflare_pages_project": "practical-ai-workflows",
-  "cloudflare_pages_url": "https://practical-ai-workflows.pages.dev"
+  "cloudflare_pages_url": "https://practical-ai-workflows.pages.dev",
+  "ga4_measurement_id": "G-Z1GHN2WDGC",
+  "google_site_verification": "fUeVN4-aAJjDqU-6KLZ64yZPnRDjSIblzVicj4bf880",
+  "gsc_status": "Google Search Console URL-prefix HTML tag configured; user should click Verify after redeploy"
 }

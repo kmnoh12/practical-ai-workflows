@@ -25,7 +25,7 @@ PUBLIC_PLACEHOLDERS = [
     'Current status',
 ]
 NOTEBOOKLM_POST_SLUG = 'notebooklm-vs-chatgpt-for-studying-pdfs'
-NOTEBOOKLM_EVIDENCE_DIR = ROOT / 'docs' / 'day-13-notebooklm-evidence-pack-files'
+NOTEBOOKLM_EVIDENCE_DIR = ROOT / 'automation-lab-archive' / 'docs' / 'day-13-notebooklm-evidence-pack-files'
 NOTEBOOKLM_REQUIRED_PUBLIC_EVIDENCE = [
     'same-source-study-notes.md',
     'same-source-study-notes.pdf',
@@ -33,7 +33,7 @@ NOTEBOOKLM_REQUIRED_PUBLIC_EVIDENCE = [
     'evaluation-rubric.md',
     'notebooklm-output.md',
     'chatgpt-output.md',
-    'scoring-notes.md',
+    'scoring-sheet.csv',
 ]
 REQUIRED_DIST = [
     'index.html',
@@ -46,14 +46,15 @@ REQUIRED_DIST = [
     'templates/index.html',
 ]
 REQUIRED_POST_SECTIONS_FOR_PUBLIC = [
-    '## Test setup',
-    '## Evidence',
-    '## Same-source prompt',
-    '## Results',
-    '## Scoring',
-    '## Recommendation',
+    '## Short answer',
+    '## Quick comparison by use case',
+    '## Practical workflow: PDF to study guide',
+    '## How to avoid hallucinations and source drift',
+    '## Prompt to compare both tools yourself',
+    '## Free template',
+    '## Evidence note',
     '## Limitations',
-    '## Official source touchpoints',
+    '## Final recommendation',
 ]
 
 
