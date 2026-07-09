@@ -286,8 +286,12 @@ if public_build:
     expected_sitemap_line = 'Sitemap: ' + absolute_url('/sitemap.xml')
     if expected_sitemap_line not in robots:
         issues.append(f'public robots.txt missing absolute sitemap line: {expected_sitemap_line}')
-    if locs != expected_public_urls:
-        issues.append(f'sitemap URL set mismatch: expected {sorted(expected_public_urls)}, got {sorted(locs)}')
+    expected_sitemap_urls = set(expected_public_urls)
+    expected_sitemap_urls.add(absolute_url('/'))
+    expected_sitemap_urls.add(absolute_url('/notebooklm-chatgpt-pdf-study-evidence/'))
+    expected_sitemap_urls.add(absolute_url('/templates/'))
+    if locs != expected_sitemap_urls:
+        issues.append(f'sitemap URL set mismatch: expected {sorted(expected_sitemap_urls)}, got {sorted(locs)}')
     for loc in locs:
         if not loc.startswith('https://'):
             issues.append(f'public sitemap loc must be absolute https URL: {loc}')

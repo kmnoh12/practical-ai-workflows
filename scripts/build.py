@@ -225,6 +225,13 @@ if public_posts:
 else:
     robots='User-agent: *\nDisallow: /\n# Evidence-needed staging build. Do not rely on robots.txt as noindex or security.\n'
 (DIST/'robots.txt').write_text(robots,encoding='utf-8')
-sitemap_urls=''.join(f'<url><loc>{html.escape(absolute_url("/" + p["slug"] + "/"))}</loc></url>' for p in public_posts)
+sitemap_paths=['/']
+sitemap_paths += ['/' + p['slug'] + '/' for p in sorted(public_posts, key=lambda x:x['order'])]
+sitemap_paths += ['/notebooklm-chatgpt-pdf-study-evidence/','/templates/']
+seen_sitemap=[]
+for sp in sitemap_paths:
+    if sp not in seen_sitemap:
+        seen_sitemap.append(sp)
+sitemap_urls=''.join(f'<url><loc>{html.escape(absolute_url(sp))}</loc></url>' for sp in seen_sitemap)
 (DIST/'sitemap.xml').write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sitemap_urls}</urlset>\n',encoding='utf-8')
 print(f'Built {len(posts)} posts into {DIST}')
