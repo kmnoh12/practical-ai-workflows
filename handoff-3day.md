@@ -135,6 +135,51 @@ If QA blocks because it was overfit to first article, update QA to validate the 
 - `parallel-research`: traffic/revenue/viral subagents were dispatched in the previous session and may return later; incorporate them if available, but do not wait for them before producing Day 1 content.
 - `next-sprint`: convert pending queue into actual public article batch immediately.
 
+## Async delegation results received at 2026-07-09 14:26 KST
+
+Three background subagents finished after this handoff was first created. Incorporate these results immediately in the next session.
+
+### 1) Broad traffic categories
+
+Full summary file:
+- `/Users/kmnoh/.hermes/cache/delegation/subagent-summary-0-20260709_142617_123571.txt`
+
+High-traffic English category expansion candidates:
+- printable templates, planners, and checklists;
+- home organization and cleaning guides;
+- appliance and household troubleshooting;
+- gardening, houseplants, and lawn care;
+- food substitutions and kitchen basics;
+- travel packing, itineraries, and local micro-guides;
+- consumer software and app tutorials;
+- workplace writing templates and everyday communication;
+- hobbies, crafts, DIY projects, and patterns;
+- kids activities, worksheets, and family entertainment.
+
+Blunt instruction: do not move all of these into Day 1. Use them as expansion lanes after the Practical AI Workflows core starts producing. Best near-term fit for the current site: consumer software/app tutorials, workplace writing templates, printable templates/checklists, and creator/productivity templates. Avoid health, legal, tax, insurance, child-data collection, dangerous appliance/gas/electrical instructions, and thin generic filler.
+
+### 2) Money-first category map
+
+Created artifact:
+- `/Users/kmnoh/Library/CloudStorage/OneDrive-개인/Obsidian Vault/content-lab/01_keywords/money-first-category-map-2026-07-09.md`
+
+It contains 12 monetizable clusters and 60 article opportunities with estimated traffic/revenue scores. Treat this as the Day 1/2 re-ranking source. It sampled autocomplete but does not contain paid SEO-tool volume/CPC; scores are strategy estimates.
+
+### 3) Ethical distribution workflow
+
+Created artifact:
+- `/Users/kmnoh/Library/CloudStorage/OneDrive-개인/Obsidian Vault/content-lab/site/distribution/ethical-distribution-agent-workflow.md`
+
+Use it as the operating rule for viral/distribution. Per article, generate:
+- Reddit/community text-first version;
+- X/Threads 5–8 post thread;
+- LinkedIn workflow post;
+- short-form script;
+- comment response bank;
+- metrics row.
+
+Do not fake traffic, use engagement pods, mass-post, automate DMs, manipulate votes, or spam communities. Distribution must be value-first and platform-native.
+
 ## Success definition
 
 Not success:
