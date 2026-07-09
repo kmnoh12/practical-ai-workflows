@@ -1,38 +1,32 @@
 ---
-title: "How We Test AI Workflows — Methodology Page Draft"
+title: "Editorial Policy"
 slug: "editorial-policy"
 noindex: false
 ---
 
-# How We Test AI Workflows — Methodology Page Draft
+# Editorial Policy
 
-Practical AI Workflows is built around tested workflows, not generic tool lists.
+Practical AI Workflows publishes workflow-first guides for AI, software, templates, and creator automation.
 
-## What we test
+## Standards
 
-We test tools using real or reusable scenarios:
+Each public guide should include:
 
-- source-based studying from notes/PDFs,
-- creator automation from lead magnet to email follow-up,
-- newsletter and digital product workflows,
-- landing page and checkout decisions,
-- content brief and publishing workflows.
+- a short answer;
+- a comparison or decision table;
+- practical workflow steps;
+- a downloadable or reusable asset when possible;
+- an evidence note with official or related sources;
+- limitations and update awareness.
 
-## Evidence labels
+## AI assistance
 
-- **Official:** information taken from an official public page, with checked date.
-- **Measured:** result from our own test or screenshot.
-- **Estimated:** judgment made before SEO/pricing/tool data is fully measured.
-- **Unverified:** claim not ready for public reliance.
+AI may be used to draft, restructure, or QA content. Public pages should still be reviewed for unsupported claims, unsafe advice, broken links, and stale tool details.
 
-## Affiliate links
+## Excluded areas
 
-Some links may be paid links. We may earn a commission at no extra cost to the reader. Tool recommendations should be based on workflow fit, limitations, and evidence, not just commission.
+The site avoids medical, legal, tax, financial, insurance, public-benefits, and account-security advice. If a topic touches those areas, it should stay high-level and direct readers to official sources.
 
-## Update policy
+## Corrections
 
-Pricing, plans, and affiliate programs change. We add checked dates and update articles when important workflow or pricing assumptions change.
-
-## Public publish gate
-
-An article should not be public if it still has unresolved `[FACT CHECK]` markers, missing disclosures, or unsupported pricing/commission claims.
+If a tool feature, link, or recommendation becomes outdated, the page should be revised or removed from the public sitemap.

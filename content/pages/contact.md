@@ -6,6 +6,13 @@ noindex: false
 
 # Contact
 
-For corrections, partnership questions, or tool updates, contact: `[email to add]`.
+For corrections, source suggestions, or feedback on a workflow guide, use the project contact route listed by the site owner.
 
-If you represent a tool mentioned on this site, include the exact page URL, the correction requested, and the official source for the update.
+When sending feedback, include:
+
+- the page URL;
+- what was unclear or outdated;
+- the tool or workflow you tested;
+- what result you expected.
+
+Do not send passwords, API keys, private customer data, payment information, or sensitive personal information.
