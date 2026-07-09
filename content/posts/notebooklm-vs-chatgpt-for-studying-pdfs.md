@@ -21,6 +21,33 @@ The best workflow is usually not one tool or the other. Use NotebookLM first to 
 
 Do not use either tool as a final authority. The output can sound polished while still drifting from the PDF.
 
+
+## What I actually tested
+
+I used one same-source study handout and asked both tools for the same study output: a one-page guide, quiz questions, confusing concepts, and a short review plan. The test was intentionally small because the goal was not a benchmark leaderboard. The goal was to find a workflow a student can repeat without losing the source trail.
+
+![NotebookLM source setup screenshot](../assets/evidence/01_notebooklm_source_inserted_copied_text.png)
+
+The useful result was not “NotebookLM wins” or “ChatGPT wins.” The useful result was this split:
+
+| Workflow stage | Safer default | Why it matters |
+|---|---|---|
+| Build first notes | NotebookLM | The PDF/source stays visible in the workflow. |
+| Check what the document actually says | NotebookLM + original PDF | Source cues make verification less annoying. |
+| Turn verified notes into practice | ChatGPT | It is better at quiz formats, explanations, and review plans. |
+| Trust an answer key | Neither by itself | Check the source before using it for graded work. |
+
+## Failure case to watch for
+
+The risky failure is subtle: the AI does not have to invent a wild fact to hurt your studying. It only has to produce a clean explanation that is *one step away* from the PDF. That is why the workflow starts with a source map and ends with retrieval practice, not a summary.
+
+Use this quick check before trusting any answer:
+
+1. Can I point to the PDF section that supports this claim?
+2. Is this a source fact, a simplified explanation, or a generated example?
+3. Would I use this exact answer on an exam or in a citation?
+4. If not, what wording is safer?
+
 ## Quick comparison by use case
 
 | Use case | Better choice | Why |

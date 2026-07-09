@@ -88,9 +88,11 @@ def validate_public_launch_prereqs(public_posts):
 
 def md_inline(s):
     s=html.escape(s)
+    s=re.sub(r'!\[([^\]]*)\]\(([^)]+)\)',r'<img alt="\1" src="\2">',s)
     s=re.sub(r'`([^`]+)`',r'<code>\1</code>',s)
     s=re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',s)
-    s=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',s)
+    s=re.sub(r'(?<!! )\[([^\]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',s)
+    s=re.sub(r'(?<!!)\[([^\]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',s)
     return s
 
 def md_to_html(md):

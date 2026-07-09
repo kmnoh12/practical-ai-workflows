@@ -17,6 +17,35 @@ The best ChatGPT prompt for studying PDFs is not a one-line "summarize this" pro
 
 Use ChatGPT after you have either uploaded the PDF or pasted verified notes from a source-grounded pass. If the source matters, tell ChatGPT exactly what counts as source truth.
 
+
+## The complete prompt stack
+
+Most PDF prompts stop at a prettier summary. This stack forces the output toward active recall.
+
+| Pass | Prompt job | Output |
+|---|---|---|
+| 1 | Set source boundary | What counts as truth, what must be marked `Check source`. |
+| 2 | Build study guide | Terms, contrasts, conditions, traps, uncertainty list. |
+| 3 | Generate retrieval practice | Short-answer, application, confusing-pair questions. |
+| 4 | Verify answer key | Supported / partly supported / not supported. |
+| 5 | Repair missed questions | Mistake pattern + 30-minute repair plan. |
+
+![ChatGPT study guide screenshot](../assets/evidence/10_chatgpt_study_guide_output_top.png)
+
+The important move is pass 4. Without answer-key verification, the prompt can make you feel productive while quietly drilling wrong answers.
+
+## Copy this first prompt
+
+```text
+You are helping me study from provided source material, not from memory.
+Use only the PDF text, excerpts, or verified notes I provide.
+If a claim is not supported by the source, write: Check source.
+Separate source facts, study explanations, generated examples, and questions.
+Do not create citations or page references unless they are present in the source material.
+```
+
+Then paste the source or verified notes below it. If the file is long, work section by section instead of asking for one giant study guide.
+
 ## Quick comparison by use case
 
 | Study task | Prompt pattern | Output to request |

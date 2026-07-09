@@ -17,6 +17,36 @@ Use NotebookLM as the first pass when the job is to understand a PDF without los
 
 The practical rule: every important note should answer two questions: **what does the PDF say?** and **where in the source can I check it?**
 
+
+## Source-map example
+
+A source map is not a summary. It is a small audit table that tells you what the PDF covers and where you should check important claims.
+
+| Source section | What it says | Source cue | Study action |
+|---|---|---|---|
+| Attention | Learning starts with selective attention, not passive exposure. | opening concept section | Make one recall question. |
+| Working memory | Working memory has limited capacity. | working-memory paragraph | Watch for overloading in explanations. |
+| Retrieval practice | Remembering improves when you practice recall. | retrieval-practice section | Turn notes into closed-book questions. |
+| Spacing | Review is better when spread across days. | review-plan section | Schedule spaced retests. |
+| Recognition vs recall | Recognizing an answer is easier than producing it. | contrast section | Use short-answer questions, not only MCQ. |
+
+![NotebookLM answer screenshot](../assets/evidence/03_notebooklm_answer_visible.png)
+
+If NotebookLM cannot give you a source cue for a high-stakes claim, treat that claim as unverified. Do not copy it into the final notes yet.
+
+## The “source trail” rule
+
+For every important note, add one of these labels:
+
+| Label | Meaning | What to do |
+|---|---|---|
+| `source fact` | Directly supported by the PDF | Keep, but preserve the source cue. |
+| `study explanation` | Simplified from a source fact | Useful, but do not cite it as the PDF. |
+| `generated example` | Added to help understanding | Keep only if clearly labeled. |
+| `check source` | Not clearly supported yet | Verify or delete. |
+
+This is the difference between using NotebookLM as a study assistant and accidentally turning it into a fake textbook.
+
 ## Quick comparison by use case
 
 | Use case | Better move | Why |
