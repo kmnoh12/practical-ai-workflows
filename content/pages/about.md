@@ -6,29 +6,39 @@ noindex: false
 
 # About Practical AI Workflows
 
-Practical AI Workflows publishes tested, workflow-first guides for people who use AI and software tools to study, create, publish, sell, and automate useful work.
+Practical AI Workflows is an independent field guide to the gaps between AI model promises and the agent runtimes people actually use.
 
-The site is built around one promise: no generic “best AI tools” lists without a workflow. Every guide should explain the source, the task, the tool tradeoffs, the verification step, and the next practical action.
+The publication investigates model access, reasoning controls, provider limits, tool behavior, subagent orchestration, and real workflow failures. The goal is not to repeat launch announcements. It is to show what a setting does, where it stops working, how the claim was checked, and what a user can do next.
 
 ## Who this is for
 
-- Students and self-learners studying from PDFs and lecture notes.
-- Solo creators building newsletters, digital products, and content workflows.
-- Freelancers and small operators who need repeatable research, writing, and automation systems.
+- AI power users comparing native products with third-party agents.
+- Developers and operators debugging model, provider, tool, and orchestration behavior.
+- Solo builders who need reliable workflows instead of another list of trending tools.
+- Readers who want source links, reproducible checks, and clearly labeled limits.
 
-## Editorial approach
+## What gets investigated
 
-We prefer:
+- Whether a model or mode is actually available through a given route.
+- What a user interface label stores and what the request sends.
+- Whether runtime settings survive background jobs and delegated agents.
+- How native products differ from wrappers using the same model.
+- Which workaround is documented, which is experimental, and which is only an inference.
 
-- concrete workflows over vague productivity claims;
-- comparison tables by use case;
-- downloadable checklists and templates;
-- official product links for current features;
-- clear limitations when a guide can become stale.
+## Evidence standard
+
+Important claims should map to official documentation, a dated source snapshot, a sanitized local observation, or a reproducible test. Private IDs, prompts, credentials, and unrelated user data are not published.
+
+Open issues and community reports are useful leads, not automatic proof. Product behavior can change quickly, so investigations carry a checked or updated date and preserve the limits of the test.
+
+## Earlier work
+
+The original document-study and source-audit series remains available in the public archive. It is part of the site's evidence history, but it no longer defines the publication's focus.
 
 ## What this site does not do
 
-- It does not promise easy money from AI.
-- It does not publish legal, medical, financial, tax, or academic cheating advice.
-- It does not ask readers to manipulate ads, fake traffic, or spam communities.
-- It does not treat AI output as automatically correct.
+- It does not publish generic AI rankings without a decision or test.
+- It does not promise easy money, guaranteed traffic, or automatic productivity.
+- It does not fake benchmarks, usage, access, or personal experience.
+- It does not manipulate ads, fabricate engagement, or spam communities.
+- It does not treat fluent AI output as verified evidence.

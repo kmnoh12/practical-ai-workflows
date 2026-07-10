@@ -44,7 +44,11 @@ REQUIRED_DIST = [
     'ads.txt',
     'assets/style.css',
     'assets/social/practical-ai-workflows-og.png',
+    'assets/social/agent-field-notes-og.png',
+    'assets/social/hermes-max-ultra-og.png',
     'assets/evidence/source-map-workflow-english.png',
+    'assets/evidence/hermes-max-ultra-control-gap.png',
+    'hermes-agent-gpt-5-6-sol-max-ultra/index.html',
     'editorial-policy/index.html',
     'affiliate-disclosure/index.html',
     'templates/index.html',
@@ -288,14 +292,14 @@ for marker in [
     '<meta property="og:description"',
     '<meta property="og:image"',
     '<meta name="twitter:card" content="summary_large_image">',
-    absolute_url('/assets/social/practical-ai-workflows-og.png'),
+    absolute_url('/assets/social/agent-field-notes-og.png'),
 ]:
     if marker not in index:
         issues.append(f'homepage missing social preview marker: {marker}')
-if 'assets/evidence/source-map-workflow-english.png' not in index:
-    issues.append('homepage missing English workflow reconstruction asset')
+if 'assets/evidence/hermes-max-ultra-control-gap.png' not in index:
+    issues.append('homepage missing Hermes Max and Ultra control-path asset')
 if 'width="1568" height="948"' not in index:
-    issues.append('homepage evidence image must reserve intrinsic dimensions to avoid layout shift')
+    issues.append('homepage investigation image must reserve intrinsic dimensions to avoid layout shift')
 if BASE_PATH and 'href="/assets/style.css"' in index:
     issues.append('homepage still uses root asset path')
 if BASE_PATH and f'href="{BASE_PATH}/posts/"' not in index:
