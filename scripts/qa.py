@@ -40,6 +40,7 @@ REQUIRED_DIST = [
     'posts/index.html',
     'robots.txt',
     'sitemap.xml',
+    'ads.txt',
     'assets/style.css',
     'assets/social/practical-ai-workflows-og.png',
     'assets/evidence/source-map-workflow-english.png',
@@ -256,9 +257,13 @@ for item in [x for x in content_items if x['kind'] == 'post']:
 
 robots = (DIST / 'robots.txt').read_text(encoding='utf-8', errors='ignore') if (DIST / 'robots.txt').exists() else ''
 sitemap = (DIST / 'sitemap.xml').read_text(encoding='utf-8', errors='ignore') if (DIST / 'sitemap.xml').exists() else ''
+ads_txt = (DIST / 'ads.txt').read_text(encoding='utf-8', errors='ignore').strip() if (DIST / 'ads.txt').exists() else ''
+expected_ads_txt = 'google.com, pub-4624913344767889, DIRECT, f08c47fec0942fa0'
 index = (DIST / 'index.html').read_text(encoding='utf-8', errors='ignore') if (DIST / 'index.html').exists() else ''
 posts_index = (DIST / 'posts' / 'index.html').read_text(encoding='utf-8', errors='ignore') if (DIST / 'posts' / 'index.html').exists() else ''
 expected_css = site_path('/assets/style.css')
+if ads_txt != expected_ads_txt:
+    issues.append('ads.txt missing or does not match the configured Google AdSense publisher record')
 if expected_css not in index:
     issues.append(f'homepage missing expected css link {expected_css}')
 for marker in [
