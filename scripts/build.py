@@ -142,9 +142,26 @@ def absolute_url(path='/'):
     path='/' + str(path).lstrip('/')
     return PUBLIC_BASE_URL + path if PUBLIC_BASE_URL else site_url(path)
 
-def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.', path='/'):
+def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.', path='/', page_type='website'):
     robots='<meta name="robots" content="noindex,nofollow">' if noindex else '<meta name="robots" content="index,follow">'
-    canonical=f'<link rel="canonical" href="{html.escape(absolute_url(path))}">'
+    page_url=absolute_url(path)
+    canonical=f'<link rel="canonical" href="{html.escape(page_url)}">'
+    social_image=absolute_url('/assets/social/practical-ai-workflows-og.png')
+    social_meta=(
+        f'<meta property="og:type" content="{html.escape(page_type)}">'
+        f'<meta property="og:site_name" content="{SITE_TITLE}">'
+        f'<meta property="og:title" content="{html.escape(title)}">'
+        f'<meta property="og:description" content="{html.escape(desc)}">'
+        f'<meta property="og:url" content="{html.escape(page_url)}">'
+        f'<meta property="og:image" content="{html.escape(social_image)}">'
+        f'<meta property="og:image:width" content="1200">'
+        f'<meta property="og:image:height" content="630">'
+        f'<meta property="og:image:alt" content="Source map, claim check, retrieval practice, and repair workflow">'
+        f'<meta name="twitter:card" content="summary_large_image">'
+        f'<meta name="twitter:title" content="{html.escape(title)}">'
+        f'<meta name="twitter:description" content="{html.escape(desc)}">'
+        f'<meta name="twitter:image" content="{html.escape(social_image)}">'
+    )
     ga4_id=str(MANIFEST.get('ga4_measurement_id','')).strip()
     ga4=''
     if ga4_id:
@@ -155,9 +172,10 @@ def layout(title, body, noindex=False, desc='Tested AI workflows for source-base
     adsense=''
     if adsense_pub:
         adsense=f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={html.escape(adsense_pub)}" crossorigin="anonymous"></script>'
-    nav=f'<div class="nav wrap"><a class="brand" href="{site_url("/")}">Practical AI Workflows</a><div class="links"><a href="{site_url("/posts/")}">Posts</a><a href="{site_url("/templates/")}">Templates</a><a href="{site_url("/editorial-policy/")}">Methodology</a><a href="{site_url("/affiliate-disclosure/")}">Disclosure</a></div></div>'
-    motion_js=f'''<script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{document.addEventListener('DOMContentLoaded',function(){{var els=document.querySelectorAll('.evidence-spread,.spread-note,.dossier-index,.dossier-link,.method-strip a,.evidence-ledger div');var io=new IntersectionObserver(function(entries){{entries.forEach(function(entry){{if(entry.isIntersecting){{entry.target.classList.add('is-visible');io.unobserve(entry.target);}}}});}},{{threshold:.14,rootMargin:'0px 0px -8% 0px'}});els.forEach(function(el,i){{el.style.setProperty('--stagger',Math.min(i,8));io.observe(el);}});}});}}</script>'''
-    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}{canonical}{gsc_meta}{ga4}{adsense}<link rel="stylesheet" href="{site_url("/assets/style.css")}"></head><body>{nav}<main class="wrap">{body}</main><footer class="footer wrap">© 2026 Practical AI Workflows. Source-grounded workflow testing with screenshots, templates, and failure notes. Affiliate links, if used, are disclosed.</footer>{motion_js}</body></html>'
+    nav=f'<div class="nav wrap"><a class="brand" href="{site_url("/")}">Practical AI Workflows</a><div class="links"><a href="{site_url("/posts/")}">Posts</a><a href="{site_url("/templates/")}">Templates</a><a href="{site_url("/notebooklm-chatgpt-pdf-study-evidence/")}">Evidence</a><a href="{site_url("/about/")}">About</a><a href="{site_url("/editorial-policy/")}">Method</a></div></div>'
+    motion_js=f'''<script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches){{document.addEventListener('DOMContentLoaded',function(){{var els=document.querySelectorAll('.evidence-spread,.spread-note,.dossier-index,.dossier-link,.workflow-rail,.workflow-step,.method-strip a,.evidence-ledger div');var io=new IntersectionObserver(function(entries){{entries.forEach(function(entry){{if(entry.isIntersecting){{entry.target.classList.add('is-visible');io.unobserve(entry.target);}}}});}},{{threshold:.14,rootMargin:'0px 0px -8% 0px'}});els.forEach(function(el,i){{el.style.setProperty('--stagger',Math.min(i,8));io.observe(el);}});}});}}</script>'''
+    footer=f'''<footer class="footer wrap"><p>Practical AI Workflows publishes small, inspectable workflow tests.</p><nav aria-label="Footer"><a href="{site_url('/about/')}">About</a><a href="{site_url('/editorial-policy/')}">Editorial policy</a><a href="{site_url('/privacy-policy/')}">Privacy</a><a href="{site_url('/affiliate-disclosure/')}">Disclosure</a><a href="{site_url('/contact/')}">Contact</a></nav><p>© 2026 Practical AI Workflows.</p></footer>'''
+    return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} - {SITE_TITLE}</title><meta name="description" content="{html.escape(desc)}">{robots}{canonical}{social_meta}{gsc_meta}{ga4}{adsense}<link rel="stylesheet" href="{site_url("/assets/style.css")}"></head><body>{nav}<main class="wrap">{body}</main>{footer}{motion_js}</body></html>'
 
 def write_page(path, html_text):
     path.mkdir(parents=True,exist_ok=True)
@@ -185,45 +203,58 @@ for p,fm,md,slug,title,public in post_sources:
     body+=md_to_html(md)+'</article>'
     noindex=not public
     public_path='/' + str(slug).strip('/') + '/'
-    write_page(DIST/str(slug), layout(str(title), body, noindex, path=public_path))
+    desc=str(fm.get('description','')).strip() or 'A tested, source-grounded AI study workflow with copyable prompts, visible evidence, and clear limits.'
+    write_page(DIST/str(slug), layout(str(title), body, noindex, desc=desc, path=public_path, page_type='article'))
     posts.append({'slug':str(slug),'title':str(title),'category':str(fm.get('category','Workflow')),'order':int(fm.get('order',99)),'status':str(fm.get('status','draft')),'noindex':noindex,'public':public})
 for p in sorted((CONTENT/'pages').glob('*.md')):
     fm,md=parse_fm(p.read_text(encoding='utf-8'))
     slug=reserve_slug(checked_slug(fm.get('slug',p.stem)), seen_slugs); title=fm.get('title',slug.replace('-',' ').title())
     body=f'<article class="post"><h1>{html.escape(str(title))}</h1>{md_to_html(md)}</article>'
-    write_page(DIST/str(slug), layout(str(title), body, fm_bool(fm, 'noindex', False) is True, path='/' + str(slug).strip('/') + '/'))
+    desc=str(fm.get('description','')).strip() or 'Practical templates, evidence, and editorial notes for source-grounded AI study workflows.'
+    write_page(DIST/str(slug), layout(str(title), body, fm_bool(fm, 'noindex', False) is True, desc=desc, path='/' + str(slug).strip('/') + '/'))
 visible_posts=public_posts if public_posts else posts
 cards='\n'.join(f'<a class="dossier-link" href="{site_url("/" + x["slug"] + "/")}"><span>0{i+1}</span><strong>{html.escape(x["title"])}</strong><em>Open workflow</em></a>' for i,x in enumerate(sorted(visible_posts,key=lambda x:x['order'])))
 home=f'''<section class="dossier-hero">
   <div class="dossier-copy">
     <p class="lab-label">Practical AI Workflows</p>
-    <h1>PDF study workflows with receipts.</h1>
-    <p class="dossier-sub">NotebookLM for source trails. ChatGPT for retrieval practice. Every public claim links back to prompts, screenshots, outputs, and failure logs.</p>
+    <h1>Stop summarizing PDFs first.</h1>
+    <p class="dossier-sub">Map the source in NotebookLM. Turn verified notes into retrieval practice with ChatGPT.</p>
+    <div class="hero-actions"><a href="{site_url('/notebooklm-vs-chatgpt-for-studying-pdfs/')}">Read the field test</a><a href="{site_url('/templates/')}">Copy the workflow</a></div>
   </div>
   <aside class="evidence-ledger" aria-label="Evidence ledger">
-    <div><span>Scope</span><strong>3 public workflows</strong></div>
-    <div><span>Evidence</span><strong>screenshots, outputs, scoring</strong></div>
-    <div><span>Excluded</span><strong>generic AI tool lists</strong></div>
-    <div class="ledger-actions"><a href="{site_url('/notebooklm-vs-chatgpt-for-studying-pdfs/')}">Read test</a><a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">Evidence pack</a></div>
+    <div><span>Scope</span><strong>1 source / 2 tools</strong></div>
+    <div><span>Receipts</span><strong>raw outputs + screenshots</strong></div>
+    <div><span>Known flaw</span><strong>citation-label artifacts</strong></div>
+    <div class="ledger-actions"><a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">Inspect evidence</a><a href="{site_url('/editorial-policy/')}">Read method</a></div>
   </aside>
 </section>
 <section class="evidence-spread">
   <figure>
-    <img src="{site_url('/assets/evidence/03_notebooklm_answer_visible.png')}" alt="NotebookLM source-grounded answer from the PDF study workflow test">
+    <img src="{site_url('/assets/evidence/source-map-workflow-english.png')}" alt="English reconstruction of the source map, claim check, retrieval practice, and repair workflow" width="1568" height="948">
+    <figcaption>English reconstruction of the recorded workflow. The original Korean UI capture remains in the public evidence pack.</figcaption>
   </figure>
-  <div class="spread-note"><h2>Not another AI tools roundup.</h2><p>The site now ships as a small research file: one source, one prompt, two tools, visible artifacts. Weak launch-cluster pages stay out of the sitemap until tested.</p></div>
+  <div class="spread-note"><h2>The messy capture stays public.</h2><p>The NotebookLM run exposed Korean citation labels and duplicated headings in the exported text. I kept those artifacts instead of polishing the evidence into a cleaner story.</p><a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">See the raw run</a></div>
+</section>
+<section class="workflow-rail" aria-labelledby="workflow-heading">
+  <div class="workflow-intro"><h2 id="workflow-heading">A workflow you can run today.</h2><p>Four passes. Each one has a job, an output, and a failure check.</p></div>
+  <div class="workflow-steps">
+    <div class="workflow-step"><span>01</span><h3>Map</h3><p>List sections, concepts, and source cues before asking for prose.</p></div>
+    <div class="workflow-step"><span>02</span><h3>Verify</h3><p>Separate source facts from explanations, examples, and open questions.</p></div>
+    <div class="workflow-step"><span>03</span><h3>Practice</h3><p>Generate closed-book questions only from the notes you checked.</p></div>
+    <div class="workflow-step"><span>04</span><h3>Repair</h3><p>Turn missed questions into a short retest plan instead of another summary.</p></div>
+  </div>
 </section>
 <section class="dossier-index">
-  <div class="index-heading"><h2>Public dossier</h2><p>Start with the comparison, then use the source-map and active-recall workflows.</p></div>
+  <div class="index-heading"><h2>Public dossier</h2><p>Start with the comparison. Use the other two guides when you need the exact source-map and active-recall prompts.</p></div>
   <div class="dossier-list">{cards}</div>
 </section>
 <section class="method-strip">
   <a href="{site_url('/templates/')}">Copy the templates</a>
   <a href="{site_url('/notebooklm-chatgpt-pdf-study-evidence/')}">Inspect raw files</a>
-  <a href="{site_url('/editorial-policy/')}">Read methodology</a>
+  <a href="{site_url('/editorial-policy/')}">Read the method</a>
 </section>'''
-write_page(DIST, layout('Home',home, noindex=False if public_posts else True, path='/'))
-write_page(DIST/'posts', layout('Posts','<h1>Posts</h1><div class="dossier-list">'+cards+'</div>', noindex=False if public_posts else True, path='/posts/'))
+write_page(DIST, layout('Source-Grounded PDF Study Workflows',home, noindex=False if public_posts else True, desc='A tested NotebookLM and ChatGPT workflow for source maps, claim checks, retrieval practice, and missed-question repair.', path='/'))
+write_page(DIST/'posts', layout('Tested PDF Study Workflows','<h1>Tested PDF study workflows</h1><div class="dossier-list">'+cards+'</div>', noindex=False if public_posts else True, desc='Three source-grounded PDF study workflows with prompts, evidence, limits, and free templates.', path='/posts/'))
 if public_posts:
     robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
 else:

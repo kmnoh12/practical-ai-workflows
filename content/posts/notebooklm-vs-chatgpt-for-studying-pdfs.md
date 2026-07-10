@@ -1,5 +1,6 @@
 ---
 title: "NotebookLM vs ChatGPT for Studying PDFs: Which One Should You Use?"
+description: "I ran the same source through NotebookLM and ChatGPT. Here is where each tool helped, where the output got messy, and the workflow I kept."
 slug: "notebooklm-vs-chatgpt-for-studying-pdfs"
 status: "published"
 noindex: false
@@ -11,15 +12,13 @@ qa_approved: true
 cta: "Download the PDF Study Workflow Template"
 ---
 
-## Short answer
+## The two-minute answer
 
-Use **NotebookLM** when source checking, citations, and source-grounded notes matter most.
+I use NotebookLM at the beginning of the job and ChatGPT near the end.
 
-Use **ChatGPT** when you want clearer explanations, more quiz variation, answer keys, and a review plan you can keep refining.
+NotebookLM is the better place to map a PDF, check what the document says, and keep a source cue next to an important claim. ChatGPT is better once the notes are already clean and I want questions, alternate explanations, or a repair plan for the answers I missed.
 
-The best workflow is usually not one tool or the other. Use NotebookLM first to build source-grounded notes from the PDF, use ChatGPT second to turn those notes into explanations, quizzes, and a review schedule, then verify risky claims back against the original source.
-
-Do not use either tool as a final authority. The output can sound polished while still drifting from the PDF.
+That split is more useful than picking a winner. Neither tool gets final authority. The PDF does.
 
 
 ## Tested with
@@ -35,11 +34,19 @@ Do not use either tool as a final authority. The output can sound polished while
 [Open the public evidence pack](../notebooklm-chatgpt-pdf-study-evidence/)
 
 
-## What I actually tested
+## The run I actually did
 
 I used one same-source study handout and asked both tools for the same study output: a one-page guide, quiz questions, confusing concepts, and a short review plan. The test was intentionally small because the goal was not a benchmark leaderboard. The goal was to find a workflow a student can repeat without losing the source trail.
 
-![NotebookLM source setup screenshot](../assets/evidence/01_notebooklm_source_inserted_copied_text.png)
+![English reconstruction of the recorded source-map workflow](../assets/evidence/source-map-workflow-english.png)
+
+The original NotebookLM capture is in the [public evidence pack](../notebooklm-chatgpt-pdf-study-evidence/). I replaced it on the article page because the Korean UI and citation labels made the workflow hard to scan for an English-speaking reader.
+
+## What broke in the test
+
+The NotebookLM export was not clean. It repeated headings and inserted Korean source labels into otherwise English output. ChatGPT produced a smoother packet, but smooth prose is exactly what makes unsupported material easy to miss.
+
+I did not clean those flaws out of the raw files. They are part of the result. The practical lesson was to compare workflow behavior, not screenshot polish.
 
 The useful result was not “NotebookLM wins” or “ChatGPT wins.” The useful result was this split:
 
@@ -61,7 +68,7 @@ Use this quick check before trusting any answer:
 3. Would I use this exact answer on an exam or in a citation?
 4. If not, what wording is safer?
 
-## Quick comparison by use case
+## Where each tool earned its keep
 
 | Use case | Better choice | Why |
 |---|---|---|
@@ -74,7 +81,7 @@ Use this quick check before trusting any answer:
 | Studying a dense academic PDF | Both | Start source-grounded, then use ChatGPT for explanation and retrieval practice. |
 | Studying a short class handout | Either, with verification | In a small same-source test, both tools produced useful study materials. |
 
-## My recommendation
+## What I use now
 
 If you only have time for one tool, choose based on the job:
 
@@ -88,7 +95,7 @@ For most students, the strongest setup is:
 2. ChatGPT for learning design.
 3. Manual verification for anything that affects an exam answer, citation, grade, or professional decision.
 
-## Practical workflow: PDF to study guide
+## The workflow I kept
 
 ### Step 1: Put the PDF into NotebookLM first
 
@@ -307,13 +314,13 @@ After both tools answer, compare:
 | Refusal behavior | Did the tool say "Not in source" when the PDF did not support something? |
 | Review plan | Does it include retrieval, spacing, and repair of missed concepts? |
 
-## Free template
+## Copy the workflow
 
 [Download the PDF Study Workflow Template](../downloads/pdf-study-workflow-template.md)
 
 Use it as a checklist: source-grounded notes first, explanation second, quiz third, verification before trust.
 
-## Evidence note
+## What this is based on
 
 This recommendation is based on one same-source test: one synthetic study handout, one shared prompt, and one captured run in each tool. The test used a short handout about attention, working memory, long-term memory, retrieval practice, spacing, recognition, recall, and a three-day review plan.
 
@@ -329,7 +336,7 @@ Sources:
 - [Use chat in NotebookLM](https://support.google.com/notebooklm/answer/16179559?hl=en)
 - [OpenAI File Uploads FAQ](https://help.openai.com/en/articles/8555545-file-uploads-faq)
 
-## Limitations
+## What this test does not prove
 
 This article has important limits:
 
@@ -342,7 +349,7 @@ This article has important limits:
 
 The safe conclusion is not "NotebookLM always wins" or "ChatGPT always wins." The safe conclusion is that they are best at different parts of the same study workflow.
 
-## Final recommendation
+## Bottom line
 
 Use NotebookLM when you need source-grounded notes and easier source checking.
 

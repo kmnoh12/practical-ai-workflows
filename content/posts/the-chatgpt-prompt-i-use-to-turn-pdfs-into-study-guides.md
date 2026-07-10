@@ -1,5 +1,6 @@
 ---
 title: "The ChatGPT Prompt I Use to Turn PDFs into Study Guides"
+description: "The prompt stack I use to turn verified PDF notes into questions, answer-key checks, and a repair plan without letting ChatGPT become the source."
 slug: "the-chatgpt-prompt-i-use-to-turn-pdfs-into-study-guides"
 status: "published"
 noindex: false
@@ -11,11 +12,11 @@ qa_approved: true
 cta: "Download the PDF Study Prompt Pack"
 ---
 
-## Short answer
+## The prompt is a sequence, not a spell
 
-The best ChatGPT prompt for studying PDFs is not a one-line "summarize this" prompt. It is a structured workflow prompt that tells ChatGPT what the source is, what kind of study output you need, what to mark as uncertain, and how to format the result for active recall.
+I do not paste one giant prompt and hope for a perfect study guide. I run a short sequence: set the source boundary, build the guide, generate questions, audit the answer key, then repair whatever I missed.
 
-Use ChatGPT after you have either uploaded the PDF or pasted verified notes from a source-grounded pass. If the source matters, tell ChatGPT exactly what counts as source truth.
+ChatGPT comes after the source pass. I either upload the PDF or paste notes I already checked. The prompt tells the model what counts as source truth and what to label `Check source`.
 
 
 ## Tested with
@@ -59,7 +60,7 @@ Do not create citations or page references unless they are present in the source
 
 Then paste the source or verified notes below it. If the file is long, work section by section instead of asking for one giant study guide.
 
-## Quick comparison by use case
+## Pick the prompt for the job
 
 | Study task | Prompt pattern | Output to request |
 |---|---|---|
@@ -70,7 +71,7 @@ Then paste the source or verified notes below it. If the file is long, work sect
 | Accuracy control | Mark uncertainty | "Check source" list |
 | Long PDFs | Work section by section | Section packet, not one huge summary |
 
-## My recommendation
+## What I actually run
 
 Use a prompt pack, not a single magic prompt. A strong PDF-to-study workflow has four passes:
 
@@ -81,7 +82,7 @@ Use a prompt pack, not a single magic prompt. A strong PDF-to-study workflow has
 
 ChatGPT is useful because it can rewrite, quiz, and adapt. The risk is that it can also fill gaps with confident language. The prompt needs to force uncertainty into the open.
 
-## Practical workflow: PDF to study guide
+## Build the guide in passes
 
 ### Step 1: Define the source boundary
 
@@ -290,13 +291,13 @@ If the notes do not support a claim, write: Check source.
 
 Then compare the output against NotebookLM or the PDF: where did ChatGPT help, and where did it drift?
 
-## Free template
+## Copy the prompt pack
 
 [Download the PDF Study Prompt Pack](../downloads/pdf-study-prompt-pack.md)
 
 It includes the source-boundary prompt, study guide prompt, quiz prompt, missed-question repair prompt, and three-day review prompt.
 
-## Evidence note
+## What this is based on
 
 This workflow is based on the site's same-source NotebookLM vs ChatGPT test and on OpenAI's documentation describing file uploads for document work. It is not a claim that ChatGPT perfectly reads every PDF. It is a practical prompt structure for converting provided source material into study tasks.
 
@@ -306,10 +307,10 @@ Sources:
 - [NotebookLM vs ChatGPT for Studying PDFs](../notebooklm-vs-chatgpt-for-studying-pdfs/)
 - [How to Use NotebookLM to Study a PDF Without Losing the Source Trail](../how-to-use-notebooklm-to-study-a-pdf-without-losing-the-source-trail/)
 
-## Limitations
+## Limits
 
 PDF parsing quality depends on the file, formatting, tables, formulas, scanned pages, and upload limits. ChatGPT can create plausible but unsupported explanations. Use the generated study guide as a draft, then verify important claims against the original PDF.
 
-## Final recommendation
+## Bottom line
 
 Do not ask ChatGPT for "a summary." Ask it for a source-bounded study packet, retrieval questions, an uncertainty list, and a review plan. That turns PDF studying from passive reading into an auditable practice loop.

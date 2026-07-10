@@ -41,18 +41,17 @@ REQUIRED_DIST = [
     'robots.txt',
     'sitemap.xml',
     'assets/style.css',
+    'assets/social/practical-ai-workflows-og.png',
+    'assets/evidence/source-map-workflow-english.png',
     'editorial-policy/index.html',
     'affiliate-disclosure/index.html',
     'templates/index.html',
 ]
-REQUIRED_POST_SECTIONS_FOR_PUBLIC = [
-    '## Short answer',
-    '## Quick comparison by use case',
-    '## My recommendation',
-    '## Free template',
-    '## Evidence note',
-    '## Limitations',
-    '## Final recommendation',
+REQUIRED_POST_MARKERS_FOR_PUBLIC = [
+    '## Tested with',
+    '../notebooklm-chatgpt-pdf-study-evidence/',
+    '## What this is based on',
+    '## Bottom line',
 ]
 
 
@@ -233,9 +232,13 @@ for item in [x for x in content_items if x['kind'] == 'post']:
                 issues.append(f'{slug}: public candidate still contains placeholder phrase: {phrase}')
         if 'content="index,follow"' not in html:
             issues.append(f'{slug}: public candidate missing index,follow robots meta')
-        for section in REQUIRED_POST_SECTIONS_FOR_PUBLIC:
-            if section not in body:
-                issues.append(f'{slug}: public candidate missing section: {section}')
+        for marker in REQUIRED_POST_MARKERS_FOR_PUBLIC:
+            if marker not in body:
+                issues.append(f'{slug}: public candidate missing required marker: {marker}')
+        if not re.search(r'^## Copy ', body, flags=re.M):
+            issues.append(f'{slug}: public candidate missing a direct copy/download section')
+        if not re.search(r'^## (Limits|What this test does not prove)$', body, flags=re.M):
+            issues.append(f'{slug}: public candidate missing a plainly labeled limits section')
         evidence_hits = sum(token in body for token in ['Sources:', 'official', 'NotebookLM', 'OpenAI', 'Make', 'Zapier'])
         if evidence_hits < 1:
             issues.append(f'{slug}: public candidate has insufficient source/evidence mentions')
@@ -258,6 +261,19 @@ posts_index = (DIST / 'posts' / 'index.html').read_text(encoding='utf-8', errors
 expected_css = site_path('/assets/style.css')
 if expected_css not in index:
     issues.append(f'homepage missing expected css link {expected_css}')
+for marker in [
+    '<meta property="og:title"',
+    '<meta property="og:description"',
+    '<meta property="og:image"',
+    '<meta name="twitter:card" content="summary_large_image">',
+    absolute_url('/assets/social/practical-ai-workflows-og.png'),
+]:
+    if marker not in index:
+        issues.append(f'homepage missing social preview marker: {marker}')
+if 'assets/evidence/source-map-workflow-english.png' not in index:
+    issues.append('homepage missing English workflow reconstruction asset')
+if 'width="1568" height="948"' not in index:
+    issues.append('homepage evidence image must reserve intrinsic dimensions to avoid layout shift')
 if BASE_PATH and 'href="/assets/style.css"' in index:
     issues.append('homepage still uses root asset path')
 if BASE_PATH and f'href="{BASE_PATH}/posts/"' not in index:
