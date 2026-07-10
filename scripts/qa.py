@@ -50,7 +50,6 @@ REQUIRED_DIST = [
 ]
 REQUIRED_POST_MARKERS_FOR_PUBLIC = [
     '## Tested with',
-    '../notebooklm-chatgpt-pdf-study-evidence/',
     '## What this is based on',
     '## Bottom line',
 ]
@@ -240,6 +239,8 @@ for item in [x for x in content_items if x['kind'] == 'post']:
             issues.append(f'{slug}: public candidate missing a direct copy/download section')
         if not re.search(r'^## (Limits|What this test does not prove)$', body, flags=re.M):
             issues.append(f'{slug}: public candidate missing a plainly labeled limits section')
+        if not re.search(r'\]\([^\)\n]*(?:evidence|downloads)[^\)\n]*\)', body, flags=re.I):
+            issues.append(f'{slug}: public candidate missing a linked evidence or download artifact')
         evidence_hits = sum(token in body for token in ['Sources:', 'official', 'NotebookLM', 'OpenAI', 'Make', 'Zapier'])
         if evidence_hits < 1:
             issues.append(f'{slug}: public candidate has insufficient source/evidence mentions')

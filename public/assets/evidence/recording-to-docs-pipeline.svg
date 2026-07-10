@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Recording-to-Docs evidence pipeline</title>
+  <desc id="desc">Six stages move from a frozen lecture bundle through transcription, PDF alignment, claim extraction, retrieval documents, and source-locked NotebookLM decks.</desc>
+  <rect width="1400" height="760" fill="#f4efe5"/>
+  <path d="M0 590 C240 520 410 690 690 605 C970 520 1130 665 1400 565 L1400 760 L0 760 Z" fill="#e5dccb"/>
+  <text x="74" y="84" fill="#14243a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="2">RECORDING-TO-DOCS</text>
+  <text x="74" y="139" fill="#14243a" font-family="Georgia, serif" font-size="48" font-weight="700">From noisy lecture evidence</text>
+  <text x="74" y="194" fill="#14243a" font-family="Georgia, serif" font-size="48" font-weight="700">to an exam retrieval system</text>
+  <text x="76" y="234" fill="#566273" font-family="Arial, Helvetica, sans-serif" font-size="20">The final deck is downstream. Source scope and claim repair come first.</text>
+
+  <line x1="125" y1="425" x2="1275" y2="425" stroke="#14243a" stroke-width="5"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(70 320)">
+      <circle cx="55" cy="105" r="48" fill="#d85c41"/>
+      <text x="55" y="114" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">01</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Freeze bundle</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">audio · PDF · scope</text>
+    </g>
+    <g transform="translate(300 320)">
+      <circle cx="55" cy="105" r="48" fill="#e2a93b"/>
+      <text x="55" y="114" text-anchor="middle" fill="#14243a" font-size="26" font-weight="700">02</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Transcribe</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">glossary · timestamps</text>
+    </g>
+    <g transform="translate(530 320)">
+      <circle cx="55" cy="105" r="48" fill="#3f7890"/>
+      <text x="55" y="114" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">03</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Align PDF</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">figures · conditions</text>
+    </g>
+    <g transform="translate(760 320)">
+      <circle cx="55" cy="105" r="48" fill="#556b52"/>
+      <text x="55" y="114" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">04</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Extract claims</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">signals · confidence</text>
+    </g>
+    <g transform="translate(990 320)">
+      <circle cx="55" cy="105" r="48" fill="#7b5b8d"/>
+      <text x="55" y="114" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">05</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Build retrieval Doc</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">recall · traps · cues</text>
+    </g>
+    <g transform="translate(1220 320)">
+      <circle cx="55" cy="105" r="48" fill="#14243a"/>
+      <text x="55" y="114" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">06</text>
+      <text x="55" y="185" text-anchor="middle" fill="#14243a" font-size="18" font-weight="700">Lock and render</text>
+      <text x="55" y="212" text-anchor="middle" fill="#566273" font-size="15">NotebookLM · QA</text>
+    </g>
+  </g>
+
+  <rect x="75" y="650" width="1250" height="56" rx="12" fill="#14243a"/>
+  <text x="700" y="686" text-anchor="middle" fill="#f4efe5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Traceable source → checkable claim → retrieval prompt → scoped deck</text>
+</svg>

@@ -1,0 +1,6 @@
+bundle_token,course_alias,lecture_dates,chapter_or_problem_scope,source_role,source_filename_or_title,source_id_or_path,modified_at,allowed_or_excluded,coverage_note,uncertainty_note,verification_state
+EXAMPLE-BUNDLE-01,Course-A,YYYY-MM-DD to YYYY-MM-DD,Chapter or problem family,transcript,,,,allowed,,,not_checked
+EXAMPLE-BUNDLE-01,Course-A,YYYY-MM-DD to YYYY-MM-DD,Chapter or problem family,lecture_pdf,,,,allowed,,,not_checked
+EXAMPLE-BUNDLE-01,Course-A,YYYY-MM-DD to YYYY-MM-DD,Chapter or problem family,corrected_study_doc,,,,allowed,,,not_checked
+EXAMPLE-BUNDLE-01,Course-A,YYYY-MM-DD to YYYY-MM-DD,Chapter or problem family,supporting_problem_set,,,,allowed,,,not_checked
+EXAMPLE-BUNDLE-01,Course-A,YYYY-MM-DD to YYYY-MM-DD,Chapter or problem family,out_of_scope_source,,,,excluded,,,not_checked
