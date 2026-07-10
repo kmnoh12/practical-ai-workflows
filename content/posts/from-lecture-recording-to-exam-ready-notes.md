@@ -10,6 +10,8 @@ updated: "2026-07-10"
 indexable: true
 qa_approved: true
 cta: "Copy the Lecture Bundle Manifest"
+social_image: "/assets/social/recording-to-docs-og.png"
+social_image_alt: "I stopped asking AI to summarize lectures. Six courses, 24 study documents, and 103 selected sources."
 ---
 
 ## The two-minute version

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 from urllib.parse import urlparse
+from html import escape as html_escape
 import sys, re, json
 import xml.etree.ElementTree as ET
 
@@ -232,6 +233,21 @@ for item in [x for x in content_items if x['kind'] == 'post']:
                 issues.append(f'{slug}: public candidate still contains placeholder phrase: {phrase}')
         if 'content="index,follow"' not in html:
             issues.append(f'{slug}: public candidate missing index,follow robots meta')
+        social_image = str(fm.get('social_image', '')).strip()
+        social_image_alt = str(fm.get('social_image_alt', '')).strip()
+        if social_image:
+            if not social_image.startswith('/assets/'):
+                issues.append(f'{slug}: custom social_image must use a root-relative /assets/ path')
+            else:
+                social_asset = ROOT / 'public' / social_image.lstrip('/')
+                if not social_asset.exists():
+                    issues.append(f'{slug}: custom social_image asset does not exist: {social_image}')
+                if absolute_url(social_image) not in html:
+                    issues.append(f'{slug}: custom social_image was not rendered into social metadata')
+            if not social_image_alt:
+                issues.append(f'{slug}: custom social_image requires social_image_alt')
+            elif html_escape(social_image_alt) not in html:
+                issues.append(f'{slug}: custom social_image_alt was not rendered into social metadata')
         for marker in REQUIRED_POST_MARKERS_FOR_PUBLIC:
             if marker not in body:
                 issues.append(f'{slug}: public candidate missing required marker: {marker}')

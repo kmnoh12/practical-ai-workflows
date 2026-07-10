@@ -142,11 +142,11 @@ def absolute_url(path='/'):
     path='/' + str(path).lstrip('/')
     return PUBLIC_BASE_URL + path if PUBLIC_BASE_URL else site_url(path)
 
-def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.', path='/', page_type='website'):
+def layout(title, body, noindex=False, desc='Tested AI workflows for source-based learning and creator automation.', path='/', page_type='website', social_image_path='/assets/social/practical-ai-workflows-og.png', social_image_alt='Source map, claim check, retrieval practice, and repair workflow'):
     robots='<meta name="robots" content="noindex,nofollow">' if noindex else '<meta name="robots" content="index,follow">'
     page_url=absolute_url(path)
     canonical=f'<link rel="canonical" href="{html.escape(page_url)}">'
-    social_image=absolute_url('/assets/social/practical-ai-workflows-og.png')
+    social_image=absolute_url(social_image_path)
     social_meta=(
         f'<meta property="og:type" content="{html.escape(page_type)}">'
         f'<meta property="og:site_name" content="{SITE_TITLE}">'
@@ -156,11 +156,12 @@ def layout(title, body, noindex=False, desc='Tested AI workflows for source-base
         f'<meta property="og:image" content="{html.escape(social_image)}">'
         f'<meta property="og:image:width" content="1200">'
         f'<meta property="og:image:height" content="630">'
-        f'<meta property="og:image:alt" content="Source map, claim check, retrieval practice, and repair workflow">'
+        f'<meta property="og:image:alt" content="{html.escape(social_image_alt)}">'
         f'<meta name="twitter:card" content="summary_large_image">'
         f'<meta name="twitter:title" content="{html.escape(title)}">'
         f'<meta name="twitter:description" content="{html.escape(desc)}">'
         f'<meta name="twitter:image" content="{html.escape(social_image)}">'
+        f'<meta name="twitter:image:alt" content="{html.escape(social_image_alt)}">'
     )
     ga4_id=str(MANIFEST.get('ga4_measurement_id','')).strip()
     ga4=''
@@ -204,7 +205,9 @@ for p,fm,md,slug,title,public in post_sources:
     noindex=not public
     public_path='/' + str(slug).strip('/') + '/'
     desc=str(fm.get('description','')).strip() or 'A tested, source-grounded AI study workflow with copyable prompts, visible evidence, and clear limits.'
-    write_page(DIST/str(slug), layout(str(title), body, noindex, desc=desc, path=public_path, page_type='article'))
+    social_image_path=str(fm.get('social_image','')).strip() or '/assets/social/practical-ai-workflows-og.png'
+    social_image_alt=str(fm.get('social_image_alt','')).strip() or 'Source map, claim check, retrieval practice, and repair workflow'
+    write_page(DIST/str(slug), layout(str(title), body, noindex, desc=desc, path=public_path, page_type='article', social_image_path=social_image_path, social_image_alt=social_image_alt))
     posts.append({'slug':str(slug),'title':str(title),'category':str(fm.get('category','Workflow')),'order':int(fm.get('order',99)),'status':str(fm.get('status','draft')),'noindex':noindex,'public':public})
 for p in sorted((CONTENT/'pages').glob('*.md')):
     fm,md=parse_fm(p.read_text(encoding='utf-8'))
