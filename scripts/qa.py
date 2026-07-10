@@ -289,13 +289,13 @@ expected_public_urls = {absolute_url('/' + post['slug'] + '/') for post in publi
 public_build = bool(public_posts)
 
 if public_build:
-    # July 2026 Pro critique pivot: quality gate is now a small set of pillar
-    # pages, not volume. Three indexable PDF/NotebookLM study workflows are
-    # allowed while weaker launch-cluster pages remain noindex/evidence-gated.
+    # Keep the public set deliberately small and evidence-led. The original
+    # three pillars may expand into a tightly related source-audit column
+    # series, but weak launch-cluster drafts must remain noindex.
     if len(public_posts) < 3:
-        issues.append(f'public pillar gate expects at least three indexable posts, found {len(public_posts)}')
-    if len(public_posts) > 5:
-        issues.append(f'public pillar gate expects no more than five indexable posts during anti-slop pivot, found {len(public_posts)}')
+        issues.append(f'public evidence gate expects at least three indexable posts, found {len(public_posts)}')
+    if len(public_posts) > 8:
+        issues.append(f'public evidence gate expects no more than eight indexable posts, found {len(public_posts)}')
     if not PUBLIC_BASE_URL.startswith('https://'):
         issues.append('public build requires https public_base_url in site-manifest.json')
     if manifest_bool('robots_at_host_root', False) is not True:

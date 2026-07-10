@@ -245,7 +245,7 @@ home=f'''<section class="dossier-hero">
   </div>
 </section>
 <section class="dossier-index">
-  <div class="index-heading"><h2>Public dossier</h2><p>Start with the comparison. Use the other two guides when you need the exact source-map and active-recall prompts.</p></div>
+  <div class="index-heading"><h2>Public dossier</h2><p>Start with the comparison. Continue with the source map, study-guide audit, and answer-key columns when you need the exact checking workflow.</p></div>
   <div class="dossier-list">{cards}</div>
 </section>
 <section class="method-strip">
@@ -254,7 +254,7 @@ home=f'''<section class="dossier-hero">
   <a href="{site_url('/editorial-policy/')}">Read the method</a>
 </section>'''
 write_page(DIST, layout('Source-Grounded PDF Study Workflows',home, noindex=False if public_posts else True, desc='A tested NotebookLM and ChatGPT workflow for source maps, claim checks, retrieval practice, and missed-question repair.', path='/'))
-write_page(DIST/'posts', layout('Tested PDF Study Workflows','<h1>Tested PDF study workflows</h1><div class="dossier-list">'+cards+'</div>', noindex=False if public_posts else True, desc='Three source-grounded PDF study workflows with prompts, evidence, limits, and free templates.', path='/posts/'))
+write_page(DIST/'posts', layout('Tested PDF Study Workflows','<h1>Tested PDF study workflows</h1><div class="dossier-list">'+cards+'</div>', noindex=False if public_posts else True, desc=f'{len(public_posts)} source-grounded PDF study workflows and columns with prompts, evidence, limits, and free templates.', path='/posts/'))
 if public_posts:
     robots='User-agent: *\nAllow: /\nSitemap: ' + absolute_url('/sitemap.xml') + '\n# Public build with only QA-approved URLs in sitemap.\n'
 else:

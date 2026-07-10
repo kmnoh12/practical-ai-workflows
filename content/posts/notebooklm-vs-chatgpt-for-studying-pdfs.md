@@ -349,6 +349,12 @@ This article has important limits:
 
 The safe conclusion is not "NotebookLM always wins" or "ChatGPT always wins." The safe conclusion is that they are best at different parts of the same study workflow.
 
+## Continue with the audit columns
+
+- [Build a Source-to-Claim Map Before You Summarize a PDF](../build-a-source-to-claim-map-before-summarizing-a-pdf/)
+- [How to Audit an AI-Generated Study Guide Against the Source](../how-to-audit-an-ai-generated-study-guide-against-the-source/)
+- [Why AI Answer Keys Are the Riskiest Part of a Study Workflow](../why-ai-answer-keys-are-the-riskiest-part-of-study-workflows/)
+
 ## Bottom line
 
 Use NotebookLM when you need source-grounded notes and easier source checking.
